@@ -1,263 +1,263 @@
-# Design System: Together AI
+# 设计系统：Together AI
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-Together AI's interface is a pastel-gradient dreamscape built for enterprise AI infrastructure — a design that somehow makes GPU clusters and model inference feel light, airy, and optimistic. The hero section blooms with soft pink-blue-lavender gradients and abstract, painterly illustrations that evoke clouds and flight, establishing a visual metaphor for the "AI-Native Cloud" proposition. Against this softness, the typography cuts through with precision: "The Future" display font at 64px with aggressive negative tracking (-1.92px) creates dense, authoritative headline blocks.
+Together AI 的界面是一个柔和粉彩渐变的梦幻世界，专为企业级 AI 基础设施而构建——这种设计竟让 GPU 集群和模型推理显得轻盈、通透且充满希望。主视觉区域绽放着柔和的粉红-蓝色-薰衣草色渐变和抽象的、绘画感十足的插画，唤起云朵与飞翔的联想，为"AI 原生云"的主张建立了视觉隐喻。在这份柔和之中，排版以精准的姿态穿透画面：64px 的 "The Future" 展示字体配合极具张力的负字距（-1.92px），创造出紧凑而权威的标题块。
 
-The design straddles two worlds: a bright, white-canvas light side where pastel gradients and stats cards create an approachable platform overview, and a dark navy universe (`#010120` — not gray-black but a deep midnight blue) where research papers and technical content live. This dual-world approach elegantly separates the "business" messaging (light, friendly, stat-driven) from the "research" messaging (dark, serious, academic).
+该设计横跨两个世界：一个是明亮、白色画布的浅色面，粉彩渐变和统计卡片营造出平易近人的平台概览；另一个是深海军蓝宇宙（`#010120`——不是灰黑色，而是深邃的午夜蓝），研究论文和技术内容栖身其中。这种双世界方案优雅地将"商业"信息（明亮、友好、数据驱动）与"研究"信息（深色、严肃、学术）区分开来。
 
-What makes Together AI distinctive is its type system. "The Future" handles all display and body text with a geometric modernist aesthetic, while "PP Neue Montreal Mono" provides uppercase labels with meticulous letter-spacing — creating a "technical infrastructure company with taste" personality. The brand accents — magenta (`#ef2cc1`) and orange (`#fc4c02`) — appear sparingly in the gradient and illustrations, never polluting the clean UI.
+Together AI 的独特之处在于其字体系统。"The Future" 以几何现代主义美学承载所有展示和正文文本，而 "PP Neue Montreal Mono" 则为全大写标签提供精细的字距控制——塑造出一种"有品味的科技基础设施公司"人格。品牌强调色——品红色（`#ef2cc1`）和橙色（`#fc4c02`）——仅在渐变和插画中克制地出现，从不污染简洁的 UI。
 
-**Key Characteristics:**
-- Soft pastel gradients (pink, blue, lavender) against pure white canvas
-- Deep midnight blue (`#010120`) for dark/research sections — not gray-black
-- Custom "The Future" font with aggressive negative letter-spacing throughout
-- PP Neue Montreal Mono for uppercase technical labels
-- Sharp geometry (4px, 8px radius) — not rounded, not pill
-- Magenta (#ef2cc1) + orange (#fc4c02) brand accents in illustrations only
-- Lavender (#bdbbff) as a soft secondary accent
-- Enterprise stats prominently displayed (2x, 60%, 90%)
-- Dark-blue-tinted shadows (rgba(1, 1, 32, 0.1))
+**核心特征：**
+- 纯白画布上的柔和粉彩渐变（粉红、蓝色、薰衣草色）
+- 深午夜蓝（`#010120`）用于深色/研究版块——而非灰黑色
+- 全局采用定制字体 "The Future"，配合强烈的负字距
+- PP Neue Montreal Mono 用于全大写技术标签
+- 锐利几何圆角（4px、8px）——不使用圆润或胶囊形
+- 品红色（#ef2cc1）+ 橙色（#fc4c02）品牌强调色仅用于插画
+- 薰衣草色（#bdbbff）作为柔和的次要强调色
+- 企业级统计数据醒目展示（2x、60%、90%）
+- 深蓝色调阴影（rgba(1, 1, 32, 0.1)）
 
-## 2. Color Palette & Roles
+## 2. 色彩体系与角色
 
-### Primary
-- **Brand Magenta** (`#ef2cc1`): The primary brand accent — a vivid pink-magenta used in gradient illustrations and the highest-signal brand moments. Never used as UI chrome.
-- **Brand Orange** (`#fc4c02`): The secondary brand accent — a vivid orange for gradient endpoints and warm accent moments.
-- **Dark Blue** (`#010120`): The primary dark surface — a deep midnight blue-black used for research sections, footer, and dark containers. Not gray, not black — distinctly blue.
+### 主色
+- **品牌品红**（`#ef2cc1`）：主要品牌强调色——一种鲜艳的粉红-品红色，用于渐变插画和最高信号的品牌时刻。绝不用作 UI 装饰。
+- **品牌橙色**（`#fc4c02`）：次要品牌强调色——一种鲜艳的橙色，用于渐变端点和暖色强调时刻。
+- **深蓝色**（`#010120`）：主要深色表面——一种深邃的午夜蓝黑色，用于研究版块、页脚和深色容器。不是灰色，不是黑色——明确的蓝色调。
 
-### Secondary & Accent
-- **Soft Lavender** (`#bdbbff`): A gentle blue-violet used for subtle accents, secondary indicators, and soft UI highlights.
-- **Black 40** (`#00000066`): Semi-transparent black for de-emphasized overlays and secondary text.
+### 次要与强调色
+- **柔和薰衣草**（`#bdbbff`）：一种温和的蓝紫色，用于微妙强调、次要指示器和柔和的 UI 高亮。
+- **黑色 40**（`#00000066`）：半透明黑色，用于弱化叠加层和次要文本。
 
-### Surface & Background
-- **Pure White** (`#ffffff`): The primary light-section page background.
-- **Dark Blue** (`#010120`): Dark-section backgrounds — research, footer, technical content.
-- **Glass Light** (`rgba(255, 255, 255, 0.12)`): Frosted glass button backgrounds on dark sections.
-- **Glass Dark** (`rgba(0, 0, 0, 0.08)`): Subtle tinted surfaces on light sections.
+### 表面与背景
+- **纯白**（`#ffffff`）：主要浅色版块页面背景。
+- **深蓝色**（`#010120`）：深色版块背景——研究、页脚、技术内容。
+- **浅色玻璃**（`rgba(255, 255, 255, 0.12)`）：深色版块上的毛玻璃按钮背景。
+- **深色玻璃**（`rgba(0, 0, 0, 0.08)`）：浅色版块上的微妙着色表面。
 
-### Neutrals & Text
-- **Pure Black** (`#000000`): Primary text on light surfaces.
-- **Pure White** (`#ffffff`): Primary text on dark surfaces.
-- **Black 8%** (`rgba(0, 0, 0, 0.08)`): Borders and subtle containment on light surfaces.
-- **White 12%** (`rgba(255, 255, 255, 0.12)`): Borders and containment on dark surfaces.
+### 中性色与文本
+- **纯黑**（`#000000`）：浅色表面上的主要文本。
+- **纯白**（`#ffffff`）：深色表面上的主要文本。
+- **黑色 8%**（`rgba(0, 0, 0, 0.08)`）：浅色表面上的边框和微妙围合。
+- **白色 12%**（`rgba(255, 255, 255, 0.12)`）：深色表面上的边框和围合。
 
-### Gradient System
-- **Pastel Cloud Gradient**: Soft pink → lavender → soft blue gradients in hero illustrations. These appear in abstract, painterly forms — clouds, feathers, flowing shapes — that create visual warmth without literal meaning.
-- **Hero Gradient**: The hero background uses soft pastel tints layered over white, creating a dawn-like atmospheric effect.
+### 渐变系统
+- **粉彩云朵渐变**：主视觉插画中的柔和粉红 → 薰衣草色 → 柔和蓝色渐变。它们以抽象的、绘画感的形式呈现——云朵、羽毛、流动的形状——创造视觉温度而不具字面含义。
+- **主视觉渐变**：主视觉背景使用柔和的粉彩色调叠加在白色之上，营造出黎明般的大气效果。
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
-- **Primary**: `The Future`, with fallback: `Arial`
-- **Monospace / Labels**: `PP Neue Montreal Mono`, with fallback: `Georgia`
+### 字体族
+- **主字体**：`The Future`，回退字体：`Arial`
+- **等宽/标签字体**：`PP Neue Montreal Mono`，回退字体：`Georgia`
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display / Hero | The Future | 64px (4rem) | 400–500 | 1.00–1.10 (tight) | -1.92px | Maximum impact, dense blocks |
-| Section Heading | The Future | 40px (2.5rem) | 500 | 1.20 (tight) | -0.8px | Feature section titles |
-| Sub-heading | The Future | 28px (1.75rem) | 500 | 1.15 (tight) | -0.42px | Card headings |
-| Feature Title | The Future | 22px (1.38rem) | 500 | 1.15 (tight) | -0.22px | Small feature headings |
-| Body Large | The Future | 18px (1.13rem) | 400–500 | 1.30 (tight) | -0.18px | Descriptions, sections |
-| Body / Button | The Future | 16px (1rem) | 400–500 | 1.25–1.30 | -0.16px | Standard body, nav, buttons |
-| Caption | The Future | 14px (0.88rem) | 400–500 | 1.40 | normal | Metadata, descriptions |
-| Mono Label | PP Neue Montreal Mono | 16px (1rem) | 500 | 1.00 (tight) | 0.08px | Uppercase section labels |
-| Mono Small | PP Neue Montreal Mono | 11px (0.69rem) | 500 | 1.00–1.40 | 0.055–0.08px | Small uppercase tags |
-| Mono Micro | PP Neue Montreal Mono | 10px (0.63rem) | 400 | 1.40 | 0.05px | Smallest uppercase labels |
+| 角色 | 字体 | 字号 | 字重 | 行高 | 字距 | 备注 |
+|------|------|------|------|------|------|------|
+| 展示/主视觉 | The Future | 64px (4rem) | 400–500 | 1.00–1.10（紧凑） | -1.92px | 最大冲击力，紧凑块状 |
+| 版块标题 | The Future | 40px (2.5rem) | 500 | 1.20（紧凑） | -0.8px | 功能版块标题 |
+| 副标题 | The Future | 28px (1.75rem) | 500 | 1.15（紧凑） | -0.42px | 卡片标题 |
+| 功能标题 | The Future | 22px (1.38rem) | 500 | 1.15（紧凑） | -0.22px | 小型功能标题 |
+| 大号正文 | The Future | 18px (1.13rem) | 400–500 | 1.30（紧凑） | -0.18px | 描述，版块说明 |
+| 正文/按钮 | The Future | 16px (1rem) | 400–500 | 1.25–1.30 | -0.16px | 标准正文、导航、按钮 |
+| 说明文字 | The Future | 14px (0.88rem) | 400–500 | 1.40 | 正常 | 元数据、描述 |
+| 等宽标签 | PP Neue Montreal Mono | 16px (1rem) | 500 | 1.00（紧凑） | 0.08px | 全大写版块标签 |
+| 等宽小号 | PP Neue Montreal Mono | 11px (0.69rem) | 500 | 1.00–1.40 | 0.055–0.08px | 小型全大写标签 |
+| 等宽微型 | PP Neue Montreal Mono | 10px (0.63rem) | 400 | 1.40 | 0.05px | 最小全大写标签 |
 
-### Principles
-- **Negative tracking everywhere**: Every size of "The Future" uses negative letter-spacing (-0.16px to -1.92px), creating consistently tight, modern text.
-- **Mono for structure**: PP Neue Montreal Mono in uppercase with positive letter-spacing creates technical "label" moments that structure the page without competing with display text.
-- **Weight 500 as emphasis**: The system uses 400 (regular) and 500 (medium) — no bold. Medium weight marks headings and emphasis.
-- **Tight line-heights throughout**: Even body text uses 1.25–1.30 line-height — tighter than typical, creating a dense, information-rich feel.
+### 原则
+- **全局负字距**：每种尺寸的 "The Future" 都使用负字距（-0.16px 至 -1.92px），创造出一致的紧凑、现代文本效果。
+- **等宽字体的结构性**：PP Neue Montreal Mono 以全大写和正字距创造技术性的"标签"时刻，在不与展示文本竞争的情况下构建页面结构。
+- **以 500 字重为强调**：系统仅使用 400（常规）和 500（中等）——不使用粗体。中等字重标记标题和强调。
+- **全局紧凑行高**：连正文都使用 1.25–1.30 行高——比通常更紧凑，营造密集、信息丰富的感觉。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Glass on Dark**
-- Background: `rgba(255, 255, 255, 0.12)` (frosted glass)
-- Text: Pure White (`#ffffff`)
-- Radius: sharp (4px)
-- Opacity: 0.5
-- Hover: transparent dark overlay
-- Used on dark sections — subtle, glass-like
+**深色上的毛玻璃效果**
+- 背景：`rgba(255, 255, 255, 0.12)`（毛玻璃）
+- 文本：纯白（`#ffffff`）
+- 圆角：锐利（4px）
+- 透明度：0.5
+- 悬停：透明深色叠加
+- 用于深色版块——微妙、玻璃质感
 
-**Dark Solid**
-- Background: Dark Blue (`#010120`) or Pure Black
-- Text: Pure White
-- Radius: sharp (4px)
-- The primary CTA on light surfaces
+**深色实心**
+- 背景：深蓝色（`#010120`）或纯黑
+- 文本：纯白
+- 圆角：锐利（4px）
+- 浅色表面上的主要行动按钮
 
-**Outlined Light**
-- Border: `1px solid rgba(0, 0, 0, 0.08)`
-- Background: transparent or subtle glass
-- Text: Pure Black
-- Radius: sharp (4px)
-- Secondary actions on light surfaces
+**浅色描边**
+- 边框：`1px solid rgba(0, 0, 0, 0.08)`
+- 背景：透明或微妙玻璃效果
+- 文本：纯黑
+- 圆角：锐利（4px）
+- 浅色表面上的次要操作
 
-### Cards & Containers
-- Background: Pure White or subtle glass tint
-- Border: `1px solid rgba(0, 0, 0, 0.08)` on light; `1px solid rgba(255, 255, 255, 0.12)` on dark
-- Radius: sharp (4px) for badges and small elements; comfortable (8px) for larger containers
-- Shadow: dark-blue-tinted (`rgba(1, 1, 32, 0.1) 0px 4px 10px`) — warm and subtle
-- Stats cards with large numbers prominently displayed
+### 卡片与容器
+- 背景：纯白或微妙玻璃着色
+- 边框：浅色版 `1px solid rgba(0, 0, 0, 0.08)`；深色版 `1px solid rgba(255, 255, 255, 0.12)`
+- 圆角：锐利（4px）用于徽章和小型元素；舒适（8px）用于较大容器
+- 阴影：深蓝色调（`rgba(1, 1, 32, 0.1) 0px 4px 10px`）——温暖而微妙
+- 统计卡片醒目展示大号数字
 
-### Badges / Tags
-- Background: `rgba(0, 0, 0, 0.04)` (light) or `rgba(255, 255, 255, 0.12)` (dark)
-- Text: Black (light) or White (dark)
-- Padding: 2px 8px (compact)
-- Radius: sharp (4px)
-- Border: `1px solid rgba(0, 0, 0, 0.08)`
-- PP Neue Montreal Mono, uppercase, 16px
+### 徽章/标签
+- 背景：`rgba(0, 0, 0, 0.04)`（浅色）或 `rgba(255, 255, 255, 0.12)`（深色）
+- 文本：黑色（浅色）或白色（深色）
+- 内边距：2px 8px（紧凑）
+- 圆角：锐利（4px）
+- 边框：`1px solid rgba(0, 0, 0, 0.08)`
+- PP Neue Montreal Mono，全大写，16px
 
-### Navigation
-- Clean horizontal nav on white/transparent
-- Logo: Together AI wordmark
-- Links: The Future at 16px, weight 400
-- CTA: Dark solid button
-- Hover: no text-decoration
+### 导航
+- 白色/透明背景上的简洁水平导航
+- Logo：Together AI 文字商标
+- 链接：The Future，16px，字重 400
+- 行动按钮：深色实心按钮
+- 悬停：无文本装饰
 
-### Image Treatment
-- Abstract pastel gradient illustrations (cloud/feather forms)
-- Product UI screenshots on dark/light surfaces
-- Team photos in editorial style
-- Research paper cards with dark backgrounds
+### 图片处理
+- 抽象粉彩渐变插画（云朵/羽毛形态）
+- 深/浅色表面上的产品 UI 截图
+- 编辑风格的团队照片
+- 深色背景的研究论文卡片
 
-### Distinctive Components
+### 特色组件
 
-**Stats Bar**
-- Large performance metrics (2x, 60%, 90%)
-- Bold display numbers
-- Short descriptive captions beneath
-- Clean horizontal layout
+**统计栏**
+- 大号性能指标（2x、60%、90%）
+- 粗体展示数字
+- 下方附简短描述性说明
+- 简洁水平布局
 
-**Mono Section Labels**
-- PP Neue Montreal Mono, uppercase, 11px, letter-spacing 0.055px
-- Used as navigational signposts throughout the page
-- Technical, structured feel
+**等宽版块标签**
+- PP Neue Montreal Mono，全大写，11px，字距 0.055px
+- 作为页面中的导航路标使用
+- 技术性、结构化的感觉
 
-**Research Section**
-- Dark Blue (#010120) background
-- White text, research paper thumbnails
-- Creates a distinct "academic" zone
+**研究版块**
+- 深蓝色（#010120）背景
+- 白色文本，研究论文缩略图
+- 创造独特的"学术"区域
 
-**Large Footer Logo**
-- "together" wordmark rendered at massive scale in the dark footer
-- Creates a brand-statement closing moment
+**大号页脚 Logo**
+- "together" 文字商标在深色页脚中以巨大尺寸呈现
+- 创造品牌宣言式的收尾时刻
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 1px, 2px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 44px, 48px, 80px, 100px, 120px
-- Button/badge padding: 2px 8px (compact)
-- Card internal padding: approximately 24–32px
-- Section vertical spacing: generous (80–120px)
+### 间距系统
+- 基准单位：8px
+- 比例：1px、2px、4px、8px、10px、12px、16px、20px、24px、32px、44px、48px、80px、100px、120px
+- 按钮/徽章内边距：2px 8px（紧凑）
+- 卡片内部间距：约 24–32px
+- 版块垂直间距：宽裕（80–120px）
 
-### Grid & Container
-- Max container width: approximately 1200px, centered
-- Hero: centered with pastel gradient background
-- Feature sections: multi-column card grids
-- Stats: horizontal row of metric cards
-- Research: dark full-width section
+### 网格与容器
+- 最大容器宽度：约 1200px，居中
+- 主视觉：居中，带粉彩渐变背景
+- 功能版块：多列卡片网格
+- 统计数据：水平排列的指标卡片
+- 研究：深色全宽版块
 
-### Whitespace Philosophy
-- **Optimistic breathing room**: Generous spacing between sections creates an open, inviting feel that makes enterprise AI infrastructure feel accessible.
-- **Dual atmosphere**: Light sections breathe with whitespace; dark sections are denser with content.
-- **Stats as visual anchors**: Large numbers with small captions create natural focal points.
+### 留白理念
+- **乐观的呼吸空间**：版块间宽裕的间距营造出开放、亲切的感觉，让企业级 AI 基础设施变得平易近人。
+- **双重氛围**：浅色版块以留白呼吸；深色版块内容更加密集。
+- **统计数据作为视觉锚点**：大号数字配小号说明创造自然焦点。
 
-### Border Radius Scale
-- Sharp (4px): Buttons, badges, tags, small interactive elements — the primary radius
-- Comfortable (8px): Larger containers, feature cards
+### 圆角比例
+- 锐利（4px）：按钮、徽章、标签、小型交互元素——主要圆角
+- 舒适（8px）：较大容器、功能卡片
 
-*This is a deliberately restrained radius system — no pills, no generous rounding. The sharp geometry contrasts with the soft pastel gradients.*
+*这是一个刻意克制的圆角系统——不使用胶囊形，不使用大圆角。锐利的几何形状与柔和的粉彩渐变形成对比。*
 
-## 6. Depth & Elevation
+## 6. 层次与抬升
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow, no border | Page background, text blocks |
-| Contained (Level 1) | `1px solid rgba(0,0,0,0.08)` (light) or `rgba(255,255,255,0.12)` (dark) | Cards, badges, containers |
-| Elevated (Level 2) | `rgba(1, 1, 32, 0.1) 0px 4px 10px` | Feature cards, hover states |
-| Dark Zone (Level 3) | Dark Blue (#010120) full-width background | Research, footer, technical sections |
+| 层级 | 处理方式 | 用途 |
+|------|----------|------|
+| 平面（层级 0） | 无阴影，无边框 | 页面背景、文本块 |
+| 围合（层级 1） | `1px solid rgba(0,0,0,0.08)`（浅色）或 `rgba(255,255,255,0.12)`（深色） | 卡片、徽章、容器 |
+| 抬升（层级 2） | `rgba(1, 1, 32, 0.1) 0px 4px 10px` | 功能卡片、悬停状态 |
+| 深色区域（层级 3） | 深蓝色（#010120）全宽背景 | 研究、页脚、技术版块 |
 
-**Shadow Philosophy**: Together AI uses a single, distinctive shadow — tinted with Dark Blue (`rgba(1, 1, 32, 0.1)`) rather than generic black. This gives elevated elements a subtle blue-ish cast that ties them to the brand's midnight-blue dark mode. The shadow is soft (10px blur, 4px offset) and always downward — creating gentle paper-hover elevation.
+**阴影理念**：Together AI 使用一种独特的阴影——以深蓝色（`rgba(1, 1, 32, 0.1)`）着色而非通用黑色。这赋予抬升元素微妙的蓝色调，将它们与品牌午夜蓝深色模式联系起来。阴影柔和（10px 模糊、4px 偏移），始终向下——创造轻柔的纸张悬浮抬升效果。
 
-## 7. Do's and Don'ts
+## 7. 宜与忌
 
-### Do
-- Use pastel gradients (pink/blue/lavender) for hero illustrations and decorative backgrounds
-- Use Dark Blue (#010120) for dark sections — never generic gray-black
-- Apply negative letter-spacing on all "The Future" text (scaled by size)
-- Use PP Neue Montreal Mono in uppercase for section labels and technical markers
-- Keep border-radius sharp (4px) for badges and interactive elements
-- Use the dark-blue-tinted shadow for elevation
-- Maintain the light/dark section duality — business (light) vs research (dark)
-- Show enterprise stats prominently with large display numbers
+### 宜
+- 使用粉彩渐变（粉红/蓝色/薰衣草色）作为主视觉插画和装饰性背景
+- 深色版块使用深蓝色（#010120）——绝不使用通用灰黑色
+- 所有 "The Future" 文本施加负字距（按尺寸缩放）
+- 使用 PP Neue Montreal Mono 全大写作为版块标签和技术标记
+- 徽章和交互元素保持锐利圆角（4px）
+- 使用深蓝色调阴影表现层次
+- 维持浅色/深色版块双重性——商业（浅色）vs 研究（深色）
+- 以大号展示数字醒目展示企业级统计数据
 
-### Don't
-- Don't use Brand Magenta (#ef2cc1) or Brand Orange (#fc4c02) as UI colors — they're for illustrations only
-- Don't use pill-shaped or generously rounded corners — the geometry is sharp
-- Don't use generic gray-black for dark sections — always Dark Blue (#010120)
-- Don't use positive letter-spacing on "The Future" — it's always negative
-- Don't use bold (700+) weight — 400–500 is the full range
-- Don't use warm-toned shadows — always dark-blue-tinted
-- Don't reduce section spacing below 48px — the open feeling is core
-- Don't mix in additional typefaces — "The Future" + PP Neue Montreal Mono is the pair
+### 忌
+- 不要将品牌品红（#ef2cc1）或品牌橙色（#fc4c02）用作 UI 颜色——它们仅用于插画
+- 不要使用胶囊形或大圆角——几何形状是锐利的
+- 深色版块不要使用通用灰黑色——始终使用深蓝色（#010120）
+- "The Future" 不要使用正字距——始终为负值
+- 不要使用粗体（700+）字重——400–500 是完整范围
+- 不要使用暖色调阴影——始终使用深蓝色调
+- 版块间距不要低于 48px——开放感是核心
+- 不要混入额外字体——"The Future" + PP Neue Montreal Mono 是固定搭配
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <479px | Compact layout, stacked everything |
-| Large Mobile | 479–767px | Single column, hamburger nav |
-| Tablet | 768–991px | 2-column grids begin |
-| Desktop | 992px+ | Full multi-column layout |
+### 断点
+| 名称 | 宽度 | 关键变化 |
+|------|------|----------|
+| 移动端 | <479px | 紧凑布局，全部堆叠 |
+| 大移动端 | 479–767px | 单列，汉堡菜单导航 |
+| 平板 | 768–991px | 开始出现两列网格 |
+| 桌面端 | 992px+ | 完整多列布局 |
 
-### Touch Targets
-- Buttons with adequate padding
-- Card surfaces as touch targets
-- Navigation links at comfortable 16px
+### 触控目标
+- 具有充足内边距的按钮
+- 卡片表面作为触控目标
+- 导航链接舒适的 16px
 
-### Collapsing Strategy
-- **Navigation**: Collapses to hamburger on mobile
-- **Hero text**: 64px → 40px → 28px progressive scaling
-- **Stats bar**: Horizontal → stacked vertical
-- **Feature grids**: Multi-column → single column
-- **Research section**: Cards stack vertically
+### 折叠策略
+- **导航**：移动端折叠为汉堡菜单
+- **主视觉文本**：64px → 40px → 28px 渐进缩放
+- **统计栏**：水平 → 垂直堆叠
+- **功能网格**：多列 → 单列
+- **研究版块**：卡片垂直堆叠
 
-### Image Behavior
-- Pastel illustrations scale proportionally
-- Product screenshots maintain aspect ratio
-- Team photos scale within containers
+### 图片行为
+- 粉彩插画按比例缩放
+- 产品截图保持纵横比
+- 团队照片在容器内缩放
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示词指南
 
-### Quick Color Reference
-- Primary Text (light): "Pure Black (#000000)"
-- Primary Text (dark): "Pure White (#ffffff)"
-- Page Background: "Pure White (#ffffff)"
-- Dark Surface: "Dark Blue (#010120)"
-- Brand Accent 1: "Brand Magenta (#ef2cc1)"
-- Brand Accent 2: "Brand Orange (#fc4c02)"
-- Soft Accent: "Soft Lavender (#bdbbff)"
-- Border (light): "rgba(0, 0, 0, 0.08)"
+### 快速颜色参考
+- 主要文本（浅色）："纯黑（#000000）"
+- 主要文本（深色）："纯白（#ffffff）"
+- 页面背景："纯白（#ffffff）"
+- 深色表面："深蓝色（#010120）"
+- 品牌强调色 1："品牌品红（#ef2cc1）"
+- 品牌强调色 2："品牌橙色（#fc4c02）"
+- 柔和强调色："柔和薰衣草（#bdbbff）"
+- 边框（浅色）："rgba(0, 0, 0, 0.08)"
 
-### Example Component Prompts
-- "Create a hero section on white with soft pastel gradients (pink → lavender → blue) as background. Headline at 64px 'The Future' weight 500, line-height 1.10, letter-spacing -1.92px. Pure Black text. Include a dark blue CTA button (#010120, 4px radius)."
-- "Design a stats card: large display number (64px, weight 500) with a small caption below (14px). White background, 8px radius, dark-blue-tinted shadow (rgba(1, 1, 32, 0.1) 0px 4px 10px)."
-- "Build a section label: PP Neue Montreal Mono, 11px, weight 500, uppercase, letter-spacing 0.055px. Black text on light, white on dark."
-- "Create a dark research section: Dark Blue (#010120) background. White text, section heading at 40px 'The Future' weight 500, letter-spacing -0.8px. Cards with rgba(255, 255, 255, 0.12) border."
-- "Design a badge: 4px radius, rgba(0, 0, 0, 0.04) background, 1px solid rgba(0, 0, 0, 0.08) border, 'The Future' 16px text. Padding: 2px 8px."
+### 示例组件提示词
+- "创建一个白色背景的主视觉版块，以柔和粉彩渐变（粉红 → 薰衣草色 → 蓝色）作为背景。标题 64px 'The Future' 字重 500，行高 1.10，字距 -1.92px。纯黑文本。包含一个深蓝色行动按钮（#010120，4px 圆角）。"
+- "设计一张统计卡片：大号展示数字（64px，字重 500），下方附小号说明（14px）。白色背景，8px 圆角，深蓝色调阴影（rgba(1, 1, 32, 0.1) 0px 4px 10px）。"
+- "构建一个版块标签：PP Neue Montreal Mono，11px，字重 500，全大写，字距 0.055px。浅色上黑色文本，深色上白色文本。"
+- "创建一个深色研究版块：深蓝色（#010120）背景。白色文本，版块标题 40px 'The Future' 字重 500，字距 -0.8px。卡片使用 rgba(255, 255, 255, 0.12) 边框。"
+- "设计一个徽章：4px 圆角，rgba(0, 0, 0, 0.04) 背景，1px solid rgba(0, 0, 0, 0.08) 边框，'The Future' 16px 文本。内边距：2px 8px。"
 
-### Iteration Guide
-1. Always specify negative letter-spacing for "The Future" — it's scaled by size
-2. Dark sections use #010120 (midnight blue), never generic black
-3. Shadows are always dark-blue-tinted: rgba(1, 1, 32, 0.1)
-4. Mono labels are always uppercase with positive letter-spacing
-5. Keep radius sharp (4px or 8px) — no pills, no generous rounding
-6. Pastel gradients are for decoration, not UI chrome
+### 迭代指南
+1. 始终为 "The Future" 指定负字距——按尺寸缩放
+2. 深色版块使用 #010120（午夜蓝），绝不使用通用黑色
+3. 阴影始终为深蓝色调：rgba(1, 1, 32, 0.1)
+4. 等宽标签始终全大写并使用正字距
+5. 保持圆角锐利（4px 或 8px）——不使用胶囊形或大圆角
+6. 粉彩渐变仅用于装饰，不用于 UI 装饰

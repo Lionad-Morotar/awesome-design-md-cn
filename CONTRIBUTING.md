@@ -1,103 +1,103 @@
-# Contributing to Awesome Design MD
+# 为 Awesome Design MD 贡献
 
-Thanks for contributing.
+感谢你的贡献。
 
-This repository is a curated collection of DESIGN.md files extracted from popular websites. Each file captures a site's complete visual language in a format any AI agent can read.
+本仓库是一个精心策划的 DESIGN.md 文件合集，这些文件从热门网站中提取而来。每个文件以一种任何 AI 智能体都能读取的格式，捕捉了某个网站的完整视觉语言。
 
-## How to Contribute
+## 如何贡献
 
-### Request a New Site
+### 请求添加新站点
 
-The easiest way to contribute. [Open an issue](https://github.com/VoltAgent/awesome-design-md/issues) with:
+最简单的贡献方式。请[提交一个 Issue](https://github.com/VoltAgent/awesome-design-md/issues)，包含以下内容：
 
-- The site URL
-- Why it's interesting (unique design language, popular brand, etc.)
+- 网站 URL
+- 为什么它值得收录（独特的设计语言、知名品牌等）
 
-We'll extract the DESIGN.md and add it to the collection.
+我们会提取 DESIGN.md 并将其添加到合集中。
 
-### Improve an Existing DESIGN.md
+### 改进现有的 DESIGN.md
 
-If you notice issues with an existing file:
+如果你发现现有文件存在问题：
 
-1. Open the site's `DESIGN.md`
-2. Compare against the live site
-3. Fix incorrect hex values, missing tokens, or weak descriptions
-4. Update the `preview.html` and `preview-dark.html` if your changes affect displayed tokens
-5. Open a PR with before/after rationale
+1. 打开该站点的 `DESIGN.md`
+2. 与线上网站进行对比
+3. 修正不正确的十六进制值、缺失的 token 或薄弱的描述
+4. 如果你的更改影响了展示的 token，请同步更新 `preview.html` 和 `preview-dark.html`
+5. 提交 PR 并说明修改前后的理由
 
-### Submit a New DESIGN.md
+### 提交新的 DESIGN.md
 
-If you've extracted a DESIGN.md yourself:
+如果你已经自行提取了一个 DESIGN.md：
 
-1. Create a directory named after the site (e.g., `x/`)
-2. Include at minimum:
-   - `DESIGN.md`: The design system document
-   - `preview.html`: Visual catalog (light)
-   - `preview-dark.html`: Visual catalog (dark)
-3. Update `README.md`: Add the site to the correct category table
-4. Open a PR with the site name and a short description
+1. 创建一个以网站名称命名的目录（例如 `x/`）
+2. 至少包含以下文件：
+   - `DESIGN.md`：设计系统文档
+   - `preview.html`：视觉目录（浅色模式）
+   - `preview-dark.html`：视觉目录（深色模式）
+3. 更新 `README.md`：将网站添加到正确的分类表格中
+4. 提交 PR，包含网站名称和简要描述
 
-## DESIGN.md Quality Bar
+## DESIGN.md 质量标准
 
-Every DESIGN.md must include all 9 sections:
+每个 DESIGN.md 必须包含全部 9 个章节：
 
-1. Visual Theme & Atmosphere
-2. Color Palette & Roles
-3. Typography Rules
-4. Component Stylings
-5. Layout Principles
-6. Depth & Elevation
-7. Do's and Don'ts
-8. Responsive Behavior
-9. Agent Prompt Guide
+1. 视觉主题与氛围
+2. 色彩系统与角色定义
+3. 排版规则
+4. 组件样式
+5. 布局原则
+6. 层次与阴影
+7. 设计规范（宜与忌）
+8. 响应式行为
+9. 智能体提示词指南
 
-### Writing Standards
+### 撰写标准
 
-- **Every color**: Semantic Name (`#hex`) + functional role
-- **Atmosphere**: Evocative and specific, never "clean and modern"
-- **Typography**: Full hierarchy table with size, weight, line-height, letter-spacing
-- **Components**: Include hover/focus states and transition timing
-- **Why, not just what**: Explain the reasoning behind design decisions
+- **每种颜色**：语义化名称（`#hex`）+ 功能角色
+- **氛围描述**：生动且具体，禁止使用"简洁现代"这类泛泛之词
+- **排版**：完整的层级表格，包含字号、字重、行高、字间距
+- **组件**：包含悬停/聚焦状态和过渡时间
+- **解释原因，而非仅描述结果**：说明设计决策背后的理由
 
-### Common Issues to Watch For
+### 常见问题
 
-- Hex values that don't match the live site (token extraction isn't perfect)
-- Missing hover/focus states on buttons and links
-- Generic atmosphere descriptions that could apply to any site
-- Incomplete typography tables (missing code font, small labels, etc.)
+- 十六进制值与线上网站不匹配（token 提取并非完美无缺）
+- 按钮和链接缺少悬停/聚焦状态
+- 空泛的氛围描述，适用于任何网站
+- 不完整的排版表格（缺少等宽字体、小号标签等）
 
-## Preview HTML Standards
+## 预览 HTML 标准
 
-- Self-contained single HTML file (inline CSS, no external dependencies except Google Fonts)
-- Must display: color swatches, typography scale, button variants, card examples, form elements, spacing scale, border radius, elevation levels
-- No logo icons or emoji icons in the nav. Plain text site name only
-- No Do's and Don'ts section in the HTML preview
-- Responsive: must look reasonable on mobile
+- 自包含的单个 HTML 文件（内联 CSS，除 Google Fonts 外无外部依赖）
+- 必须展示：色板、排版层级、按钮变体、卡片示例、表单元素、间距层级、圆角、阴影层级
+- 导航栏中不使用 logo 图标或 emoji 图标，仅使用纯文本网站名称
+- HTML 预览中不包含设计规范（宜与忌）章节
+- 响应式：在移动端必须显示合理
 
-## Validation Checklist (Before PR)
+## 验证清单（PR 提交前）
 
-- [ ] All 9 sections present in DESIGN.md
-- [ ] Every color has semantic name + hex + role
-- [ ] Typography table is complete with real values
-- [ ] Preview HTML files are self-contained and render correctly
-- [ ] Site added to correct category in README.md
-- [ ] Links in README resolve correctly
+- [ ] DESIGN.md 中包含全部 9 个章节
+- [ ] 每种颜色都有语义化名称 + 十六进制值 + 角色
+- [ ] 排版表格完整且包含真实数值
+- [ ] 预览 HTML 文件自包含且正确渲染
+- [ ] 网站已添加到 README.md 中正确的分类
+- [ ] README 中的链接可正确访问
 
-## Pull Request Checklist
+## Pull Request 清单
 
-- [ ] Added/updated DESIGN.md file
-- [ ] Added/updated preview HTML files
-- [ ] Updated main README.md
-- [ ] Included clear PR description
-- [ ] Verified against live site
+- [ ] 已添加/更新 DESIGN.md 文件
+- [ ] 已添加/更新预览 HTML 文件
+- [ ] 已更新主 README.md
+- [ ] 包含清晰的 PR 描述
+- [ ] 已与线上网站进行验证
 
-## Style Notes
+## 风格说明
 
-- Keep documentation in English.
-- Prefer precise, descriptive wording over marketing language.
-- Keep category descriptions short and factual.
-- Alphabetical ordering within categories.
+- 保持文档为英文。
+- 优先使用精确、描述性的措辞，而非营销语言。
+- 分类描述保持简短且客观。
+- 分类内按字母顺序排列。
 
-## License
+## 许可证
 
-By contributing, you agree your contributions are provided under the repository license terms.
+通过贡献，你同意你的贡献在仓库许可证条款下提供。

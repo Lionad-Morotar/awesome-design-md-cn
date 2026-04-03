@@ -1,23 +1,23 @@
-# Spotify Inspired Design System
+# Spotify 风格设计系统
 
-[DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/spotify/DESIGN.md) extracted from the public [spotify](https://spotify.com/) website. This is not the official design system. Colors, fonts, and spacing may not be 100% accurate. But it's a good starting point for building something similar.
+[DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/spotify/DESIGN.md) 提取自公开的 [spotify](https://spotify.com/) 网站。这不是官方设计系统。颜色、字体和间距可能不是 100% 准确，但它是构建类似内容的良好起点。
 
-## Files
+## 文件
 
-| File | Description |
-|------|-------------|
-| `DESIGN.md` | Complete design system documentation (9 sections) |
-| `preview.html` | Interactive design token catalog (light) |
-| `preview-dark.html` | Interactive design token catalog (dark) |
+| 文件 | 说明 |
+|------|------|
+| `DESIGN.md` | 完整设计系统文档（9 个章节） |
+| `preview.html` | 交互式设计令牌目录（浅色） |
+| `preview-dark.html` | 交互式设计令牌目录（深色） |
 
-Use [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/spotify/DESIGN.md) to use as a reference for AI agents (Claude, Cursor, Stitch) to generate UI that looks like the Spotify design language.
+使用 [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/spotify/DESIGN.md) 作为 AI 智能体（Claude、Cursor、Stitch）的参考，以生成符合 Spotify 设计语言的 UI。
 
-## Preview
+## 预览
 
-A sample landing page built with DESIGN.md. It shows the actual colors, typography, buttons, cards, spacing, and elevation, all in one page.
+一个使用 DESIGN.md 构建的示例落地页。它在一个页面中展示了实际的配色、排版、按钮、卡片、间距和层级。
 
-### Dark Mode
+### 深色模式
 ![Spotify Design System — Dark Mode](https://pub-2e4ecbcbc9b24e7b93f1a6ab5b2bc71f.r2.dev/designs/spotify/preview-dark-screenshot.png)
 
-### Light Mode
+### 浅色模式
 ![Spotify Design System — Light Mode](https://pub-2e4ecbcbc9b24e7b93f1a6ab5b2bc71f.r2.dev/designs/spotify/preview-screenshot.png)

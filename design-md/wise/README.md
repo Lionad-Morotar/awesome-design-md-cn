@@ -1,23 +1,23 @@
-# Wise Inspired Design System
+# Wise 风格设计系统
 
-[DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/wise/DESIGN.md) extracted from the public [wise](https://wise.com/) website. This is not the official design system. Colors, fonts, and spacing may not be 100% accurate. But it's a good starting point for building something similar.
+[DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/wise/DESIGN.md) 从公开的 [wise](https://wise.com/) 网站中提取。这不是官方设计系统。颜色、字体和间距可能不是 100% 准确，但它是构建类似风格项目的一个良好起点。
 
-## Files
+## 文件
 
-| File | Description |
-|------|-------------|
-| `DESIGN.md` | Complete design system documentation (9 sections) |
-| `preview.html` | Interactive design token catalog (light) |
-| `preview-dark.html` | Interactive design token catalog (dark) |
+| 文件 | 描述 |
+|------|------|
+| `DESIGN.md` | 完整设计系统文档（9 个章节） |
+| `preview.html` | 交互式设计 token 目录（亮色） |
+| `preview-dark.html` | 交互式设计 token 目录（暗色） |
 
-Use [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/wise/DESIGN.md) to use as a reference for AI agents (Claude, Cursor, Stitch) to generate UI that looks like the Wise design language.
+使用 [DESIGN.md](https://github.com/VoltAgent/awesome-design-md/blob/main/design-md/wise/DESIGN.md) 作为 AI 智能体（Claude、Cursor、Stitch）的参考，以生成符合 Wise 设计语言的 UI。
 
-## Preview
+## 预览
 
-A sample landing page built with DESIGN.md. It shows the actual colors, typography, buttons, cards, spacing, and elevation, all in one page.
+使用 DESIGN.md 构建的示例落地页。它在一个页面中展示了实际的颜色、排版、按钮、卡片、间距和阴影。
 
-### Dark Mode
+### 暗色模式
 ![Wise Design System — Dark Mode](https://pub-2e4ecbcbc9b24e7b93f1a6ab5b2bc71f.r2.dev/designs/wise/preview-dark-screenshot.png)
 
-### Light Mode
+### 亮色模式
 ![Wise Design System — Light Mode](https://pub-2e4ecbcbc9b24e7b93f1a6ab5b2bc71f.r2.dev/designs/wise/preview-screenshot.png)

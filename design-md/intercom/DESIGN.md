@@ -1,146 +1,146 @@
-# Design System: Intercom
+# 设计系统：Intercom
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-Intercom's website is a warm, confident customer service platform that communicates "AI-first helpdesk" through a clean, editorial design language. The page operates on a warm off-white canvas (`#faf9f6`) with off-black (`#111111`) text, creating an intimate, magazine-like reading experience. The signature Fin Orange (`#ff5600`) — named after Intercom's AI agent — serves as the singular vibrant accent against the warm neutral palette.
+Intercom 的网站是一个温暖、自信的客户服务品牌平台，通过干净、编辑化的设计语言传达"AI 优先的客服台"理念。页面以温暖的米白色画布（`#faf9f6`）为基底，搭配煤黑色（`#111111`）文本，营造出亲密的杂志般阅读体验。标志性的 Fin 橙色（`#ff5600`）——以 Intercom 的 AI 智能体命名——作为温暖中性色调中唯一的鲜艳点缀。
 
-The typography uses Saans — a custom geometric sans-serif with aggressive negative letter-spacing (-2.4px at 80px, -0.48px at 24px) and a consistent 1.00 line-height across all heading sizes. This creates ultra-compressed, billboard-like headlines that feel engineered and precise. Serrif provides the serif companion for editorial moments, and SaansMono handles code and uppercase technical labels. MediumLL and LLMedium appear for specific UI contexts, creating a rich five-font ecosystem.
+排版系统采用 Saans 字体——一种几何无衬线字体，具有激进的负字距（-2.4px @ 80px，-0.48px @ 24px）和一致的 1.00 行高（所有标题尺寸）。这创造出超紧凑、如广告牌般的标题效果，显得经过精心工程设计。Serrif 作为衬线字体伴侣用于编辑化场景，SaansMono 则用于代码和大写技术标签。MediumLL 和 LLMedium 用于特定 UI 场景，共同构成了丰富的五字体生态系统。
 
-What distinguishes Intercom is its remarkably sharp geometry — 4px border-radius on buttons creates near-rectangular interactive elements that feel industrial and precise, contrasting with the warm surface colors. Button hover states use `scale(1.1)` expansion, creating a physical "growing" interaction. The border system uses warm oat tones (`#dedbd6`) and oklab-based opacity values for sophisticated color management.
+Intercom 的独特之处在于其极其锐利的几何感——按钮采用 4px 圆角半径，创造出近乎矩形的交互元素，呈现工业化与精密感，与温暖的表面色彩形成对比。按钮悬停状态使用 `scale(1.1)` 放大效果，产生物理性的"生长"交互。边框系统使用温暖的燕麦色调（`#dedbd6`）和基于 oklab 的不透明度值，实现精致的色彩管理。
 
-**Key Characteristics:**
-- Warm off-white canvas (`#faf9f6`) with oat-toned borders (`#dedbd6`)
-- Saans font with extreme negative tracking (-2.4px at 80px) and 1.00 line-height
-- Fin Orange (`#ff5600`) as singular brand accent
-- Sharp 4px border-radius — near-rectangular buttons and elements
-- Scale(1.1) hover with scale(0.85) active — physical button interaction
-- SaansMono uppercase labels with wide tracking (0.6px–1.2px)
-- Rich multi-color report palette (blue, green, red, pink, lime, orange)
-- oklab color values for sophisticated opacity management
+**核心特征：**
+- 温暖的米白色画布（`#faf9f6`）搭配燕麦色边框（`#dedbd6`）
+- Saans 字体配合极端的负字距（-2.4px @ 80px）和 1.00 行高
+- Fin 橙色（`#ff5600`）作为唯一品牌点缀色
+- 锐利的 4px 圆角半径——近乎矩形的按钮和元素
+- scale(1.1) 悬停与 scale(0.85) 激活——物理性按钮交互
+- SaansMono 大写标签配合宽松字距（0.6px–1.2px）
+- 丰富的多色报告调色板（蓝、绿、红、粉、柠檬绿、橙）
+- oklab 色彩值实现精致的不透明度管理
 
-## 2. Color Palette & Roles
+## 2. 色彩调色板与用途
 
-### Primary
-- **Off Black** (`#111111`): `--color-off-black`, primary text, button backgrounds
-- **Pure White** (`#ffffff`): `--wsc-color-content-primary`, primary surface
-- **Warm Cream** (`#faf9f6`): Button backgrounds, card surfaces
-- **Fin Orange** (`#ff5600`): `--color-fin`, primary brand accent
-- **Report Orange** (`#fe4c02`): `--color-report-orange`, data visualization
+### 主色
+- **煤黑色**（`#111111`）：`--color-off-black`，主要文本、按钮背景
+- **纯白色**（`#ffffff`）：`--wsc-color-content-primary`，主表面
+- **暖奶油色**（`#faf9f6`）：按钮背景、卡片表面
+- **Fin 橙色**（`#ff5600`）：`--color-fin`，主要品牌点缀
+- **报告橙色**（`#fe4c02`）：`--color-report-orange`，数据可视化
 
-### Report Palette
-- **Report Blue** (`#65b5ff`): `--color-report-blue`
-- **Report Green** (`#0bdf50`): `--color-report-green`
-- **Report Red** (`#c41c1c`): `--color-report-red`
-- **Report Pink** (`#ff2067`): `--color-report-pink`
-- **Report Lime** (`#b3e01c`): `--color-report-lime-300`
-- **Green** (`#00da00`): `--color-green`
-- **Deep Blue** (`#0007cb`): Deep blue accent
+### 报告调色板
+- **报告蓝**（`#65b5ff`）：`--color-report-blue`
+- **报告绿**（`#0bdf50`）：`--color-report-green`
+- **报告红**（`#c41c1c`）：`--color-report-red`
+- **报告粉**（`#ff2067`）：`--color-report-pink`
+- **报告柠檬绿**（`#b3e01c`）：`--color-report-lime-300`
+- **绿色**（`#00da00`）：`--color-green`
+- **深蓝**（`#0007cb`）：深蓝点缀
 
-### Neutral Scale (Warm)
-- **Black 80** (`#313130`): `--wsc-color-black-80`, dark neutral
-- **Black 60** (`#626260`): `--wsc-color-black-60`, mid neutral
-- **Black 50** (`#7b7b78`): `--wsc-color-black-50`, muted text
-- **Content Tertiary** (`#9c9fa5`): `--wsc-color-content-tertiary`
-- **Oat Border** (`#dedbd6`): Warm border color
-- **Warm Sand** (`#d3cec6`): Light warm neutral
+### 中性色阶（暖调）
+- **黑 80**（`#313130`）：`--wsc-color-black-80`，深色中性
+- **黑 60**（`#626260`）：`--wsc-color-black-60`，中间中性
+- **黑 50**（`#7b7b78`）：`--wsc-color-black-50`，弱化文本
+- **内容第三级**（`#9c9fa5`）：`--wsc-color-content-tertiary`
+- **燕麦边框**（`#dedbd6`）：暖色边框
+- **暖沙色**（`#d3cec6`）：浅色暖中性
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
-- **Primary**: `Saans`, fallbacks: `Saans Fallback, ui-sans-serif, system-ui`
-- **Serif**: `Serrif`, fallbacks: `Serrif Fallback, ui-serif, Georgia`
-- **Monospace**: `SaansMono`, fallbacks: `SaansMono Fallback, ui-monospace`
-- **UI**: `MediumLL` / `LLMedium`, fallbacks: `system-ui, -apple-system`
+### 字体族
+- **主字体**：`Saans`，降级：`Saans Fallback, ui-sans-serif, system-ui`
+- **衬线体**：`Serrif`，降级：`Serrif Fallback, ui-serif, Georgia`
+- **等宽体**：`SaansMono`，降级：`SaansMono Fallback, ui-monospace`
+- **UI 字体**：`MediumLL` / `LLMedium`，降级：`system-ui, -apple-system`
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing |
-|------|------|------|--------|-------------|----------------|
-| Display Hero | Saans | 80px | 400 | 1.00 (tight) | -2.4px |
-| Section Heading | Saans | 54px | 400 | 1.00 | -1.6px |
-| Sub-heading | Saans | 40px | 400 | 1.00 | -1.2px |
-| Card Title | Saans | 32px | 400 | 1.00 | -0.96px |
-| Feature Title | Saans | 24px | 400 | 1.00 | -0.48px |
-| Body Emphasis | Saans | 20px | 400 | 0.95 | -0.2px |
-| Nav / UI | Saans | 18px | 400 | 1.00 | normal |
-| Body | Saans | 16px | 400 | 1.50 | normal |
-| Body Light | Saans | 14px | 300 | 1.40 | normal |
-| Button | Saans | 16px / 14px | 400 | 1.50 / 1.43 | normal |
-| Button Bold | LLMedium | 16px | 700 | 1.20 | 0.16px |
-| Serif Body | Serrif | 16px | 300 | 1.40 | -0.16px |
-| Mono Label | SaansMono | 12px | 400–500 | 1.00–1.30 | 0.6px–1.2px uppercase |
+| 角色 | 字体 | 字号 | 字重 | 行高 | 字距 |
+|------|------|------|------|------|------|
+| 展示主标题 | Saans | 80px | 400 | 1.00（紧凑） | -2.4px |
+| 章节标题 | Saans | 54px | 400 | 1.00 | -1.6px |
+| 子标题 | Saans | 40px | 400 | 1.00 | -1.2px |
+| 卡片标题 | Saans | 32px | 400 | 1.00 | -0.96px |
+| 特性标题 | Saans | 24px | 400 | 1.00 | -0.48px |
+| 正文强调 | Saans | 20px | 400 | 0.95 | -0.2px |
+| 导航/UI | Saans | 18px | 400 | 1.00 | normal |
+| 正文 | Saans | 16px | 400 | 1.50 | normal |
+| 轻量正文 | Saans | 14px | 300 | 1.40 | normal |
+| 按钮 | Saans | 16px / 14px | 400 | 1.50 / 1.43 | normal |
+| 粗体按钮 | LLMedium | 16px | 700 | 1.20 | 0.16px |
+| 衬线正文 | Serrif | 16px | 300 | 1.40 | -0.16px |
+| 等宽标签 | SaansMono | 12px | 400–500 | 1.00–1.30 | 0.6px–1.2px 大写 |
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary Dark**
-- Background: `#111111`
-- Text: `#ffffff`
-- Padding: 0px 14px
-- Radius: 4px
-- Hover: white background, dark text, scale(1.1)
-- Active: green background (`#2c6415`), scale(0.85)
+**主按钮（深色）**
+- 背景：`#111111`
+- 文本：`#ffffff`
+- 内边距：0px 14px
+- 圆角：4px
+- 悬停：白色背景、深色文本、scale(1.1)
+- 激活：绿色背景（`#2c6415`）、scale(0.85)
 
-**Outlined**
-- Background: transparent
-- Text: `#111111`
-- Border: `1px solid #111111`
-- Radius: 4px
-- Same scale hover/active behavior
+**描边按钮**
+- 背景：transparent（透明）
+- 文本：`#111111`
+- 边框：`1px solid #111111`
+- 圆角：4px
+- 相同的缩放悬停/激活行为
 
-**Warm Card Button**
-- Background: `#faf9f6`
-- Text: `#111111`
-- Padding: 16px
-- Border: `1px solid oklab(... / 0.1)`
+**暖色卡片按钮**
+- 背景：`#faf9f6`
+- 文本：`#111111`
+- 内边距：16px
+- 边框：`1px solid oklab(... / 0.1)`
 
-### Cards & Containers
-- Background: `#faf9f6` (warm cream)
-- Border: `1px solid #dedbd6` (warm oat)
-- Radius: 8px
-- No visible shadows
+### 卡片与容器
+- 背景：`#faf9f6`（暖奶油色）
+- 边框：`1px solid #dedbd6`（暖燕麦色）
+- 圆角：8px
+- 无明显阴影
 
-### Navigation
-- Saans 16px for links
-- Off-black text on white
-- Small 4px–6px radius buttons
-- Orange Fin accent for AI features
+### 导航
+- Saans 16px 用于链接
+- 白色背景上的煤黑色文本
+- 小型 4px–6px 圆角按钮
+- AI 功能使用橙色 Fin 点缀
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing: 8px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 60px, 64px, 80px, 96px
-### Border Radius: 4px (buttons), 6px (nav items), 8px (cards, containers)
+### 间距：8px, 10px, 12px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 60px, 64px, 80px, 96px
+### 圆角半径：4px（按钮）, 6px（导航项）, 8px（卡片、容器）
 
-## 6. Depth & Elevation
-Minimal shadows. Depth through warm border colors and surface tints.
+## 6. 深度与层级
+最小化阴影。通过暖色边框色彩和表面色调来表现深度。
 
-## 7. Do's and Don'ts
+## 7. 建议与禁忌
 
-### Do
-- Use Saans with 1.00 line-height and negative tracking on all headings
-- Apply 4px radius on buttons — sharp geometry is the identity
-- Use Fin Orange (#ff5600) for AI/brand accent only
-- Apply scale(1.1) hover on buttons
-- Use warm neutrals (#faf9f6, #dedbd6)
+### 建议
+- 使用 Saans 字体配合 1.00 行高，所有标题应用负字距
+- 按钮应用 4px 圆角——锐利几何是核心特征
+- 仅在 AI/品牌点缀场景使用 Fin 橙色（#ff5600）
+- 按钮应用 scale(1.1) 悬停效果
+- 使用暖中性色（#faf9f6, #dedbd6）
 
-### Don't
-- Don't round buttons beyond 4px
-- Don't use Fin Orange decoratively
-- Don't use cool gray borders — always warm oat tones
-- Don't skip the negative tracking on headings
+### 禁忌
+- 按钮圆角不要超过 4px
+- 不要装饰性地使用 Fin 橙色
+- 不要使用冷灰色边框——始终使用暖燕麦色调
+- 不要省略标题的负字距设置
 
-## 8. Responsive Behavior
-Breakpoints: 425px, 530px, 600px, 640px, 768px, 896px
+## 8. 响应式行为
+断点：425px, 530px, 600px, 640px, 768px, 896px
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示词指南
 
-### Quick Color Reference
-- Text: Off Black (`#111111`)
-- Background: Warm Cream (`#faf9f6`)
-- Accent: Fin Orange (`#ff5600`)
-- Border: Oat (`#dedbd6`)
-- Muted: `#7b7b78`
+### 快速色彩参考
+- 文本：煤黑色（`#111111`）
+- 背景：暖奶油色（`#faf9f6`）
+- 点缀色：Fin 橙色（`#ff5600`）
+- 边框：燕麦色（`#dedbd6`）
+- 弱化色：`#7b7b78`
 
-### Example Component Prompts
-- "Create hero: warm cream (#faf9f6) background. Saans 80px weight 400, line-height 1.00, letter-spacing -2.4px, #111111. Dark button (#111111, 4px radius). Hover: scale(1.1), white bg."
+### 示例组件提示词
+- "创建英雄区：暖奶油色（#faf9f6）背景。Saans 80px 字重 400，行高 1.00，字距 -2.4px，#111111。深色按钮（#111111，4px 圆角）。悬停：scale(1.1)，白色背景。"

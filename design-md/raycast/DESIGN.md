@@ -1,268 +1,268 @@
-# Design System: Raycast
+# 设计系统：Raycast
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-Raycast's marketing site feels like the dark interior of a precision instrument — a Swiss watch case carved from obsidian. The background isn't just dark, it's an almost-black blue-tint (`#07080a`) that creates a sense of being inside a macOS native application rather than a website. Every surface, every border, every shadow is calibrated to evoke the feeling of a high-performance desktop utility: fast, minimal, trustworthy.
+Raycast 的营销网站感觉像是精密仪器的深色内舱——一个由黑曜石雕刻而成的瑞士手表表壳。背景不仅仅是深色，它是一种近乎黑色的蓝色调（`#07080a`），营造出一种置身于 macOS 原生应用程序而非网站的感觉。每一个表面、每一条边框、每一个阴影都经过精心校准，以唤起高性能桌面工具的感觉：快速、极简、值得信赖。
 
-The signature move is the layered shadow system borrowed from macOS window chrome: multi-layer box-shadows with inset highlights that simulate physical depth, as if cards and buttons are actual pressed or raised glass elements on a dark desk. Combined with Raycast Red (`#FF6363`) — deployed almost exclusively in the hero's iconic diagonal stripe pattern — the palette creates a brand that reads as "powerful tool with personality." The red doesn't dominate; it punctuates.
+标志性的设计是从 macOS 窗口框架借鉴而来的分层阴影系统：多层 box-shadow 与内嵌高光相结合，模拟出物理深度，仿佛卡片和按钮是深色桌面上实际按压或凸起的玻璃元素。结合 Raycast 红色（`#FF6363`）——几乎专门用于英雄区域标志性的对角线条纹图案——调色板创造了一个"兼具个性的强大工具"的品牌形象。红色并不占据主导地位，而是起点缀作用。
 
-Inter is used everywhere — headings, body, buttons, captions — with extensive OpenType features (`calt`, `kern`, `liga`, `ss03`) creating a consistent, readable typographic voice. The positive letter-spacing (0.2px–0.4px on body text) is unusual for a dark UI and gives the text an airy, breathable quality that counterbalances the dense, dark surfaces. GeistMono appears for code elements, reinforcing the developer-tool identity.
+Inter 字体无处不在——用于标题、正文、按钮、字幕——并广泛使用 OpenType 特性（`calt`、`kern`、`liga`、`ss03`），创造出一致且易读的排版风格。正文文本上异常的正字母间距（0.2px–0.4px）为深色 UI 带来了通透、呼吸感的品质，与密集、深色的表面形成平衡。GeistMono 用于代码元素，强化了开发者工具的身份认同。
 
-**Key Characteristics:**
-- Near-black blue-tinted background (`#07080a`) — not pure black, subtly blue-shifted
-- macOS-native shadow system with multi-layer inset highlights simulating physical depth
-- Raycast Red (`#FF6363`) as a punctuation color — hero stripes, not pervasive
-- Inter with positive letter-spacing (0.2px) for an airy, readable dark-mode experience
-- Radix UI component primitives powering the interaction layer
-- Subtle rgba white borders (0.06–0.1 opacity) for containment on dark surfaces
-- Keyboard shortcut styling with gradient key caps and heavy shadows
+**关键特征：**
+- 近黑色的蓝色调背景（`#07080a`）——不是纯黑色，微妙的蓝色偏移
+- macOS 原生阴影系统，多层内嵌高光模拟物理深度
+- Raycast 红色（`#FF6363`）作为点缀色——用于条纹装饰，而非无处不在
+- Inter 字体配合正字母间距（0.2px），为深色模式带来通透易读的体验
+- Radix UI 组件原语驱动交互层
+- 微妙的 rgba 白色边框（0.06–0.1 透明度）用于深色表面上的内容限定
+- 键盘快捷键样式采用渐变键帽和厚重阴影
 
-## 2. Color Palette & Roles
+## 2. 色彩调色板与角色
 
-### Primary
-- **Near-Black Blue** (`#07080a`): Primary page background — the foundational void with a subtle blue-cold undertone
-- **Pure White** (`#ffffff`): Primary heading text, high-emphasis elements
-- **Raycast Red** (`#FF6363` / `hsl(0, 100%, 69%)`): Brand accent — hero stripes, danger states, critical highlights
+### 主色
+- **近黑色蓝色**（`#07080a`）：主页面背景——基础虚空，带有微妙的蓝色冷色调
+- **纯白色**（`#ffffff`）：主标题文本、高强调元素
+- **Raycast 红色**（`#FF6363` / `hsl(0, 100%, 69%)`）：品牌强调——英雄条纹、危险状态、关键高亮
 
-### Secondary & Accent
-- **Raycast Blue** (`hsl(202, 100%, 67%)` / ~`#55b3ff`): Interactive accent — links, focus states, selected items
-- **Raycast Green** (`hsl(151, 59%, 59%)` / ~`#5fc992`): Success states, positive indicators
-- **Raycast Yellow** (`hsl(43, 100%, 60%)` / ~`#ffbc33`): Warning accents, highlights
-- **Blue Transparent** (`hsla(202, 100%, 67%, 0.15)`): Blue tint overlay for interactive surfaces
-- **Red Transparent** (`hsla(0, 100%, 69%, 0.15)`): Red tint overlay for danger/error surfaces
+### 次色与强调色
+- **Raycast 蓝色**（`hsl(202, 100%, 67%)` / ~`#55b3ff`）：交互强调——链接、焦点状态、选中项
+- **Raycast 绿色**（`hsl(151, 59%, 59%)` / ~`#5fc992`）：成功状态、正面指示器
+- **Raycast 黄色**（`hsl(43, 100%, 60%)` / ~`#ffbc33`）：警告强调、高亮
+- **蓝色透明**（`hsla(202, 100%, 67%, 0.15)`）：蓝色色调叠加，用于交互表面
+- **红色透明**（`hsla(0, 100%, 69%, 0.15)`）：红色色调叠加，用于危险/错误表面
 
-### Surface & Background
-- **Deep Background** (`#07080a`): Page canvas, the darkest surface
-- **Surface 100** (`#101111`): Elevated surface, card backgrounds
-- **Key Start** (`#121212`): Keyboard key gradient start
-- **Key End** (`#0d0d0d`): Keyboard key gradient end
-- **Card Surface** (`#1b1c1e`): Badge backgrounds, tag fills, elevated containers
-- **Button Foreground** (`#18191a`): Dark surface for button text on light backgrounds
+### 表面与背景
+- **深层背景**（`#07080a`）：页面画布，最暗表面
+- **表面 100**（`#101111`）：抬升表面、卡片背景
+- **Key Start**（`#121212`）：键盘键渐变起始色
+- **Key End**（`#0d0d0d`）：键盘键渐变结束色
+- **卡片表面**（`#1b1c1e`）：徽章背景、标签填充、抬高容器
+- **按钮前景**（`#18191a`）：浅色背景上按钮文本的深色表面
 
-### Neutrals & Text
-- **Near White** (`#f9f9f9` / `hsl(240, 11%, 96%)`): Primary body text, high-emphasis content
-- **Light Gray** (`#cecece` / `#cdcdce`): Secondary body text, descriptions
-- **Silver** (`#c0c0c0`): Tertiary text, subdued labels
-- **Medium Gray** (`#9c9c9d`): Link default color, secondary navigation
-- **Dim Gray** (`#6a6b6c`): Disabled text, low-emphasis labels
-- **Dark Gray** (`#434345`): Muted borders, inactive navigation links
-- **Border** (`hsl(195, 5%, 15%)` / ~`#252829`): Standard border color for cards and dividers
-- **Dark Border** (`#2f3031`): Separator lines, table borders
+### 中性色与文本
+- **近白色**（`#f9f9f9` / `hsl(240, 11%, 96%)`）：主正文文本、高强调内容
+- **浅灰色**（`#cecece` / `#cdcdce`）：次要正文文本、描述
+- **银色**（`#c0c0c0`）：三级文本、低调标签
+- **中灰色**（`#9c9c9d`）：链接默认颜色、次要导航
+- **暗灰色**（`#6a6b6c`）：禁用文本、低强调标签
+- **深灰色**（`#434445`）：柔和边框、非活动导航链接
+- **边框**（`hsl(195, 5%, 15%)` / ~`#252829`）：卡片和分隔线的标准边框颜色
+- **深色边框**（`#2f3031`）：分隔线、表格边框
 
-### Semantic & Accent
-- **Error Red** (`hsl(0, 100%, 69%)`): Error states, destructive actions
-- **Success Green** (`hsl(151, 59%, 59%)`): Success confirmations, positive states
-- **Warning Yellow** (`hsl(43, 100%, 60%)`): Warnings, attention-needed states
-- **Info Blue** (`hsl(202, 100%, 67%)`): Informational highlights, links
+### 语义与强调
+- **错误红色**（`hsl(0, 100%, 69%)`）：错误状态、破坏性操作
+- **成功绿色**（`hsl(151, 59%, 59%)`）：成功确认、正面状态
+- **警告黄色**（`hsl(43, 100%, 60%)`）：警告、需要注意的状态
+- **信息蓝色**（`hsl(202, 100%, 67%)`）：信息高亮、链接
 
-### Gradient System
-- **Keyboard Key Gradient**: Linear gradient from `#121212` (top) to `#0d0d0d` (bottom) — simulates physical key depth
-- **Warm Glow**: `rgba(215, 201, 175, 0.05)` radial spread — subtle warm ambient glow behind featured elements
+### 渐变系统
+- **键盘键渐变**：线性渐变从 `#121212`（顶部）到 `#0d0d0d`（底部）——模拟物理键深度
+- **温暖光晕**：`rgba(215, 201, 175, 0.05)` 径向扩散——特色元素背后微妙的温暖环境光晕
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
-- **Primary**: `Inter` — humanist sans-serif, used everywhere. Fallbacks: `Inter Fallback`, system sans-serif
-- **System**: `SF Pro Text` — Apple system font for select macOS-native UI elements. Fallbacks: `SF Pro Icons`, `Inter`, `Inter Fallback`
-- **Monospace**: `GeistMono` — Vercel's monospace font for code elements. Fallbacks: `ui-monospace`, `SFMono-Regular`, `Roboto Mono`, `Menlo`, `Monaco`
-- **OpenType features**: `calt`, `kern`, `liga`, `ss03` enabled globally; `ss02`, `ss08` on display text; `liga` disabled (`"liga" 0`) on hero headings
+### 字体系列
+- **主字体**：`Inter` —— 人文主义无衬线字体，无处不在。回退：`Inter Fallback`、系统 sans-serif
+- **系统字体**：`SF Pro Text` —— Apple 系统字体，用于选定的 macOS 原生 UI 元素。回退：`SF Pro Icons`、`Inter`、`Inter Fallback`
+- **等宽字体**：`GeistMono` —— Vercel 的等宽字体，用于代码元素。回退：`ui-monospace`、`SFMono-Regular`、`Roboto Mono`、`Menlo`、`Monaco`
+- **OpenType 特性**：全局启用 `calt`、`kern`、`liga`、`ss03`；展示文本使用 `ss02`、`ss08`；英雄标题禁用 `liga`（`"liga" 0`）
 
-### Hierarchy
+### 层级
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|--------|-------------|----------------|-------|
-| Display Hero | 64px | 600 | 1.10 | 0px | OpenType: liga 0, ss02, ss08 |
-| Section Display | 56px | 400 | 1.17 | 0.2px | OpenType: calt, kern, liga, ss03 |
-| Section Heading | 24px | 500 | normal | 0.2px | OpenType: calt, kern, liga, ss03 |
-| Card Heading | 22px | 400 | 1.15 | 0px | OpenType: calt, kern, liga, ss03 |
-| Sub-heading | 20px | 500 | 1.60 | 0.2px | Relaxed line-height for readability |
-| Body Large | 18px | 400 | 1.15 | 0.2px | OpenType: calt, kern, liga, ss03 |
-| Body | 16px | 500 | 1.60 | 0.2px | Primary body text, relaxed rhythm |
-| Body Tight | 16px | 400 | 1.15 | 0.1px | UI labels, compact contexts |
-| Button | 16px | 600 | 1.15 | 0.3px | Semibold, slightly wider tracking |
-| Nav Link | 16px | 500 | 1.40 | 0.3px | Links in navigation |
-| Caption | 14px | 500 | 1.14 | 0.2px | Small labels, metadata |
-| Caption Bold | 14px | 600 | 1.40 | 0px | Emphasized captions |
-| Small | 12px | 600 | 1.33 | 0px | Badges, tags, micro-labels |
-| Small Link | 12px | 400 | 1.50 | 0.4px | Footer links, fine print |
-| Code | 14px (GeistMono) | 500 | 1.60 | 0.3px | Code blocks, technical content |
-| Code Small | 12px (GeistMono) | 400 | 1.60 | 0.2px | Inline code, terminal output |
+| 角色 | 字号 | 字重 | 行高 | 字母间距 | 备注 |
+|------|------|------|------|----------|------|
+| 展示英雄 | 64px | 600 | 1.10 | 0px | OpenType: liga 0, ss02, ss08 |
+| 章节展示 | 56px | 400 | 1.17 | 0.2px | OpenType: calt, kern, liga, ss03 |
+| 章节标题 | 24px | 500 | normal | 0.2px | OpenType: calt, kern, liga, ss03 |
+| 卡片标题 | 22px | 400 | 1.15 | 0px | OpenType: calt, kern, liga, ss03 |
+| 副标题 | 20px | 500 | 1.60 | 0.2px | 宽松的行高，提升可读性 |
+| 大正文 | 18px | 400 | 1.15 | 0.2px | OpenType: calt, kern, liga, ss03 |
+| 正文 | 16px | 500 | 1.60 | 0.2px | 主正文文本，宽松节奏 |
+| 紧凑正文 | 16px | 400 | 1.15 | 0.1px | UI 标签、紧凑上下文 |
+| 按钮 | 16px | 600 | 1.15 | 0.3px | 半粗体，略微更宽的字距 |
+| 导航链接 | 16px | 500 | 1.40 | 0.3px | 导航中的链接 |
+| 说明文字 | 14px | 500 | 1.14 | 0.2px | 小标签、元数据 |
+| 加粗说明 | 14px | 600 | 1.40 | 0px | 强调的说明文字 |
+| 小字 | 12px | 600 | 1.33 | 0px | 徽章、标签、微标签 |
+| 小链接 | 12px | 400 | 1.50 | 0.4px | 页脚链接、细小印刷 |
+| 代码 | 14px (GeistMono) | 500 | 1.60 | 0.3px | 代码块、技术内容 |
+| 小代码 | 12px (GeistMono) | 400 | 1.60 | 0.2px | 行内代码、终端输出 |
 
-### Principles
-- **Positive tracking on dark**: Unlike most dark UIs that use tight or neutral letter-spacing, Raycast applies +0.2px to +0.4px — creating an airy, readable feel that compensates for the dark background
-- **Weight 500 as baseline**: Most body text uses medium weight (500), not regular (400) — subtle extra heft improves legibility on dark surfaces
-- **Display restraint**: Hero text at 64px/600 is confident but not oversized — Raycast avoids typographic spectacle in favor of functional elegance
-- **OpenType everywhere**: `ss03` (stylistic set 3) is enabled globally across Inter, giving the typeface a slightly more geometric, tool-like quality
+### 原则
+- **深色背景上的正字距**：与大多数使用紧致或中性字母间距的深色 UI 不同，Raycast 应用 +0.2px 到 +0.4px——创造通透易读的感觉，补偿深色背景
+- **字重 500 作为基线**：大多数正文文本使用中等字重（500），而非常规（400）——微妙的额外粗度提高深色表面的可读性
+- **克制的展示**：64px/600 的英雄文本自信但不夸张——Raycast 避免排版上的壮观，而支持功能性的优雅
+- **无处不在的 OpenType**：`ss03`（stylistic set 3）在全局 Inter 文本上启用，赋予字体略微更具几何感、工具般的品质
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-- **Primary Pill**: Transparent background, white text, pill shape (86px radius), multi-layer inset shadow (`rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset`). Hover: opacity 0.6
-- **Secondary Button**: Transparent background, white text, 6px radius, `1px solid rgba(255, 255, 255, 0.1)` border, subtle drop shadow (`rgba(0, 0, 0, 0.03) 0px 7px 3px`). Hover: opacity 0.6
-- **Ghost Button**: No background or border, gray text (`#6a6b6c`), 86px radius, same inset shadow. Hover: opacity 0.6, text brightens to white
-- **CTA (Download)**: Semi-transparent white background (`hsla(0, 0%, 100%, 0.815)`), dark text (`#18191a`), pill shape. Hover: full white background (`hsl(0, 0%, 100%)`)
-- **Transition**: All buttons use opacity transition for hover rather than background-color change — a signature Raycast interaction pattern
+### 按钮
+- **主胶囊按钮**：透明背景、白色文本、胶囊形状（86px 半径）、多层内嵌阴影（`rgba(255, 255, 255, 0.1) 0px 1px 0px 0px inset`）。悬停：透明度 0.6
+- **次要按钮**：透明背景、白色文本、6px 半径、`1px solid rgba(255, 255, 255, 0.1)` 边框、微妙的投影（`rgba(0, 0, 0, 0.03) 0px 7px 3px`）。悬停：透明度 0.6
+- **幽灵按钮**：无背景或边框、灰色文本（`#6a6b6c`）、86px 半径、相同的内嵌阴影。悬停：透明度 0.6，文本变亮为白色
+- **CTA（下载）**：半透明白色背景（`hsla(0, 0%, 100%, 0.815)`）、深色文本（`#18191a`）、胶囊形状。悬停：全白色背景（`hsl(0, 0%, 100%)`）
+- **过渡**：所有按钮使用透明度过渡进行悬停，而非背景颜色变化——这是 Raycast 的标志性交互模式
 
-### Cards & Containers
-- **Standard Card**: `#101111` surface, `1px solid rgba(255, 255, 255, 0.06)` border, 12px–16px border-radius
-- **Elevated Card**: Ring shadow `rgb(27, 28, 30) 0px 0px 0px 1px` outer + `rgb(7, 8, 10) 0px 0px 0px 1px inset` inner — creates a double-ring containment
-- **Feature Card**: 16px–20px border-radius, subtle warm glow (`rgba(215, 201, 175, 0.05) 0px 0px 20px 5px`) behind hero elements
-- **Hover**: Cards brighten slightly via border opacity increase or subtle shadow enhancement
+### 卡片与容器
+- **标准卡片**：`#101111` 表面、`1px solid rgba(255, 255, 255, 0.06)` 边框、12px–16px 边框半径
+- **抬升卡片**：环形阴影 `rgb(27, 28, 30) 0px 0px 0px 1px` 外部 + `rgb(7, 8, 10) 0px 0px 0px 1px inset` 内部——创造双重环限定
+- **功能卡片**：16px–20px 边框半径、英雄元素背后微妙的温暖光晕（`rgba(215, 201, 175, 0.05) 0px 0px 20px 5px`）
+- **悬停**：卡片通过边框透明度增加或微妙阴影增强略微变亮
 
-### Inputs & Forms
-- Dark input fields with `#07080a` background, `1px solid rgba(255, 255, 255, 0.08)` border, 8px border-radius
-- Focus state: Border brightens, blue glow (`hsla(202, 100%, 67%, 0.15)`) ring appears
-- Text: `#f9f9f9` input color, `#6a6b6c` placeholder
-- Labels: `#9c9c9d` at 14px weight 500
+### 输入框与表单
+- 深色输入框，`#07080a` 背景、`1px solid rgba(255, 255, 255, 0.08)` 边框、8px 边框半径
+- 焦点状态：边框变亮，出现蓝色光晕（`hsla(202, 100%, 67%, 0.15)`）环
+- 文本：`#f9f9f9` 输入颜色、`#6a6b6c` 占位符
+- 标签：`#9c9c9d`，14px 字重 500
 
-### Navigation
-- **Top nav**: Dark background blending with page, white text links at 16px weight 500
-- **Nav links**: Gray text (`#9c9c9d`) → white on hover, underline decoration on hover
-- **CTA button**: Semi-transparent white pill at nav end
-- **Mobile**: Collapses to hamburger, maintains dark theme
-- **Sticky**: Nav fixed at top with subtle border separator
+### 导航
+- **顶部导航**：深色背景与页面融合，白色文本链接 16px 字重 500
+- **导航链接**：灰色文本（`#9c9c9d`）→ 悬停时变为白色，悬停时添加下划线装饰
+- **CTA 按钮**：导航末端的半透明白色胶囊
+- **移动端**：折叠为汉堡菜单，保持深色主题
+- **粘性**：导航固定在顶部，带有微妙的边框分隔线
 
-### Image Treatment
-- **Product screenshots**: macOS window chrome style — rounded corners (12px), deep shadows simulating floating windows
-- **Full-bleed sections**: Dark screenshots blend seamlessly into the dark background
-- **Hero illustration**: Diagonal stripe pattern in Raycast Red — abstract, geometric, brand-defining
-- **App UI embeds**: Showing actual Raycast command palette and extensions — product as content
+### 图像风格
+- **产品截图**：macOS 窗口框架风格——圆角（12px）、模拟悬浮窗口的深阴影
+- **全出血区域**：深色截图无缝融入深色背景
+- **英雄插图**：Raycast 红色对角线条纹图案——抽象、几何、定义品牌
+- **App UI 嵌入**：展示实际的 Raycast 命令面板和扩展——产品即内容
 
-### Keyboard Shortcut Keys
-- **Key cap styling**: Gradient background (`#121212` → `#0d0d0d`), heavy multi-layer shadow (`rgba(0, 0, 0, 0.4) 0px 1.5px 0.5px 2.5px` + inset shadows), creating realistic physical key appearance
-- Border-radius: 4px–6px for individual keys
+### 键盘快捷键按键
+- **键帽样式**：渐变背景（`#121212` → `#0d0d0d`）、厚重的多层阴影（`rgba(0, 0, 0, 0.4) 0px 1.5px 0.5px 2.5px` + 内嵌阴影），创造逼真的物理按键外观
+- 边框半径：单个按键 4px–6px
 
-### Badges & Tags
-- **Neutral badge**: `#1b1c1e` background, white text, 6px radius, 14px font at weight 500, `0px 6px` padding
-- Compact, pill-like treatment for categorization
+### 徽章与标签
+- **中性徽章**：`#1b1c1e` 背景、白色文本、6px 半径、14px 字体字重 500、`0px 6px` 内边距
+- 紧凑、药丸状风格用于分类
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- **Base unit**: 8px
-- **Scale**: 1px, 2px, 3px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px
-- **Section padding**: 80px–120px vertical between major sections
-- **Card padding**: 16px–32px internal spacing
-- **Component gaps**: 8px–16px between related elements
+### 间距系统
+- **基本单位**：8px
+- **比例尺**：1px, 2px, 3px, 4px, 8px, 10px, 12px, 16px, 20px, 24px, 32px, 40px
+- **区块内边距**：主要区块之间垂直 80px–120px
+- **卡片内边距**：内部 16px–32px 间距
+- **组件间距**：相关元素之间 8px–16px
 
-### Grid & Container
-- **Max width**: ~1200px container (breakpoint at 1204px), centered
-- **Column patterns**: Single-column hero, 2–3 column feature grids, full-width showcase sections
-- **App showcase**: Product UI presented in centered window frames
+### 网格与容器
+- **最大宽度**：约 1200px 容器（断点在 1204px），居中
+- **列模式**：单列英雄区、2–3 列功能网格、全宽展示区
+- **App 展示**：产品在居中窗口框架中呈现
 
-### Whitespace Philosophy
-- **Dramatic negative space**: Sections float in vast dark void, creating cinematic pacing between features
-- **Dense product, sparse marketing**: The product UI screenshots are information-dense, but the surrounding marketing copy uses minimal text with generous spacing
-- **Vertical rhythm**: Consistent 24px–32px gaps between elements within sections
+### 留白理念
+- **戏剧性的负空间**：区块漂浮在广阔的深色虚空中，在功能之间创造电影般的节奏
+- **密集的产品，稀疏的营销**：产品 UI 截图信息密集，但周围的营销文案使用最小化的文本和 generous 的间距
+- **垂直节奏**：区块内元素之间一致的 24px–32px 间距
 
-### Border Radius Scale
-- **2px–3px**: Micro-elements, code spans, tiny indicators
-- **4px–5px**: Keyboard keys, small interactive elements
-- **6px**: Buttons, badges, tags — the workhorse radius
-- **8px**: Input fields, inline components
-- **9px–11px**: Images, medium containers
-- **12px**: Standard cards, product screenshots
-- **16px**: Large cards, feature sections
-- **20px**: Hero cards, prominent containers
-- **86px+**: Pill buttons, nav CTAs — full pill shape
+### 边框半径比例尺
+- **2px–3px**：微元素、代码片段、微小指示器
+- **4px–5px**：键盘按键、小型交互元素
+- **6px**：按钮、徽章、标签——主力半径
+- **8px**：输入框、内联组件
+- **9px–11px**：图像、中等容器
+- **12px**：标准卡片、产品截图
+- **16px**：大卡片、功能区块
+- **20px**：英雄卡片、突出容器
+- **86px+**：胶囊按钮、导航 CTA——完整胶囊形状
 
-## 6. Depth & Elevation
+## 6. 深度与海拔
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Level 0 (Void) | No shadow, `#07080a` surface | Page background |
-| Level 1 (Subtle) | `rgba(0, 0, 0, 0.28) 0px 1.189px 2.377px` | Minimal lift, inline elements |
-| Level 2 (Ring) | `rgb(27, 28, 30) 0px 0px 0px 1px` outer + `rgb(7, 8, 10) 0px 0px 0px 1px inset` inner | Card containment, double-ring technique |
-| Level 3 (Button) | `rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset` + `rgba(255, 255, 255, 0.25) 0px 0px 0px 1px` + `rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset` | macOS-native button press — white highlight top, dark inset bottom |
-| Level 4 (Key) | 5-layer shadow stack with inset press effects | Keyboard shortcut key caps — physical 3D appearance |
-| Level 5 (Floating) | `rgba(0, 0, 0, 0.5) 0px 0px 0px 2px` + `rgba(255, 255, 255, 0.19) 0px 0px 14px` + insets | Command palette, floating panels — heavy depth with glow |
+| 级别 | 处理 | 用途 |
+|------|------|-----|
+| Level 0（虚空） | 无阴影、`#07080a` 表面 | 页面背景 |
+| Level 1（微妙） | `rgba(0, 0, 0, 0.28) 0px 1.189px 2.377px` | 最小抬升、内联元素 |
+| Level 2（环形） | `rgb(27, 28, 30) 0px 0px 0px 1px` 外部 + `rgb(7, 8, 10) 0px 0px 0px 1px inset` 内部 | 卡片限定、双环技术 |
+| Level 3（按钮） | `rgba(255, 255, 255, 0.05) 0px 1px 0px 0px inset` + `rgba(255, 255, 255, 0.25) 0px 0px 0px 1px` + `rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset` | macOS 原生按钮按压——顶部白色高亮、底部深色内嵌 |
+| Level 4（按键） | 5 层阴影堆叠，带内嵌按压效果 | 键盘快捷键键帽——物理 3D 外观 |
+| Level 5（浮动） | `rgba(0, 0, 0, 0.5) 0px 0px 0px 2px` + `rgba(255, 255, 255, 0.19) 0px 0px 14px` + 内嵌 | 命令面板、浮动面板——带光晕的厚重深度 |
 
-### Shadow Philosophy
-Raycast's shadow system is the most macOS-native on the web. Multi-layer shadows combine:
-- **Outer rings** for containment (replacing traditional borders)
-- **Inset top highlights** (`rgba(255, 255, 255, 0.05–0.25)`) simulating light source from above
-- **Inset bottom darks** (`rgba(0, 0, 0, 0.2)`) simulating shadow underneath
-- The effect is physical: elements feel like glass or brushed metal, not flat rectangles
+### 阴影理念
+Raycast 的阴影系统是网络上最具 macOS 原生感的。多层阴影结合：
+- **外环**用于限定（替代传统边框）
+- **内嵌顶部高亮**（`rgba(255, 255, 255, 0.05–0.25)`）模拟来自上方的光源
+- **内嵌底部暗部**（`rgba(0, 0, 0, 0.2)`）模拟下方的阴影
+- 效果是物理的：元素感觉像玻璃或拉丝金属，而不是扁平的矩形
 
-### Decorative Depth
-- **Warm glow**: `rgba(215, 201, 175, 0.05) 0px 0px 20px 5px` behind featured elements — a subtle warm aura on the cold dark canvas
-- **Blue info glow**: `rgba(0, 153, 255, 0.15)` for interactive state emphasis
-- **Red danger glow**: `rgba(255, 99, 99, 0.15)` for error/destructive state emphasis
+### 装饰深度
+- **温暖光晕**：`rgba(215, 201, 175, 0.05) 0px 0px 20px 5px` 在特色元素背后——冷暗画布上微妙的温暖光晕
+- **蓝色信息光晕**：`rgba(0, 153, 255, 0.15)` 用于交互状态强调
+- **红色危险光晕**：`rgba(255, 99, 99, 0.15)` 用于错误/破坏性状态强调
 
-## 7. Do's and Don'ts
+## 7. 建议与禁忌
 
-### Do
-- Use `#07080a` (not pure black) as the background — the blue-cold tint is essential to the Raycast feel
-- Apply positive letter-spacing (+0.2px) on body text — this is deliberately different from most dark UIs
-- Use multi-layer shadows with inset highlights for interactive elements — the macOS-native depth is signature
-- Keep Raycast Red (`#FF6363`) as punctuation, not pervasive — reserve it for hero moments and error states
-- Use `rgba(255, 255, 255, 0.06)` borders for card containment — barely visible, structurally essential
-- Apply weight 500 as the body text baseline — medium weight improves dark-mode legibility
-- Use pill shapes (86px+ radius) for primary CTAs, rectangular shapes (6px–8px) for secondary actions
-- Enable OpenType features `calt`, `kern`, `liga`, `ss03` on all Inter text
-- Use opacity transitions (hover: opacity 0.6) for button interactions, not color changes
+### 建议
+- 使用 `#07080a`（而非纯黑色）作为背景——蓝色冷色调对 Raycast 的感觉至关重要
+- 在正文文本上应用正字母间距（+0.2px）——这刻意区别于大多数深色 UI
+- 为交互元素应用带内嵌高亮的多层阴影——macOS 原生深度是标志性特征
+- 保持 Raycast 红色（`#FF6363`）作为点缀，而非无处不在——保留给英雄时刻和错误状态
+- 使用 `rgba(255, 255, 255, 0.06)` 边框进行卡片限定——几乎不可见，但结构上至关重要
+- 应用字重 500 作为正文基线——中等字重提高深色模式的可读性
+- 主 CTA 使用胶囊形状（86px+ 半径），次要操作使用矩形形状（6px–8px）
+- 在所有 Inter 文本上启用 OpenType 特性 `calt`、`kern`、`liga`、`ss03`
+- 按钮交互使用透明度过渡（悬停：透明度 0.6），而非颜色变化
 
-### Don't
-- Use pure black (`#000000`) as the background — the blue tint differentiates Raycast from generic dark themes
-- Apply negative letter-spacing on body text — Raycast deliberately uses positive spacing for readability
-- Use Raycast Blue as the primary accent for everything — blue is for interactive/info, red is the brand color
-- Create single-layer flat shadows — the multi-layer inset system is core to the macOS-native aesthetic
-- Use regular weight (400) for body text when 500 is available — the extra weight prevents dark-mode text from feeling thin
-- Mix warm and cool borders — stick to the cool gray (`hsl(195, 5%, 15%)`) border palette
-- Apply heavy drop shadows without inset companions — shadows always come in pairs (outer + inset)
-- Use decorative elements, gradients, or colorful backgrounds — the dark void is the stage, content is the performer
+### 禁忌
+- 使用纯黑色（`#000000`）作为背景——蓝色色调将 Raycast 与通用深色主题区分开来
+- 在正文文本上应用负字母间距——Raycast 刻意使用正间距提高可读性
+- 到处使用 Raycast 蓝色作为主强调色——蓝色用于交互/信息，红色才是品牌色
+- 创建单层扁平阴影——多层内嵌系统是 macOS 原生美学的核心
+- 当有 500 可用时使用常规字重（400）作为正文——额外的字重防止深色模式文本感觉过细
+- 混合冷暖边框——坚持使用冷灰色（`hsl(195, 5%, 15%)`）边框调色板
+- 应用厚重的投影而没有内嵌搭配——阴影总是成对出现（外部 + 内嵌）
+- 使用装饰元素、渐变或彩色背景——深色虚空是舞台，内容是表演者
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <600px | Single column, stacked cards, hamburger nav, hero text reduces to ~40px |
-| Small Tablet | 600px–768px | 2-column grid begins, nav partially visible |
-| Tablet | 768px–1024px | 2–3 column features, nav expanding, screenshots scale |
-| Desktop | 1024px–1200px | Full layout, all nav links visible, 64px hero display |
-| Large Desktop | >1200px | Max-width container centered, generous side margins |
+### 断点
+| 名称 | 宽度 | 关键变化 |
+|------|------|---------|
+| 移动端 | <600px | 单列、堆叠卡片、汉堡导航、英雄文本缩小至约 40px |
+| 小平板 | 600px–768px | 2 列网格开始、导航部分可见 |
+| 平板 | 768px–1024px | 2–3 列功能、导航扩展、截图缩放 |
+| 桌面 | 1024px–1200px | 完整布局、所有导航链接可见、64px 英雄展示 |
+| 大桌面 | >1200px | 最大宽度容器居中、 generous 侧边距 |
 
-### Touch Targets
-- Pill buttons: 86px radius with 20px padding — well above 44px minimum
-- Secondary buttons: 8px padding minimum, but border provides visual target expansion
-- Nav links: 16px text with surrounding padding for accessible touch targets
+### 触摸目标
+- 胶囊按钮：86px 半径，20px 内边距——远超 44px 最小值
+- 次要按钮：最小 8px 内边距，但边框提供视觉目标扩展
+- 导航链接：16px 文本，周围内边距提供可访问的触摸目标
 
-### Collapsing Strategy
-- **Navigation**: Full horizontal nav → hamburger at mobile with slide-out menu
-- **Hero**: 64px display → 48px → 36px across breakpoints
-- **Feature grids**: 3-column → 2-column → single-column stack
-- **Product screenshots**: Scale within containers, maintaining macOS window chrome proportions
-- **Keyboard shortcut displays**: Simplify or hide on mobile where keyboard shortcuts are irrelevant
+### 折叠策略
+- **导航**：完整水平导航 → 移动端汉堡菜单带滑出菜单
+- **英雄**：64px 展示 → 48px → 36px 跨越断点
+- **功能网格**：3 列 → 2 列 → 单列堆叠
+- **产品截图**：在容器内缩放，保持 macOS 窗口框架比例
+- **键盘快捷键展示**：在键盘快捷键无关紧要的移动端简化或隐藏
 
-### Image Behavior
-- Product screenshots scale responsively within fixed-ratio containers
-- Hero diagonal stripe pattern scales proportionally
-- macOS window chrome rounded corners maintained at all sizes
-- No lazy-loading artifacts — images are critical to the product narrative
+### 图像行为
+- 产品截图在固定比例容器内响应式缩放
+- 英雄对角线条纹图案按比例缩放
+- macOS 窗口框架圆角在所有尺寸上保持
+- 无懒加载伪影——图像对产品叙事至关重要
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示词指南
 
-### Quick Color Reference
-- Primary Background: Near-Black Blue (`#07080a`)
-- Primary Text: Near White (`#f9f9f9`)
-- Brand Accent: Raycast Red (`#FF6363`)
-- Interactive Blue: Raycast Blue (`hsl(202, 100%, 67%)` / ~`#55b3ff`)
-- Secondary Text: Medium Gray (`#9c9c9d`)
-- Card Surface: Surface 100 (`#101111`)
-- Border: Dark Border (`hsl(195, 5%, 15%)` / ~`#252829`)
+### 快速颜色参考
+- 主背景：近黑色蓝色（`#07080a`）
+- 主文本：近白色（`#f9f9f9`）
+- 品牌强调：Raycast 红色（`#FF6363`）
+- 交互蓝色：Raycast 蓝色（`hsl(202, 100%, 67%)` / ~`#55b3ff`）
+- 次要文本：中灰色（`#9c9c9d`）
+- 卡片表面：表面 100（`#101111`）
+- 边框：深色边框（`hsl(195, 5%, 15%)` / ~`#252829`）
 
-### Example Component Prompts
-- "Create a hero section on #07080a background with 64px Inter heading (weight 600, line-height 1.1), near-white text (#f9f9f9), and a semi-transparent white pill CTA button (hsla(0,0%,100%,0.815), 86px radius, dark text #18191a)"
-- "Design a feature card with #101111 background, 1px solid rgba(255,255,255,0.06) border, 16px border-radius, double-ring shadow (rgb(27,28,30) 0px 0px 0px 1px outer), 22px Inter heading, and #9c9c9d body text"
-- "Build a navigation bar on dark background (#07080a), Inter links at 16px weight 500 in #9c9c9d, hover to white, and a translucent white pill button at the right end"
-- "Create a keyboard shortcut display with key caps using gradient background (#121212→#0d0d0d), 5-layer shadow for physical depth, 4px radius, Inter 12px weight 600 text"
-- "Design an alert card with #101111 surface, Raycast Red (#FF6363) left border accent, translucent red glow (hsla(0,100%,69%,0.15)), white heading, and #cecece description text"
+### 示例组件提示词
+- "在 #07080a 背景上创建一个英雄区块，64px Inter 标题（字重 600，行高 1.1），近白色文本（#f9f9f9），以及半透明白色胶囊 CTA 按钮（hsla(0,0%,100%,0.815), 86px 半径，深色文本 #18191a）"
+- "设计一个功能卡片，#101111 背景、1px solid rgba(255,255,255,0.06) 边框、16px 边框半径、双环阴影（rgb(27,28,30) 0px 0px 0px 1px 外部）、22px Inter 标题、#9c9c9d 正文文本"
+- "在深色背景（#07080a）上构建导航栏，Inter 链接 16px 字重 500，颜色 #9c9c9d，悬停变白，右端一个半透明白色胶囊按钮"
+- "创建键盘快捷键展示，键帽使用渐变背景（#121212→#0d0d0d）、5 层阴影模拟物理深度、4px 半径、Inter 12px 字重 600 文本"
+- "设计警告卡片，#101111 表面、Raycast 红色（#FF6363）左边框强调、半透明红色光晕（hsla(0,100%,69%,0.15)）、白色标题、#cecece 描述文本"
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Check the background is `#07080a` not pure black — the blue tint is critical
-2. Verify letter-spacing is positive (+0.2px) on body text — negative spacing breaks the Raycast aesthetic
-3. Ensure shadows have both outer and inset layers — single-layer shadows look flat and wrong
-4. Confirm Inter has OpenType features `calt`, `kern`, `liga`, `ss03` enabled
-5. Test that hover states use opacity transitions (0.6) not color swaps — this is a core interaction pattern
+### 迭代指南
+当优化使用此设计系统生成的现有屏幕时：
+1. 检查背景是 `#07080a` 而非纯黑色——蓝色色调至关重要
+2. 验证正文文本的字母间距为正（+0.2px）——负间距破坏 Raycast 美学
+3. 确保阴影同时具有外部和内嵌层——单层阴影看起来扁平且不正确
+4. 确认 Inter 启用了 OpenType 特性 `calt`、`kern`、`liga`、`ss03`
+5. 测试悬停状态使用透明度过渡（0.6）而非颜色交换——这是核心交互模式

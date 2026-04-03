@@ -1,266 +1,266 @@
-# Design System: MongoDB
+# 设计系统：MongoDB
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-MongoDB's website is a deep-forest-meets-terminal experience — a design system rooted in the darkest teal-black (`#001e2b`) that evokes both the density of a database and the depth of a forest canopy. Against this near-black canvas, a striking neon green (`#00ed64`) pulses as the brand accent — bright enough to feel electric, organic enough to feel alive. This isn't the cold neon of cyberpunk; it's the bioluminescent green of something growing in the dark.
+MongoDB 的网站是一场深海森林与终端机的邂逅——这一设计系统植根于最深的青 teal 黑色（`#001e2b`），既唤起数据库的深邃，又如森林树冠般深沉。在这近乎黑色的画布上， striking 的霓虹绿（`#00ed64`）如脉冲般跃动，成为品牌强调色——明亮得足以让人感到电光火石，却又有机得仿佛拥有生命。这不是赛博朋克式的冰冷霓虹，而是黑暗中生物发光的绿。
 
-The typography system is architecturally ambitious: MongoDB Value Serif for massive hero headlines (96px) creates an editorial, authoritative presence — serif type at database-company scale is a bold choice that says "we're not just another tech company." Euclid Circular A handles the heavy lifting of body and UI text with an unusually wide weight range (300–700), while Source Code Pro serves as the code and label font with distinctive uppercase treatments featuring very wide letter-spacing (1px–3px). This three-font system creates a hierarchy that spans editorial elegance → geometric professionalism → engineering precision.
+排版系统在架构上颇具野心：MongoDB Value Serif 用于超大号标题（96px），营造出编辑般的权威感——在数据库公司规模上使用衬线字体是一个大胆的选择，它在说"我们不只是又一家科技公司"。Euclid Circular A 承担了正文和 UI 文本的重任，拥有异常广泛的字重范围（300–700），而 Source Code Pro 则作为代码和标签字体，采用独特的全大写处理，配以非常宽的字间距（1px–3px）。这三字体系统构建了一个从编辑优雅 → 几何专业 → 工程精准的层级。
 
-What makes MongoDB distinctive is its dual-mode design: a dark hero/feature section world (`#001e2b` with neon green accents) and a light content world (white with teal-gray borders `#b8c4c2`). The transition between these modes creates dramatic contrast. The shadow system uses teal-tinted dark shadows (`rgba(0, 30, 43, 0.12)`) that maintain the forest-dark atmosphere even on light surfaces. Buttons use pill shapes (100px–999px radius) with MongoDB Green borders (`#00684a`), and the entire component system references the LeafyGreen design system.
+MongoDB 的独特之处在于其双模式设计：深色英雄/功能区世界（`#001e2b` 配霓虹绿强调）和浅色内容世界（白色配青灰边框 `#b8c4c2`）。这两种模式之间的过渡创造出戏剧性的对比。阴影系统使用青色调的深色阴影（`rgba(0, 30, 43, 0.12)`），即使在浅色表面上也能保持森林黑暗的氛圍。按钮使用胶囊形状（100px–999px 半径）配 MongoDB 绿边框（`#00684a`），整个组件系统引用 LeafyGreen 设计系统。
 
-**Key Characteristics:**
-- Deep teal-black backgrounds (`#001e2b`) — forest-dark, not space-dark
-- Neon MongoDB Green (`#00ed64`) as the singular brand accent — electric and organic
-- MongoDB Value Serif for hero headlines — editorial authority at tech scale
-- Euclid Circular A for body with weight 300 (light) as a distinctive body weight
-- Source Code Pro with wide uppercase letter-spacing (1px–3px) for technical labels
-- Teal-tinted shadows: `rgba(0, 30, 43, 0.12)` — shadows carry the forest color
-- Dual-mode: dark teal hero sections + light white content sections
-- Pill buttons (100px radius) with green borders (`#00684a`)
-- Link Blue (`#006cfa`) and hover transition to `#3860be`
+**关键特征：**
+- 深青黑色背景（`#001e2b`）——森林之暗，非太空之暗
+- 霓虹 MongoDB 绿（`#00ed64`）作为单一品牌强调色——电光般有机
+- MongoDB Value Serif 用于英雄标题——科技规模下的编辑权威
+- Euclid Circular A 用于正文，字重 300（细体）作为独特的正文字重
+- Source Code Pro 配宽全大写字间距（1px–3px）用于技术标签
+- 青色调阴影：`rgba(0, 30, 43, 0.12)` ——阴影承载森林色彩
+- 双模式：深青英雄区 + 浅色白色内容区
+- 胶囊按钮（100px 半径）配绿边框（`#00684a`）
+- 链接蓝（`#006cfa`）悬停过渡至 `#3860be`
 
-## 2. Color Palette & Roles
+## 2. 色板与角色
 
-### Primary Brand
-- **Forest Black** (`#001e2b`): Primary dark background — the deepest teal-black
-- **MongoDB Green** (`#00ed64`): Primary brand accent — neon green for highlights, underlines, gradients
-- **Dark Green** (`#00684a`): Button borders, link text on light — muted green for functional use
+### 品牌主色
+- **森林黑**（`#001e2b`）：主深色背景——最深的青黑色
+- **MongoDB 绿**（`#00ed64`）：品牌主强调色——霓虹绿用于高亮、下划线、渐变
+- **深绿**（`#00684a`）：按钮边框、浅色背景上的链接文本——用于功能性的柔和绿
 
-### Interactive
-- **Action Blue** (`#006cfa`): Secondary accent — links, interactive highlights
-- **Hover Blue** (`#3860be`): All link hover states transition to this blue
-- **Teal Active** (`#1eaedb`): Button hover background — bright teal
+### 交互色
+- **行动蓝**（`#006cfa`）：次要强调色——链接、交互高亮
+- **悬停蓝**（`#3860be`）：所有链接悬停状态过渡至此蓝色
+- **青活跃色**（`#1eaedb`）：按钮悬停背景——亮青色
 
-### Neutral Scale
-- **Deep Teal** (`#1c2d38`): Dark button backgrounds, secondary dark surfaces
-- **Teal Gray** (`#3d4f58`): Dark borders on dark surfaces
-- **Dark Slate** (`#21313c`): Dark link text variant
-- **Cool Gray** (`#5c6c75`): Muted text on dark, secondary button text
-- **Silver Teal** (`#b8c4c2`): Borders on light surfaces, dividers
-- **Light Input** (`#e8edeb`): Input text on dark surfaces
-- **Pure White** (`#ffffff`): Light section background, button text on dark
-- **Black** (`#000000`): Text on light surfaces, darkest elements
+### 中性色阶
+- **深青**（`#1c2d38`）：深色按钮背景、次要深色表面
+- **青灰**（`#3d4f58`）：深色表面上的深色边框
+- **深板岩**（`#21313c`）：深色链接文本变体
+- **冷灰**（`#5c6c75`）：深色背景上的柔和文本、次要按钮文本
+- **银青**（`#b8c4c2`）：浅色表面上的边框、分割线
+- **浅输入**（`#e8edeb`）：深色表面上的输入文本
+- **纯白**（`#ffffff`）：浅色区块背景、深色背景上的按钮文本
+- **黑**（`#000000`）：浅色表面上的文本、最深色元素
 
-### Shadows
-- **Forest Shadow** (`rgba(0, 30, 43, 0.12) 0px 26px 44px, rgba(0, 0, 0, 0.13) 0px 7px 13px`): Primary card elevation — teal-tinted
-- **Standard Shadow** (`rgba(0, 0, 0, 0.15) 0px 3px 20px`): General elevation
-- **Subtle Shadow** (`rgba(0, 0, 0, 0.1) 0px 2px 4px`): Light card lift
+### 阴影
+- **森林阴影**（`rgba(0, 30, 43, 0.12) 0px 26px 44px, rgba(0, 0, 0, 0.13) 0px 7px 13px`）：主卡片层级——青色调
+- **标准阴影**（`rgba(0, 0, 0, 0.15) 0px 3px 20px`）：常规层级
+- **微妙阴影**（`rgba(0, 0, 0, 0.1) 0px 2px 4px`）：浅色卡片提升
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
-- **Display Serif**: `MongoDB Value Serif` — editorial hero headlines
-- **Body / UI**: `Euclid Circular A` — geometric sans-serif workhorse
-- **Code / Labels**: `Source Code Pro` — monospace with uppercase label treatments
-- **Fallbacks**: `Akzidenz-Grotesk Std` (with CJK: Noto Sans KR/SC/JP), `Times`, `Arial`, `system-ui`
+### 字体系列
+- **展示衬线**：`MongoDB Value Serif` ——编辑风英雄标题
+- **正文 / UI**：`Euclid Circular A` ——几何无衬线主力
+- **代码 / 标签**：`Source Code Pro` ——等宽字体配全大写标签处理
+- **回退**：`Akzidenz-Grotesk Std`（配中日韩：Noto Sans KR/SC/JP）、`Times`、`Arial`、`system-ui`
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | MongoDB Value Serif | 96px (6.00rem) | 400 | 1.20 (tight) | normal | Serif authority |
-| Display Secondary | MongoDB Value Serif | 64px (4.00rem) | 400 | 1.00 (tight) | normal | Serif sub-hero |
-| Section Heading | Euclid Circular A | 36px (2.25rem) | 500 | 1.33 | normal | Geometric precision |
-| Sub-heading | Euclid Circular A | 24px (1.50rem) | 500 | 1.33 | normal | Feature titles |
-| Body Large | Euclid Circular A | 20px (1.25rem) | 400 | 1.60 (relaxed) | normal | Introductions |
-| Body | Euclid Circular A | 18px (1.13rem) | 400 | 1.33 | normal | Standard body |
-| Body Light | Euclid Circular A | 16px (1.00rem) | 300 | 1.50–2.00 | normal | Light-weight reading text |
-| Nav / UI | Euclid Circular A | 16px (1.00rem) | 500 | 1.00–1.88 | 0.16px | Navigation, emphasized |
-| Body Bold | Euclid Circular A | 15px (0.94rem) | 700 | 1.50 | normal | Strong emphasis |
-| Button | Euclid Circular A | 13.5px–16px | 500–700 | 1.00 | 0.135px–0.9px | CTA labels |
-| Caption | Euclid Circular A | 14px (0.88rem) | 400 | 1.71 (relaxed) | normal | Metadata |
-| Small | Euclid Circular A | 11px (0.69rem) | 600 | 1.82 (relaxed) | 0.2px | Tags, annotations |
-| Code Heading | Source Code Pro | 40px (2.50rem) | 400 | 1.60 (relaxed) | normal | Code showcase titles |
-| Code Body | Source Code Pro | 16px (1.00rem) | 400 | 1.50 | normal | Code blocks |
-| Code Label | Source Code Pro | 14px (0.88rem) | 400–500 | 1.14 (tight) | 1px–2px | `text-transform: uppercase` |
-| Code Micro | Source Code Pro | 9px (0.56rem) | 600 | 2.67 (relaxed) | 2.5px | `text-transform: uppercase` |
+| 角色 | 字体 | 字号 | 字重 | 行高 | 字间距 | 备注 |
+|------|------|------|------|------|------|------|
+| 展示英雄 | MongoDB Value Serif | 96px (6.00rem) | 400 | 1.20 (紧凑) | normal | 衬线权威 |
+| 展示次要 | MongoDB Value Serif | 64px (4.00rem) | 400 | 1.00 (紧凑) | normal | 衬线次级英雄 |
+| 区块标题 | Euclid Circular A | 36px (2.25rem) | 500 | 1.33 | normal | 几何精准 |
+| 副标题 | Euclid Circular A | 24px (1.50rem) | 500 | 1.33 | normal | 特性标题 |
+| 大正文 | Euclid Circular A | 20px (1.25rem) | 400 | 1.60 (宽松) | normal | 介绍 |
+| 正文 | Euclid Circular A | 18px (1.13rem) | 400 | 1.33 | normal | 标准正文 |
+| 浅正文 | Euclid Circular A | 16px (1.00rem) | 300 | 1.50–2.00 | normal | 细体阅读文本 |
+| 导航 / UI | Euclid Circular A | 16px (1.00rem) | 500 | 1.00–1.88 | 0.16px | 导航、强调 |
+| 加粗正文 | Euclid Circular A | 15px (0.94rem) | 700 | 1.50 | normal | 强强调 |
+| 按钮 | Euclid Circular A | 13.5px–16px | 500–700 | 1.00 | 0.135px–0.9px | CTA 标签 |
+| 说明 | Euclid Circular A | 14px (0.88rem) | 400 | 1.71 (宽松) | normal | 元数据 |
+| 小字 | Euclid Circular A | 11px (0.69rem) | 600 | 1.82 (宽松) | 0.2px | 标签、注释 |
+| 代码标题 | Source Code Pro | 40px (2.50rem) | 400 | 1.60 (宽松) | normal | 代码展示标题 |
+| 代码正文 | Source Code Pro | 16px (1.00rem) | 400 | 1.50 | normal | 代码块 |
+| 代码标签 | Source Code Pro | 14px (0.88rem) | 400–500 | 1.14 (紧凑) | 1px–2px | `text-transform: uppercase` |
+| 代码微缩 | Source Code Pro | 9px (0.56rem) | 600 | 2.67 (宽松) | 2.5px | `text-transform: uppercase` |
 
-### Principles
-- **Serif for authority**: MongoDB Value Serif at hero scale creates an editorial presence unusual in tech — it communicates that MongoDB is an institution, not a startup.
-- **Weight 300 as body default**: Euclid Circular A uses light (300) for body text, creating an airy reading experience that contrasts with the dense, dark backgrounds.
-- **Wide-tracked monospace labels**: Source Code Pro uppercase at 1px–3px letter-spacing creates technical signposts that feel like database field labels — systematic, structured, classified.
-- **Four-weight range**: 300 (light body) → 400 (standard) → 500 (UI/nav) → 700 (bold CTA) — a wider range than most systems, enabling fine-grained hierarchy.
+### 原则
+- **衬线建立权威**：MongoDB Value Serif 在英雄尺度上营造编辑感，这在科技领域实属罕见——它传达出 MongoDB 是一个机构，而非初创公司。
+- **字重 300 作为正文默认**：Euclid Circular A 使用细体（300）作为正文，营造出轻盈的阅读体验，与密集的深色背景形成对比。
+- **宽距等宽标签**：Source Code Pro 全大写配 1px–3px 字间距，创造出技术路标，感觉像数据库字段标签——系统化、结构化、分类化。
+- **四字重范围**：300（细正文）→ 400（标准）→ 500（UI/导航）→ 700（加粗 CTA）——比大多数系统更宽的范围，实现精细层级。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary Green (Dark Surface)**
-- Background: `#00684a` (muted MongoDB green)
-- Text: `#000000`
-- Radius: 50% (circular) or 100px (pill)
-- Border: `1px solid #00684a`
-- Shadow: `rgba(0,0,0,0.06) 0px 1px 6px`
-- Hover: scale 1.1
-- Active: scale 0.85
+**主绿按钮（深色表面）**
+- 背景：`#00684a`（柔和 MongoDB 绿）
+- 文本：`#000000`
+- 圆角：50%（圆形）或 100px（胶囊）
+- 边框：`1px solid #00684a`
+- 阴影：`rgba(0,0,0,0.06) 0px 1px 6px`
+- 悬停：scale 1.1
+- 激活：scale 0.85
 
-**Dark Teal Button**
-- Background: `#1c2d38`
-- Text: `#5c6c75`
-- Radius: 100px (pill)
-- Border: `1px solid #3d4f58`
-- Hover: background `#1eaedb`, text white, translateX(5px)
+**深青按钮**
+- 背景：`#1c2d38`
+- 文本：`#5c6c75`
+- 圆角：100px（胶囊）
+- 边框：`1px solid #3d4f58`
+- 悬停：背景 `#1eaedb`，文本白色，translateX(5px)
 
-**Outlined Button (Light Surface)**
-- Background: transparent
-- Text: `#001e2b`
-- Border: `1px solid #b8c4c2`
-- Radius: 4px–8px
-- Hover: background tint
+**描边按钮（浅色表面）**
+- 背景：transparent
+- 文本：`#001e2b`
+- 边框：`1px solid #b8c4c2`
+- 圆角：4px–8px
+- 悬停：背景着色
 
-### Cards & Containers
-- Light mode: white background with `1px solid #b8c4c2` border
-- Dark mode: `#001e2b` or `#1c2d38` background with `1px solid #3d4f58`
-- Radius: 16px (standard), 24px (medium), 48px (large/hero)
-- Shadow: `rgba(0,30,43,0.12) 0px 26px 44px` (forest-tinted)
-- Image containers: 30px–32px radius
+### 卡片与容器
+- 浅色模式：白色背景配 `1px solid #b8c4c2` 边框
+- 深色模式：`#001e2b` 或 `#1c2d38` 背景配 `1px solid #3d4f58`
+- 圆角：16px（标准）、24px（中）、48px（大/英雄）
+- 阴影：`rgba(0,30,43,0.12) 0px 26px 44px`（森林色调）
+- 图片容器：30px–32px 圆角
 
-### Inputs & Forms
-- Textarea: text `#e8edeb`, padding 12px 12px 12px 8px
-- Borders: `1px solid #b8c4c2` on light, `1px solid #3d4f58` on dark
-- Input radius: 4px
+### 输入与表单
+- 文本域：文本 `#e8edeb`，内边距 12px 12px 12px 8px
+- 边框：浅色上 `1px solid #b8c4c2`，深色上 `1px solid #3d4f58`
+- 输入圆角：4px
 
-### Navigation
-- Dark header on forest-black background
-- Euclid Circular A 16px weight 500 for nav links
-- MongoDB logo (leaf icon + wordmark) left-aligned
-- Green CTA pill buttons right-aligned
-- Mega-menu dropdowns with product categories
+### 导航
+- 森林黑背景上的深色头部
+- 导航链接使用 Euclid Circular A 16px 字重 500
+- MongoDB 标志（叶子图标 + 字标）左对齐
+- 绿色 CTA 胶囊按钮右对齐
+- 带产品分类的巨型菜单下拉
 
-### Image Treatment
-- Dashboard screenshots on dark backgrounds
-- Green-accented UI elements in screenshots
-- 30px–32px radius on image containers
-- Full-width dark sections for product showcases
+### 图片处理
+- 深色背景上的仪表板截图
+- 截图中带绿色强调的 UI 元素
+- 图片容器 30px–32px 圆角
+- 产品展示用全宽深色区块
 
-### Distinctive Components
+### 特色组件
 
-**Neon Green Accent Underlines**
-- `0px 2px 2px 0px solid #00ed64` — bottom + right border creating accent underlines
-- Used on feature headings and highlighted text
-- Also appears as `#006cfa` (blue) variant
+**霓虹绿强调下划线**
+- `0px 2px 2px 0px solid #00ed64` ——底部 + 右边框创建强调下划线
+- 用于特性标题和高亮文本
+- 也有 `#006cfa`（蓝色）变体
 
-**Source Code Label System**
-- 14px uppercase Source Code Pro with 1px–2px letter-spacing
-- Used as section category markers above headings
-- Creates a "database field label" aesthetic
+**Source Code 标签系统**
+- 14px 全大写 Source Code Pro 配 1px–2px 字间距
+- 用作标题上方的区块分类标记
+- 创造"数据库字段标签"美学
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 1px, 4px, 7px, 8px, 10px, 12px, 14px, 15px, 16px, 18px, 20px, 24px, 32px
+### 间距系统
+- 基础单位：8px
+- 缩放：1px, 4px, 7px, 8px, 10px, 12px, 14px, 15px, 16px, 18px, 20px, 24px, 32px
 
-### Grid & Container
-- Max content width centered
-- Dark hero section with contained content
-- Light content sections below
-- Card grids: 2–3 columns
-- Full-width dark footer
+### 网格与容器
+- 最大内容宽度居中
+-  contained 内容的深色英雄区块
+- 下方浅色内容区块
+- 卡片网格：2–3 列
+- 全宽深色页脚
 
-### Whitespace Philosophy
-- **Dramatic mode transitions**: The shift from dark teal sections to white content creates built-in visual breathing through contrast, not just space.
-- **Generous dark sections**: Dark hero and feature areas use extra vertical padding (80px+) to let the forest-dark background breathe.
-- **Compact light sections**: White content areas are denser, with tighter card grids and less vertical spacing.
+### 留白哲学
+- **戏剧性模式过渡**：从深青区块到白色内容的转换通过对比（而非仅空间）创造内置的视觉呼吸。
+- **慷慨的深色区块**：深色英雄和特性区使用额外的垂直内边距（80px+）让森林黑暗背景呼吸。
+- **紧凑的浅色区块**：白色内容区更密集，卡片网格更紧凑，垂直间距更小。
 
-### Border Radius Scale
-- Minimal (1px–2px): Small spans, badges
-- Subtle (4px): Inputs, small buttons
-- Standard (8px): Cards, links
-- Card (16px): Standard cards, containers
-- Toggle (20px): Switch elements
-- Large (24px): Large panels
-- Image (30px–32px): Image containers
-- Hero (48px): Hero cards
-- Pill (100px–999px): Buttons, navigation pills
-- Full (9999px): Maximum pill
+### 圆角缩放
+- 最小（1px–2px）：小跨度、徽章
+- 微妙（4px）：输入、小按钮
+- 标准（8px）：卡片、链接
+- 卡片（16px）：标准卡片、容器
+- 开关（20px）：开关元素
+- 大（24px）：大型面板
+- 图片（30px–32px）：图片容器
+- 英雄（48px）：英雄卡片
+- 胶囊（100px–999px）：按钮、导航胶囊
+- 全（9999px）：最大胶囊
 
-## 6. Depth & Elevation
+## 6. 深度与层级
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Default surfaces |
-| Subtle (Level 1) | `rgba(0,0,0,0.1) 0px 2px 4px` | Light card lift |
-| Standard (Level 2) | `rgba(0,0,0,0.15) 0px 3px 9px` | Standard cards |
-| Prominent (Level 3) | `rgba(0,0,0,0.15) 0px 3px 20px` | Elevated panels |
-| Forest (Level 4) | `rgba(0,30,43,0.12) 0px 26px 44px, rgba(0,0,0,0.13) 0px 7px 13px` | Hero cards — teal-tinted |
+| 级别 | 处理 | 用途 |
+|------|------|-----|
+| 平面（0 级） | 无阴影 | 默认表面 |
+| 微妙（1 级） | `rgba(0,0,0,0.1) 0px 2px 4px` | 浅色卡片提升 |
+| 标准（2 级） | `rgba(0,0,0,0.15) 0px 3px 9px` | 标准卡片 |
+| 突出（3 级） | `rgba(0,0,0,0.15) 0px 3px 20px` | 提升面板 |
+| 森林（4 级） | `rgba(0,30,43,0.12) 0px 26px 44px, rgba(0,0,0,0.13) 0px 7px 13px` | 英雄卡片——青色调 |
 
-**Shadow Philosophy**: MongoDB's shadow system is unique in that the primary elevation shadow uses `rgba(0, 30, 43, 0.12)` — a teal-tinted shadow that carries the forest-dark brand color into the depth system. This means even on white surfaces, shadows feel like they belong to the MongoDB color world rather than being generic neutral black.
+**阴影哲学**：MongoDB 的阴影系统独特之处在于主层级阴影使用 `rgba(0, 30, 43, 0.12)` ——一种青色调阴影，将森林黑暗的品牌色彩带入深度系统。这意味着即使在白色表面上，阴影也感觉属于 MongoDB 色彩世界，而非通用的中性黑。
 
-## 7. Do's and Don'ts
+## 7. 宜与忌
 
-### Do
-- Use `#001e2b` (forest-black) for dark sections — not pure black
-- Apply MongoDB Green (`#00ed64`) sparingly for maximum electric impact
-- Use MongoDB Value Serif ONLY for hero/display headings — Euclid Circular A for everything else
-- Apply Source Code Pro uppercase with wide tracking (1px–3px) for technical labels
-- Use teal-tinted shadows (`rgba(0,30,43,0.12)`) for primary card elevation
-- Maintain the dark/light section duality — dramatic contrast between modes
-- Use weight 300 for body text — the light weight is the readable voice
-- Apply pill radius (100px) to primary action buttons
+### 宜
+- 使用 `#001e2b`（森林黑）用于深色区块——非纯黑
+- 节制使用 MongoDB 绿（`#00ed64`）以最大化电光冲击
+- 仅将 MongoDB Value Serif 用于英雄/展示标题——其他一切用 Euclid Circular A
+- 对技术标签使用 Source Code Pro 全大写配宽字距（1px–3px）
+- 对主卡片层级使用青色调阴影（`rgba(0,30,43,0.12)`）
+- 保持深/浅区块二元性——模式间戏剧性对比
+- 使用字重 300 作为正文——细体是可阅读的声调
+- 对主操作按钮使用胶囊圆角（100px）
 
-### Don't
-- Don't use pure black (`#000000`) for dark backgrounds — always use teal-black (`#001e2b`)
-- Don't use MongoDB Green (`#00ed64`) on backgrounds — it's an accent for text, underlines, and small highlights
-- Don't use standard gray shadows — always use teal-tinted (`rgba(0,30,43,...)`)
-- Don't apply serif font to body text — MongoDB Value Serif is hero-only
-- Don't use narrow letter-spacing on Source Code Pro labels — the wide tracking IS the identity
-- Don't mix dark and light section treatments within the same section
-- Don't use warm colors — the palette is strictly cool (teal, green, blue)
-- Don't forget the green accent underlines — they're the signature decorative element
+### 忌
+- 不要用纯黑（`#000000`）作为深色背景——始终使用青黑（`#001e2b`）
+- 不要在背景上使用 MongoDB 绿（`#00ed64`）——它是文本、下划线和小高亮的强调色
+- 不要用标准灰色阴影——始终使用青色调（`rgba(0,30,43,...)`）
+- 不要将衬线字体用于正文——MongoDB Value Serif 仅限英雄
+- 不要对 Source Code Pro 标签使用窄字距——宽字距即身份
+- 不要在同一区块内混用深色和浅色处理
+- 不要用暖色——色板严格为冷色（青、绿、蓝）
+- 不要忘记绿色强调下划线——它们是标志性装饰元素
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | <425px | Tight single column |
-| Mobile | 425–768px | Standard mobile |
-| Tablet | 768–1024px | 2-column grids begin |
-| Desktop | 1024–1280px | Standard layout |
-| Large Desktop | 1280–1440px | Expanded layout |
-| Ultra-wide | >1440px | Maximum width, generous margins |
+### 断点
+| 名称 | 宽度 | 关键变化 |
+|------|------|------|
+| 手机小 | <425px | 紧凑单列 |
+| 手机 | 425–768px | 标准手机 |
+| 平板 | 768–1024px | 开始 2 列网格 |
+| 桌面 | 1024–1280px | 标准布局 |
+| 大桌面 | 1280–1440px | 扩展布局 |
+| 超宽 | >1440px | 最大宽度、慷慨边距 |
 
-### Touch Targets
-- Pill buttons with generous padding
-- Navigation links at 16px with adequate spacing
-- Card surfaces as full-area touch targets
+### 触控目标
+-  generous 内边距的胶囊按钮
+- 16px 导航链接配足够间距
+- 卡片表面作为全区域触控目标
 
-### Collapsing Strategy
-- Hero: MongoDB Value Serif 96px → 64px → scales further
-- Navigation: horizontal mega-menu → hamburger
-- Feature cards: multi-column → stacked
-- Dark/light sections maintain their mode at all sizes
-- Source Code Pro labels maintain uppercase treatment
+### 折叠策略
+- 英雄：MongoDB Value Serif 96px → 64px → 进一步缩放
+- 导航：水平巨型菜单 → 汉堡菜单
+- 特性卡片：多列 → 堆叠
+- 深/浅区块在所有尺寸下保持其模式
+- Source Code Pro 标签保持全大写处理
 
-### Image Behavior
-- Dashboard screenshots scale proportionally
-- Dark section backgrounds maintained full-width
-- Image radius maintained across breakpoints
+### 图片行为
+- 仪表板截图按比例缩放
+- 深色区块背景全宽保持
+- 圆角在所有断点下保持
 
-## 9. Agent Prompt Guide
+## 9. Agent 提示词指南
 
-### Quick Color Reference
-- Dark background: Forest Black (`#001e2b`)
-- Brand accent: MongoDB Green (`#00ed64`)
-- Functional green: Dark Green (`#00684a`)
-- Link blue: Action Blue (`#006cfa`)
-- Text on light: Black (`#000000`)
-- Text on dark: White (`#ffffff`) or Light Input (`#e8edeb`)
-- Border light: Silver Teal (`#b8c4c2`)
-- Border dark: Teal Gray (`#3d4f58`)
+### 快速颜色参考
+- 深色背景：森林黑（`#001e2b`）
+- 品牌强调：MongoDB 绿（`#00ed64`）
+- 功能性绿：深绿（`#00684a`）
+- 链接蓝：行动蓝（`#006cfa`）
+- 浅色上文本：黑（`#000000`）
+- 深色上文本：白（`#ffffff`）或浅输入（`#e8edeb`）
+- 浅色边框：银青（`#b8c4c2`）
+- 深色边框：青灰（`#3d4f58`）
 
-### Example Component Prompts
-- "Create a hero on forest-black (#001e2b) background. Headline at 96px MongoDB Value Serif weight 400, line-height 1.20, white text with 'potential' highlighted in MongoDB Green (#00ed64). Subtitle at 18px Euclid Circular A weight 400. Green pill CTA (#00684a, 100px radius). Neon green gradient glow behind product screenshot."
-- "Design a card on white background: 1px solid #b8c4c2 border, 16px radius, shadow rgba(0,30,43,0.12) 0px 26px 44px. Title at 24px Euclid Circular A weight 500. Body at 16px weight 300. Source Code Pro 14px uppercase label above title with 2px letter-spacing."
-- "Build a dark section: #001e2b background, 1px solid #3d4f58 border on cards. White text. MongoDB Green (#00ed64) accent underlines on headings using bottom-border 2px solid."
-- "Create technical label: Source Code Pro 14px, text-transform uppercase, letter-spacing 2px, weight 500, #00ed64 color on dark background."
-- "Design a pill button: #1c2d38 background, 1px solid #3d4f58 border, 100px radius, #5c6c75 text. Hover: #1eaedb background, white text, translateX(5px)."
+### 示例组件提示词
+- "在森林黑（#001e2b）背景上创建英雄。标题 96px MongoDB Value Serif 字重 400，行高 1.20，白色文本，'potential'用 MongoDB 绿（#00ed64）高亮。副标题 18px Euclid Circular A 字重 400。绿色胶囊 CTA（#00684a，100px 圆角）。产品截图后有霓虹绿渐变光晕。"
+- "设计白色背景卡片：1px solid #b8c4c2 边框，16px 圆角，阴影 rgba(0,30,43,0.12) 0px 26px 44px。标题 24px Euclid Circular A 字重 500。正文 16px 字重 300。标题上方 Source Code Pro 14px 全大写标签配 2px 字间距。"
+- "构建深色区块：#001e2b 背景，卡片上 1px solid #3d4f58 边框。白色文本。标题上用 MongoDB 绿（#00ed64）强调下划线，使用底边框 2px solid。"
+- "创建技术标签：Source Code Pro 14px，text-transform uppercase，letter-spacing 2px，字重 500，#00ed64 颜色在深色背景上。"
+- "设计胶囊按钮：#1c2d38 背景，1px solid #3d4f58 边框，100px 圆角，#5c6c75 文本。悬停：#1eaedb 背景，白色文本，translateX(5px)。"
 
-### Iteration Guide
-1. Start with the mode decision: dark (#001e2b) for hero/features, white for content
-2. MongoDB Green (#00ed64) is electric — use once per section for maximum impact
-3. Serif headlines (MongoDB Value Serif) create the editorial authority — never use for body
-4. Weight 300 body text creates the airy reading experience — don't default to 400
-5. Source Code Pro uppercase with wide tracking for technical labels — the database voice
-6. Teal-tinted shadows keep everything in the MongoDB color world
+### 迭代指南
+1. 从模式决策开始：英雄/特性用深色（#001e2b），内容用白色
+2. MongoDB 绿（#00ed64）是电光——每区块用一次以最大化冲击
+3. 衬线标题（MongoDB Value Serif）建立编辑权威——切勿用于正文
+4. 字重 300 正文创造轻盈阅读体验——不要默认用 400
+5. Source Code Pro 全大写配宽字距用于技术标签——数据库之声
+6. 青色调阴影让一切保持在 MongoDB 色彩世界中

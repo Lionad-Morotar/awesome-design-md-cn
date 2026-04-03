@@ -1,246 +1,246 @@
-# Design System: Framer
+# 设计系统：Framer
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-Framer's website is a cinematic, tool-obsessed dark canvas that radiates the confidence of a design tool built by designers who worship craft. The entire experience is drenched in pure black — not a warm charcoal or a cozy dark gray, but an absolute void (`#000000`) that makes every element, every screenshot, every typographic flourish feel like it's floating in deep space. This is a website that treats its own product UI as the hero art, embedding full-fidelity screenshots and interactive demos directly into the narrative flow.
+Framer 的网站是一个电影般的、沉迷于工具的黑暗画布，散发着由崇拜工艺的设计师构建的设计工具的自信。整个体验沉浸在纯黑之中——不是温暖的炭灰色或舒适的深灰色，而是绝对的虚空（`#000000`），让每个元素、每个截图、每个排版细节都感觉像是漂浮在深空中。这是一个将产品 UI 本身作为主角艺术的网站，将全保真截图和交互式演示直接嵌入到叙事流程中。
 
-The typography is the signature move: GT Walsheim with aggressively tight letter-spacing (as extreme as -5.5px on 110px display text) creates headlines that feel compressed, kinetic, almost spring-loaded — like words under pressure that might expand at any moment. The transition to Inter for body text is seamless, with extensive OpenType feature usage (`cv01`, `cv05`, `cv09`, `cv11`, `ss03`, `ss07`) that gives even small text a refined, custom feel. Framer Blue (`#0099ff`) is deployed sparingly but decisively — as link color, border accents, and subtle ring shadows — creating a cold, electric throughline against the warm-less black.
+排版是标志性动作：GT Walsheim 配合极其紧凑的字间距（110px 展示文本上极端至 -5.5px）创造出压缩的、动态的、几乎像弹簧蓄力般的标题——仿佛文字在压力下随时可能扩张。过渡到 Inter 正文文本是无缝的，广泛使用 OpenType 特性（`cv01`、`cv05`、`cv09`、`cv11`、`ss03`、`ss07`），赋予即使是小字号文本一种精致的定制感。Framer Blue（`#0099ff`）被节俭但果断地部署——作为链接颜色、边框强调和微妙的光环阴影——在无暖色的黑色背景上创造一条冷峻的电光贯穿线。
 
-The overall effect is a nightclub for web designers: dark, precise, seductive, and unapologetically product-forward. Every section exists to showcase what the tool can do, with the website itself serving as proof of concept.
+整体效果是一个为网页设计师打造的夜店：黑暗、精确、诱人且毫不掩饰地以产品为导向。每个部分都存在以展示工具的能力，网站本身作为概念验证。
 
-**Key Characteristics:**
-- Pure black (`#000000`) void canvas — absolute dark, not warm or gray-tinted
-- GT Walsheim display font with extreme negative letter-spacing (-5.5px at 110px)
-- Framer Blue (`#0099ff`) as the sole accent color — cold, electric, precise
-- Pill-shaped buttons (40px–100px radius) — no sharp corners on interactive elements
-- Product screenshots as hero art — the tool IS the marketing
-- Frosted glass button variants using `rgba(255, 255, 255, 0.1)` on dark surfaces
-- Extensive OpenType feature usage across Inter for refined micro-typography
+**关键特征：**
+- 纯黑（`#000000`）虚空画布——绝对的黑暗，无暖色或灰色色调
+- GT Walsheim 展示字体配合极端负字间距（110px 时为 -5.5px）
+- Framer Blue（`#0099ff`）作为唯一的强调色——冷峻、电光、精确
+- 胶囊形按钮（40px–100px 半径）——交互元素无锐角
+- 产品截图作为主角艺术——工具本身就是营销
+- 使用 `rgba(255, 255, 255, 0.1)` 在深色表面上的磨砂玻璃按钮变体
+- 在 Inter 上广泛使用 OpenType 特性以实现精致的微观排版
 
-## 2. Color Palette & Roles
+## 2. 色板与角色
 
-### Primary
-- **Pure Black** (`#000000`): Primary background, the void canvas that defines Framer's dark-first identity
-- **Pure White** (`#ffffff`): Primary text color on dark surfaces, button text on accent backgrounds
-- **Framer Blue** (`#0099ff`): Primary accent color — links, borders, ring shadows, interactive highlights
+### 主色
+- **纯黑**（`#000000`）：主背景，定义 Framer 暗色优先身份的虚空画布
+- **纯白**（`#ffffff`）：深色表面上的主文本颜色，强调色背景上的按钮文本
+- **Framer Blue**（`#0099ff`）：主强调色——链接、边框、光环阴影、交互高亮
 
-### Secondary & Accent
-- **Muted Silver** (`#a6a6a6`): Secondary text, subdued labels, dimmed descriptions on dark surfaces
-- **Near Black** (`#090909`): Elevated dark surface, shadow ring color for subtle depth separation
+### 辅助色与强调色
+- **柔和银**（`#a6a6a6`）：次要文本、柔和标签、深色表面上的淡化描述
+- **近黑**（`#090909`）：抬高的深色表面，用于微妙深度分离的阴影环颜色
 
-### Surface & Background
-- **Void Black** (`#000000`): Page background, primary canvas
-- **Frosted White** (`rgba(255, 255, 255, 0.1)`): Translucent button backgrounds, glass-effect surfaces on dark
-- **Subtle White** (`rgba(255, 255, 255, 0.5)`): Slightly more opaque frosted elements for hover states
+### 表面与背景
+- **虚空黑**（`#000000`）：页面背景，主画布
+- **磨砂白**（`rgba(255, 255, 255, 0.1)`）：半透明按钮背景，深色上的玻璃效果表面
+- **微妙白**（`rgba(255, 255, 255, 0.5)`）：悬停状态下稍微更不透明的磨砂元素
 
-### Neutrals & Text
-- **Pure White** (`#ffffff`): Heading text, high-emphasis body text
-- **Muted Silver** (`#a6a6a6`): Body text, descriptions, secondary information
-- **Ghost White** (`rgba(255, 255, 255, 0.6)`): Tertiary text, placeholders on dark surfaces
+### 中性色与文本
+- **纯白**（`#ffffff`）：标题文本，高强调正文文本
+- **柔和银**（`#a6a6a6`）：正文文本、描述、次要信息
+- **幽灵白**（`rgba(255, 255, 255, 0.6)`）：三级文本、深色表面上的占位符
 
-### Semantic & Accent
-- **Framer Blue** (`#0099ff`): Links, interactive borders, focus rings
-- **Blue Glow** (`rgba(0, 153, 255, 0.15)`): Focus ring shadow, subtle blue halo around interactive elements
-- **Default Link Blue** (`#0000ee`): Standard browser link color (used sparingly in content areas)
+### 语义与强调
+- **Framer Blue**（`#0099ff`）：链接、交互边框、焦点环
+- **蓝色光晕**（`rgba(0, 153, 255, 0.15)`）：焦点环阴影、交互元素周围的微妙蓝色光环
+- **默认链接蓝**（`#0000ee`）：标准浏览器链接颜色（在内容区域中少量使用）
 
-### Gradient System
-- No prominent gradient usage — Framer relies on pure flat black surfaces with occasional blue-tinted glows for depth
-- Subtle radial glow effects behind product screenshots using Framer Blue at very low opacity
+### 渐变系统
+- 无显著的渐变使用——Framer 依赖纯平黑色表面，偶尔使用蓝色调光晕增加深度
+- 在产品截图后面使用极低不透明度的 Framer Blue 微妙的径向光晕效果
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
-- **Display**: `GT Walsheim Framer Medium` / `GT Walsheim Medium` — custom geometric sans-serif, weight 500. Fallbacks: `GT Walsheim Framer Medium Placeholder`, system sans-serif
-- **Body/UI**: `Inter Variable` / `Inter` — variable sans-serif with extensive OpenType features. Fallbacks: `Inter Placeholder`, `-apple-system`, `system-ui`
-- **Accent**: `Mona Sans` — GitHub's open-source font, used for select elements at ultra-light weight (100)
-- **Monospace**: `Azeret Mono` — companion mono for code and technical labels
-- **Rounded**: `Open Runde` — small rounded companion font for micro-labels
+### 字体系列
+- **展示**：`GT Walsheim Framer Medium` / `GT Walsheim Medium`——定制几何无衬线体，字重 500。回退：`GT Walsheim Framer Medium Placeholder`、系统无衬线体
+- **正文/UI**：`Inter Variable` / `Inter`——带广泛 OpenType 特性的变量无衬线体。回退：`Inter Placeholder`、`-apple-system`、`system-ui`
+- **强调**：`Mona Sans`——GitHub 的开源字体，以超轻字重（100）用于部分元素
+- **等宽**：`Azeret Mono`——用于代码和技术标签的配套等宽字体
+- **圆角**：`Open Runde`——用于微标签的小型圆角配套字体
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 字体 | 字号 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|------|--------|-------------|----------------|-------|
-| Display Hero | GT Walsheim Framer Medium | 110px | 500 | 0.85 | -5.5px | Extreme negative tracking, compressed impact |
-| Section Display | GT Walsheim Medium | 85px | 500 | 0.95 | -4.25px | OpenType: ss02, tnum |
-| Section Heading | GT Walsheim Medium | 62px | 500 | 1.00 | -3.1px | OpenType: ss02 |
-| Feature Heading | GT Walsheim Medium | 32px | 500 | 1.13 | -1px | Tightest of the smaller headings |
-| Accent Display | Mona Sans | 61.5px | 100 | 1.00 | -3.1px | Ultra-light weight, ethereal |
-| Card Title | Inter Variable | 24px | 400 | 1.30 | -0.01px | OpenType: cv01, cv05, cv09, cv11, ss03, ss07 |
-| Feature Title | Inter | 22px | 700 | 1.20 | -0.8px | OpenType: cv05 |
-| Sub-heading | Inter | 20px | 600 | 1.20 | -0.8px | OpenType: cv01, cv09 |
-| Body Large | Inter Variable | 18px | 400 | 1.30 | -0.01px | OpenType: cv01, cv05, cv09, cv11, ss03, ss07 |
-| Body | Inter Variable | 15px | 400 | 1.30 | -0.01px | OpenType: cv11 |
-| Nav/UI | Inter Variable | 15px | 400 | 1.00 | -0.15px | OpenType: cv06, cv11, dlig, ss03 |
-| Body Readable | Inter Framer Regular | 14px | 400 | 1.60 | normal | Long-form body text |
-| Caption | Inter Variable | 14px | 400 | 1.40 | normal | OpenType: cv01, cv06, cv09, cv11, ss03, ss07 |
-| Label | Inter | 13px | 500 | 1.60 | normal | OpenType: cv06, cv11, ss03 |
-| Small Caption | Inter Variable | 12px | 400 | 1.40 | normal | OpenType: cv01, cv06, cv09, cv11, ss03, ss07 |
-| Micro Code | Azeret Mono | 10.4px | 400 | 1.60 | normal | OpenType: cv06, cv11, ss03 |
-| Badge | Open Runde | 9px | 600 | 1.11 | normal | OpenType: cv01, cv09 |
-| Micro Uppercase | Inter Variable | 7px | 400 | 1.00 | 0.21px | uppercase transform |
+| 展示英雄 | GT Walsheim Framer Medium | 110px | 500 | 0.85 | -5.5px | 极端负追踪，压缩冲击力 |
+| 部分展示 | GT Walsheim Medium | 85px | 500 | 0.95 | -4.25px | OpenType: ss02, tnum |
+| 部分标题 | GT Walsheim Medium | 62px | 500 | 1.00 | -3.1px | OpenType: ss02 |
+| 功能标题 | GT Walsheim Medium | 32px | 500 | 1.13 | -1px | 较小标题中最紧的 |
+| 强调展示 | Mona Sans | 61.5px | 100 | 1.00 | -3.1px | 超轻字重，空灵 |
+| 卡片标题 | Inter Variable | 24px | 400 | 1.30 | -0.01px | OpenType: cv01, cv05, cv09, cv11, ss03, ss07 |
+| 功能标题 | Inter | 22px | 700 | 1.20 | -0.8px | OpenType: cv05 |
+| 副标题 | Inter | 20px | 600 | 1.20 | -0.8px | OpenType: cv01, cv09 |
+| 大正文 | Inter Variable | 18px | 400 | 1.30 | -0.01px | OpenType: cv01, cv05, cv09, cv11, ss03, ss07 |
+| 正文 | Inter Variable | 15px | 400 | 1.30 | -0.01px | OpenType: cv11 |
+| 导航/UI | Inter Variable | 15px | 400 | 1.00 | -0.15px | OpenType: cv06, cv11, dlig, ss03 |
+| 可读正文 | Inter Framer Regular | 14px | 400 | 1.60 | normal | 长篇幅正文 |
+| 说明文字 | Inter Variable | 14px | 400 | 1.40 | normal | OpenType: cv01, cv06, cv09, cv11, ss03, ss07 |
+| 标签 | Inter | 13px | 500 | 1.60 | normal | OpenType: cv06, cv11, ss03 |
+| 小说明 | Inter Variable | 12px | 400 | 1.40 | normal | OpenType: cv01, cv06, cv09, cv11, ss03, ss07 |
+| 微代码 | Azeret Mono | 10.4px | 400 | 1.60 | normal | OpenType: cv06, cv11, ss03 |
+| 徽章 | Open Runde | 9px | 600 | 1.11 | normal | OpenType: cv01, cv09 |
+| 微大写 | Inter Variable | 7px | 400 | 1.00 | 0.21px | 大写变换 |
 
-### Principles
-- **Compression as personality**: GT Walsheim's extreme negative letter-spacing (-5.5px at 110px) is the defining typographic gesture — headlines feel spring-loaded, urgent, almost breathless
-- **OpenType maximalism**: Inter is deployed with 6+ OpenType features simultaneously (`cv01`, `cv05`, `cv09`, `cv11`, `ss03`, `ss07`), creating a subtly custom feel even at body sizes
-- **Weight restraint on display**: All GT Walsheim usage is weight 500 (medium) — never bold, never regular. This creates a confident-but-not-aggressive display tone
-- **Ultra-tight line heights**: Display text at 0.85 line-height means letters nearly overlap vertically — intentional density that rewards reading at arm's length
+### 原则
+- **压缩即个性**：GT Walsheim 的极端负字间距（110px 时 -5.5px）是定义性的排版姿态——标题感觉像弹簧蓄力、紧迫、几乎屏息
+- **OpenType 最大化**：Inter 同时部署 6+ OpenType 特性（`cv01`、`cv05`、`cv09`、`cv11`、`ss03`、`ss07`），即使在正文字号上也创造微妙定制感
+- **展示字重克制**：所有 GT Walsheim 使用字重 500（中等）——从不粗体，从不常规。这创造自信但不具攻击性的展示语调
+- **超紧行高**：展示文本 0.85 行高意味着字母在垂直方向几乎重叠——有意的密度，奖励在臂距处阅读
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-- **Frosted Pill**: `rgba(255, 255, 255, 0.1)` background, black text (`#000000`), pill shape (40px radius). The glass-effect button that lives on dark surfaces — translucent, ambient, subtle
-- **Solid White Pill**: `rgb(255, 255, 255)` background, black text (`#000000`), full pill shape (100px radius), padding `10px 15px`. The primary CTA — clean, high-contrast on dark, unmissable
-- **Ghost**: No visible background, white text, relies on text styling alone. Hover reveals subtle frosted background
-- **Transition**: Scale-based animations (matrix transform with 0.85 scale factor), opacity transitions for reveal effects
+### 按钮
+- **磨砂胶囊**：`rgba(255, 255, 255, 0.1)` 背景，黑色文本（`#000000`），胶囊形状（40px 半径）。存在于深色表面上的玻璃效果按钮——半透明、环境、微妙
+- **实心白胶囊**：`rgb(255, 255, 255)` 背景，黑色文本（`#000000`），完整胶囊形状（100px 半径），内边距 `10px 15px`。主 CTA——在深色上干净、高对比度、不可忽视
+- **幽灵**：无可见背景，白色文本，仅依赖文本样式。悬停时显示微妙磨砂背景
+- **过渡**：基于缩放的动画（带 0.85 缩放因子的矩阵变换），用于显示效果的透明度过渡
 
-### Cards & Containers
-- **Dark Surface Card**: Black or near-black (`#090909`) background, `rgba(0, 153, 255, 0.15) 0px 0px 0px 1px` blue ring shadow border, rounded corners (10px–15px radius)
-- **Elevated Card**: Multi-layer shadow — `rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0.5px` (subtle top highlight) + `rgba(0, 0, 0, 0.25) 0px 10px 30px` (deep ambient shadow)
-- **Product Screenshots**: Full-width or padded within dark containers, 8px–12px border-radius for software UI previews
-- **Hover**: Subtle glow increase on Framer Blue ring shadow, or brightness shift on frosted surfaces
+### 卡片与容器
+- **深色表面卡片**：黑色或近黑（`#090909`）背景，`rgba(0, 153, 255, 0.15) 0px 0px 0px 1px` 蓝色环阴影边框，圆角（10px–15px 半径）
+- **抬高卡片**：多层阴影——`rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0.5px`（微妙顶部高亮）+ `rgba(0, 0, 0, 0.25) 0px 10px 30px`（深度环境阴影）
+- **产品截图**：在深色容器内全宽或带内边距，软件 UI 预览 8px–12px 边框半径
+- **悬停**：Framer Blue 环阴影上的微妙光晕增强，或磨砂表面的亮度 shifts
 
-### Inputs & Forms
-- Minimal form presence on the marketing site
-- Input fields follow dark theme: dark background, subtle border, white text
-- Focus state: Framer Blue (`#0099ff`) ring border, `1px solid #0099ff`
-- Placeholder text in `rgba(255, 255, 255, 0.4)`
+### 输入与表单
+- 营销网站上极简的表单存在
+- 输入框遵循暗色主题：深色背景、微妙边框、白色文本
+- 焦点状态：Framer Blue（`#0099ff`）环边框，`1px solid #0099ff`
+- 占位符文本使用 `rgba(255, 255, 255, 0.4)`
 
-### Navigation
-- **Dark floating nav bar**: Black background with frosted glass effect, white text links
-- **Nav links**: Inter at 15px, weight 400, white text with subtle hover opacity change
-- **CTA button**: Pill-shaped, white or frosted, positioned at right end of nav
-- **Mobile**: Collapses to hamburger menu, maintains dark theme
-- **Sticky behavior**: Nav remains fixed at top on scroll
+### 导航
+- **深色浮动导航栏**：黑色背景带磨砂玻璃效果，白色文本链接
+- **导航链接**：Inter 15px，字重 400，白色文本带微妙悬停透明度变化
+- **CTA 按钮**：胶囊形状，白色或磨砂，位于导航右侧末端
+- **移动端**：折叠为汉堡菜单，保持暗色主题
+- **粘性行为**：导航在滚动时保持固定在顶部
 
-### Image Treatment
-- **Product screenshots as hero art**: Full-width embedded UI screenshots with rounded corners (8px–12px)
-- **Dark-on-dark composition**: Screenshots placed on black backgrounds with subtle shadow for depth separation
-- **16:9 and custom aspect ratios**: Product demos fill their containers
-- **No decorative imagery**: All images are functional — showing the tool, the output, or the workflow
+### 图像处理
+- **产品截图作为主角艺术**：带圆角（8px–12px）的全宽嵌入式 UI 截图
+- **暗对暗构图**：截图放置在黑色背景上，带微妙阴影以增加深度分离
+- **16:9 和自定义宽高比**：产品演示填充其容器
+- **无装饰图像**：所有图像都是功能性的——展示工具、输出或工作流
 
-### Trust & Social Proof
-- Customer logos and testimonials in muted gray on dark surfaces
-- Minimal ornamentation — the product screenshots serve as the trust signal
+### 信任与社会证明
+- 客户标志和推荐语在深色表面上使用柔和灰色
+- 极简装饰——产品截图作为信任信号
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- **Base unit**: 8px
-- **Scale**: 1px, 2px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 15px, 20px, 30px, 35px
-- **Section padding**: Large vertical spacing (80px–120px between sections)
-- **Card padding**: 15px–30px internal padding
-- **Component gaps**: 8px–20px between related elements
+### 间距系统
+- **基本单位**：8px
+- **比例**：1px, 2px, 3px, 4px, 5px, 6px, 8px, 10px, 12px, 15px, 20px, 30px, 35px
+- **部分内边距**：大垂直间距（部分之间 80px–120px）
+- **卡片内边距**：15px–30px 内部内边距
+- **组件间隙**：相关元素之间 8px–20px
 
-### Grid & Container
-- **Max width**: ~1200px container, centered
-- **Column patterns**: Full-width hero, 2-column feature sections, single-column product showcases
-- **Asymmetric layouts**: Feature sections often pair text (40%) with screenshot (60%)
+### 网格与容器
+- **最大宽度**：~1200px 容器，居中
+- **列模式**：全宽英雄、2 列功能部分、单列产品展示
+- **不对称布局**：功能部分通常将文本（40%）与截图（60%）配对
 
-### Whitespace Philosophy
-- **Breathe through darkness**: Generous vertical spacing between sections — the black background means whitespace manifests as void, creating dramatic pauses between content blocks
-- **Dense within, spacious between**: Individual components are tightly composed (tight line-heights, compressed text) but float in generous surrounding space
-- **Product-first density**: Screenshot areas are allowed to be dense and information-rich, contrasting with the sparse marketing text
+### 留白哲学
+- **通过黑暗呼吸**：部分之间 generous 垂直间距——黑色背景意味着留白表现为虚空，在内容块之间创造戏剧性停顿
+- **内部密集，之间宽敞**：独立组件紧密组合（紧行高、压缩文本）但漂浮在 generous 周围空间中
+- **产品优先密度**：截图区域允许密集和信息丰富，与稀疏的营销文本形成对比
 
-### Border Radius Scale
-- **1px**: Micro-elements, nearly squared precision edges
-- **5px–7px**: Small UI elements, image thumbnails — subtly softened
-- **8px**: Standard component radius — code blocks, buttons, interactive elements
-- **10px–12px**: Cards, product screenshots — comfortably rounded
-- **15px–20px**: Large containers, feature cards — generously rounded
-- **30px–40px**: Navigation pills, pagination — noticeably rounded
-- **100px**: Full pill shape — primary CTAs, tag elements
+### 边框半径比例
+- **1px**：微元素，几乎方形的精确边缘
+- **5px–7px**：小 UI 元素、图像缩略图——微妙柔化
+- **8px**：标准组件半径——代码块、按钮、交互元素
+- **10px–12px**：卡片、产品截图——舒适圆角
+- **15px–20px**：大容器、功能卡片—— generously 圆角
+- **30px–40px**：导航胶囊、分页——明显圆角
+- **100px**：完整胶囊形状——主 CTA、标签元素
 
-## 6. Depth & Elevation
+## 6. 深度与高程
 
-| Level | Treatment | Use |
+| 级别 | 处理 | 用途 |
 |-------|-----------|-----|
-| Level 0 (Flat) | No shadow, pure black surface | Page background, empty areas |
-| Level 1 (Ring) | `rgba(0, 153, 255, 0.15) 0px 0px 0px 1px` | Card borders, interactive element outlines — Framer Blue glow ring |
-| Level 2 (Contained) | `rgb(9, 9, 9) 0px 0px 0px 2px` | Near-black ring for subtle containment on dark surfaces |
-| Level 3 (Floating) | `rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0.5px, rgba(0, 0, 0, 0.25) 0px 10px 30px` | Elevated cards, floating elements — subtle white top-edge highlight + deep ambient shadow |
+| Level 0（平面） | 无阴影，纯黑表面 | 页面背景、空白区域 |
+| Level 1（环） | `rgba(0, 153, 255, 0.15) 0px 0px 0px 1px` | 卡片边框、交互元素轮廓——Framer Blue 光环环 |
+| Level 2（包含） | `rgb(9, 9, 9) 0px 0px 0px 2px` | 近黑环，用于深色表面上的微妙包含 |
+| Level 3（浮动） | `rgba(255, 255, 255, 0.1) 0px 0.5px 0px 0.5px, rgba(0, 0, 0, 0.25) 0px 10px 30px` | 抬高卡片、浮动元素——微妙白色顶部边缘高亮 + 深度环境阴影 |
 
-### Shadow Philosophy
-Framer's elevation system is inverted from traditional light-theme designs. Instead of darker shadows on light backgrounds, Framer uses:
-- **Blue-tinted ring shadows** at very low opacity (0.15) for containment — a signature move that subtly brands every bordered element
-- **White edge highlights** (0.5px) on the top edge of elevated elements — simulating light hitting the top surface
-- **Deep ambient shadows** for true floating elements — `rgba(0, 0, 0, 0.25)` at large spread (30px)
+### 阴影哲学
+Framer 的高程系统与传统亮色主题设计相反。Framer 不使用浅色背景上的深色阴影，而是使用：
+- **蓝色调环阴影** 在极低不透明度（0.15）下用于包含——一个标志性动作，微妙地为每个带边框元素品牌化
+- **白色边缘高亮**（0.5px）在抬高元素的顶部边缘——模拟光线照射顶部表面
+- **深度环境阴影** 用于真正的浮动元素——`rgba(0, 0, 0, 0.25)` 在大扩散（30px）时
 
-### Decorative Depth
-- **Blue glow auras**: Subtle Framer Blue (`#0099ff`) radial gradients behind key interactive areas
-- **No background blur/glassmorphism**: Despite the frosted button effect, there's no heavy glass blur usage — the translucency is achieved through simple rgba opacity
+### 装饰深度
+- **蓝色光晕光环**：关键交互区域后面的微妙 Framer Blue（`#0099ff`）径向渐变
+- **无背景模糊/玻璃拟态**：尽管有磨砂按钮效果，但没有厚重的玻璃模糊使用——半透明通过简单 rgba 不透明度实现
 
-## 7. Do's and Don'ts
+## 7. 做与不做
 
-### Do
-- Use pure black (`#000000`) as the primary background — not dark gray, not charcoal
-- Apply extreme negative letter-spacing on GT Walsheim display text (-3px to -5.5px)
-- Keep all buttons pill-shaped (40px+ radius) — never use squared or slightly-rounded buttons
-- Use Framer Blue (`#0099ff`) exclusively for interactive accents — links, borders, focus states
-- Deploy `rgba(255, 255, 255, 0.1)` for frosted glass surfaces on dark backgrounds
-- Maintain GT Walsheim at weight 500 only — the medium weight IS the brand
-- Use extensive OpenType features on Inter text (cv01, cv05, cv09, cv11, ss03, ss07)
-- Let product screenshots be the visual centerpiece — the tool markets itself
-- Apply blue ring shadows (`rgba(0, 153, 255, 0.15) 0px 0px 0px 1px`) for card containment
+### 做
+- 使用纯黑（`#000000`）作为主背景——不是深灰色，不是炭灰色
+- 在 GT Walsheim 展示文本上应用极端负字间距（-3px 至 -5.5px）
+- 保持所有按钮胶囊形状（40px+ 半径）——从不使用方形或微圆角按钮
+- 仅将 Framer Blue（`#0099ff`）用于交互强调——链接、边框、焦点状态
+- 在深色背景上部署 `rgba(255, 255, 255, 0.1)` 用于磨砂玻璃表面
+- 保持 GT Walsheim 仅在字重 500——中等字重就是品牌
+- 在 Inter 文本上使用广泛 OpenType 特性（cv01, cv05, cv09, cv11, ss03, ss07）
+- 让产品截图成为视觉中心——工具自我营销
+- 应用蓝色环阴影（`rgba(0, 153, 255, 0.15) 0px 0px 0px 1px`）用于卡片包含
 
-### Don't
-- Use warm dark backgrounds (no `#1a1a1a`, `#2d2d2d`, or brownish blacks)
-- Apply bold (700+) weight to GT Walsheim display text — medium 500 only
-- Introduce additional accent colors beyond Framer Blue — this is a one-accent-color system
-- Use large border-radius on non-interactive elements (cards use 10px–15px, only buttons get 40px+)
-- Add decorative imagery, illustrations, or icons — the product IS the illustration
-- Use positive letter-spacing on headlines — everything is compressed, negative tracking
-- Create heavy drop shadows — depth is communicated through subtle rings and minimal ambients
-- Place light/white backgrounds behind content sections — the void is sacred
-- Use serif or display-weight fonts — the system is geometric sans-serif only
+### 不做
+- 使用暖色深色背景（无 `#1a1a1a`、`#2d2d2d` 或带棕色的黑色）
+- 对 GT Walsheim 展示文本应用粗体（700+）字重——仅中等 500
+- 引入 Framer Blue 之外的其他强调色——这是单强调色系统
+- 在非交互元素上使用大边框半径（卡片使用 10px–15px，仅按钮获得 40px+）
+- 添加装饰图像、插图或图标——产品本身就是插图
+- 在标题上使用正字间距——一切都是压缩的、负追踪
+- 创建厚重投影——深度通过微妙环和极简环境传达
+- 在内容部分后面放置浅色/白色背景——虚空是神圣的
+- 使用衬线或展示字重字体——系统仅是几何无衬线体
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
+### 断点
+| 名称 | 宽度 | 关键变化 |
 |------|-------|-------------|
-| Mobile | <809px | Single column, stacked feature sections, reduced hero text (62px→40px), hamburger nav |
-| Tablet | 809px–1199px | 2-column features begin, nav links partially visible, screenshots scale down |
-| Desktop | >1199px | Full layout, expanded nav with all links + CTA, 110px display hero, side-by-side features |
+| 移动端 | <809px | 单列、堆叠功能部分、减少英雄文本（62px→40px）、汉堡导航 |
+| 平板端 | 809px–1199px | 2 列功能开始、导航链接部分可见、截图缩小 |
+| 桌面端 | >1199px | 完整布局、展开导航带所有链接 + CTA、110px 展示英雄、并排功能 |
 
-### Touch Targets
-- Pill buttons: minimum 40px height with 10px vertical padding — exceeds 44px WCAG minimum
-- Nav links: 15px text with generous padding for touch accessibility
-- Mobile CTA buttons: Full-width pills on mobile for easy thumb reach
+### 触摸目标
+- 胶囊按钮：最小 40px 高度带 10px 垂直内边距——超过 44px WCAG 最低要求
+- 导航链接：15px 文本带 generous 内边距用于触摸可访问性
+- 移动端 CTA 按钮：移动端上全宽胶囊便于拇指触及
 
-### Collapsing Strategy
-- **Navigation**: Full horizontal nav → hamburger menu at mobile breakpoint
-- **Hero text**: 110px display → 85px → 62px → ~40px across breakpoints, maintaining extreme negative tracking proportionally
-- **Feature sections**: Side-by-side (text + screenshot) → stacked vertically on mobile
-- **Product screenshots**: Scale responsively within containers, maintaining aspect ratios
-- **Section spacing**: Reduces proportionally — 120px desktop → 60px mobile
+### 折叠策略
+- **导航**：完整水平导航 → 移动端断点处汉堡菜单
+- **英雄文本**：110px 展示 → 85px → 62px → ~40px 跨断点，按比例保持极端负追踪
+- **功能部分**：并排（文本 + 截图）→ 在移动端垂直堆叠
+- **产品截图**：在容器边界内响应式缩放，保持宽高比
+- **部分间距**：按比例减少——120px 桌面端 → 60px 移动端
 
-### Image Behavior
-- Product screenshots are responsive, scaling within their container boundaries
-- No art direction changes — same crops across breakpoints
-- Dark background ensures screenshots maintain visual impact at any size
-- Screenshots lazy-load as user scrolls into view
+### 图像行为
+- 产品截图是响应式的，在容器边界内缩放
+- 无艺术指导变化——跨断点相同裁剪
+- 深色背景确保截图在任何尺寸下保持视觉冲击力
+- 截图在用户滚动进入视图时懒加载
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示指南
 
-### Quick Color Reference
-- Primary Background: Void Black (`#000000`)
-- Primary Text: Pure White (`#ffffff`)
-- Accent/CTA: Framer Blue (`#0099ff`)
-- Secondary Text: Muted Silver (`#a6a6a6`)
-- Frosted Surface: Translucent White (`rgba(255, 255, 255, 0.1)`)
-- Elevation Ring: Blue Glow (`rgba(0, 153, 255, 0.15)`)
+### 快速颜色参考
+- 主背景：虚空黑（`#000000`）
+- 主文本：纯白（`#ffffff`）
+- 强调/CTA：Framer Blue（`#0099ff`）
+- 次要文本：柔和银（`#a6a6a6`）
+- 磨砂表面：半透明白（`rgba(255, 255, 255, 0.1)`）
+- 高程环：蓝色光晕（`rgba(0, 153, 255, 0.15)`）
 
-### Example Component Prompts
-- "Create a hero section on pure black background with 110px GT Walsheim heading in white, letter-spacing -5.5px, line-height 0.85, and a pill-shaped white CTA button (100px radius) with black text"
-- "Design a feature card on black background with a 1px Framer Blue ring shadow border (rgba(0,153,255,0.15)), 12px border-radius, white heading in Inter at 22px weight 700, and muted silver (a6a6a6) body text"
-- "Build a navigation bar with black background, white Inter text links at 15px, and a frosted pill button (rgba(255,255,255,0.1) background, 40px radius) as the CTA"
-- "Create a product showcase section with a full-width screenshot embedded on black, 10px border-radius, subtle multi-layer shadow (white 0.5px top highlight + rgba(0,0,0,0.25) 30px ambient)"
-- "Design a pricing card using pure black surface, Framer Blue (#0099ff) accent for the selected plan border, white text hierarchy (24px Inter bold heading, 14px regular body), and a solid white pill CTA button"
+### 示例组件提示
+- "在纯黑背景上创建英雄部分，带 110px GT Walsheim 白色标题，字间距 -5.5px，行高 0.85，以及带黑色文本的胶囊形白色 CTA 按钮（100px 半径）"
+- "在黑色背景上设计功能卡片，带 1px Framer Blue 环阴影边框（rgba(0,153,255,0.15)），12px 边框半径，Inter 白色标题 22px 字重 700，以及柔和银（a6a6a6）正文文本"
+- "构建带黑色背景的导航栏，白色 Inter 文本链接 15px，以及磨砂胶囊按钮（rgba(255,255,255,0.1) 背景，40px 半径）作为 CTA"
+- "创建产品展示部分，带嵌入黑色的全宽截图，10px 边框半径，微妙多层阴影（白色 0.5px 顶部高亮 + rgba(0,0,0,0.25) 30px 环境）"
+- "使用纯黑表面设计定价卡片，Framer Blue（#0099ff）强调用于选中计划边框，白色文本层级（24px Inter 粗体标题，14px 常规正文），以及实心白胶囊 CTA 按钮"
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Focus on ONE component at a time — the dark canvas makes each element precious
-2. Always verify letter-spacing on GT Walsheim headings — the extreme negative tracking is non-negotiable
-3. Check that Framer Blue appears ONLY on interactive elements — never as decorative background or text color for non-links
-4. Ensure all buttons are pill-shaped — any squared corner immediately breaks the Framer aesthetic
-5. Test frosted glass surfaces by checking they have exactly `rgba(255, 255, 255, 0.1)` — too opaque looks like a bug, too transparent disappears
+### 迭代指南
+优化使用此设计系统生成的现有屏幕时：
+1. 一次关注一个组件——黑暗画布使每个元素珍贵
+2. 始终验证 GT Walsheim 标题的字间距——极端负追踪是不可协商的
+3. 检查 Framer Blue 仅出现在交互元素上——从不作为装饰背景或非链接的文本颜色
+4. 确保所有按钮都是胶囊形状——任何方角立即破坏 Framer 美学
+5. 通过检查磨砂玻璃表面是否有精确的 `rgba(255, 255, 255, 0.1)` 测试——太不透明看起来像 bug，太透明则消失

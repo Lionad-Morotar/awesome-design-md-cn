@@ -1,257 +1,257 @@
-# Design System: MiniMax
+# 设计系统：MiniMax
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-MiniMax's website is a clean, product-showcase platform for a Chinese AI technology company that bridges consumer-friendly appeal with technical credibility. The design language is predominantly white-space-driven with a light, airy feel — pure white backgrounds (`#ffffff`) dominate, letting colorful product cards and AI model illustrations serve as the visual anchors. The overall aesthetic sits at the intersection of Apple's product marketing clarity and a playful, rounded design language that makes AI technology feel approachable.
+MiniMax 的网站是一个简洁的产品展示平台，面向中国 AI 技术公司，在消费级友好性与技术可信度之间取得平衡。设计语言以留白为主导，营造出轻盈通透的感受——纯白背景（`#ffffff`）占据主导，让色彩丰富的产品卡片和 AI 模型插图成为视觉焦点。整体美学处于 Apple 产品营销的清晰感与一种活泼圆润的设计语言之间，使 AI 技术显得平易近人。
 
-The typography system is notably multi-font: DM Sans serves as the primary UI workhorse, Outfit handles display headings with geometric elegance, Poppins appears for mid-tier headings, and Roboto handles data-heavy contexts. This variety reflects a brand in rapid growth — each font serves a distinct communicative purpose rather than competing for attention. The hero heading at 80px weight 500 in both DM Sans and Outfit with a tight 1.10 line-height creates a bold but not aggressive opening statement.
+字体系统显著地采用了多字体方案：DM Sans 作为主要 UI 字体，Outfit 以几何优雅感处理展示标题，Poppins 用于中层标题，Roboto 处理数据密集的场景。这种多样性反映了一个快速增长中的品牌——每种字体服务于独特的传达目的，而非相互竞争。主标题使用 DM Sans 和 Outfit 的 80px、字重 500、行高 1.10 的紧凑排版，形成了大胆但不具攻击性的开场声明。
 
-What makes MiniMax distinctive is its pill-button geometry (9999px radius) for navigation and primary actions, combined with softer 8px–24px radiused cards for product showcases. The product cards themselves are richly colorful — vibrant gradients in pink, purple, orange, and blue — creating a "gallery of AI capabilities" feel. Against the white canvas, these colorful cards pop like app icons on a phone home screen, making each AI model/product feel like a self-contained creative tool.
+MiniMax 的独特之处在于其胶囊按钮几何（9999px 圆角）用于导航和主要操作，搭配较为柔和的 8px–24px 圆角卡片用于产品展示。产品卡片本身色彩丰富——粉色、紫色、橙色和蓝色的鲜艳渐变——营造出"AI 能力画廊"的感觉。在白色画布上，这些彩色卡片如同手机主屏幕上的应用图标般跳脱，使每个 AI 模型/产品感觉像是一个独立的创意工具。
 
-**Key Characteristics:**
-- White-dominant layout with colorful product card accents
-- Multi-font system: DM Sans (UI), Outfit (display), Poppins (mid-tier), Roboto (data)
-- Pill buttons (9999px radius) for primary navigation and CTAs
-- Generous rounded cards (20px–24px radius) for product showcases
-- Brand blue spectrum: from `#1456f0` (brand-6) through `#3b82f6` (primary-500) to `#60a5fa` (light)
-- Brand pink (`#ea5ec1`) as secondary accent
-- Near-black text (`#222222`, `#18181b`) on white backgrounds
-- Purple-tinted shadows (`rgba(44, 30, 116, 0.16)`) creating subtle brand-colored depth
-- Dark footer section (`#181e25`) with product/company links
+**核心特征：**
+- 白色主导布局，以彩色产品卡片作为点缀
+- 多字体系统：DM Sans（UI）、Outfit（展示）、Poppins（中层）、Roboto（数据）
+- 胶囊按钮（9999px 圆角）用于主导航和行动号召
+- 大圆角卡片（20px–24px 圆角）用于产品展示
+- 品牌蓝色光谱：从 `#1456f0`（brand-6）经 `#3b82f6`（primary-500）到 `#60a5fa`（浅色）
+- 品牌粉色（`#ea5ec1`）作为辅助强调色
+- 近黑色文本（`#222222`、`#18181b`）搭配白色背景
+- 紫色调阴影（`rgba(44, 30, 116, 0.16)`）创造微妙的品牌色深度感
+- 深色页脚区域（`#181e25`）包含产品/公司链接
 
-## 2. Color Palette & Roles
+## 2. 色彩系统与角色
 
-### Brand Primary
-- **Brand Blue** (`#1456f0`): `--brand-6`, primary brand identity color
-- **Sky Blue** (`#3daeff`): `--col-brand00`, lighter brand variant for accents
-- **Brand Pink** (`#ea5ec1`): `--col-brand02`, secondary brand accent
+### 品牌主色
+- **品牌蓝**（`#1456f0`）：`--brand-6`，主要品牌标识色
+- **天空蓝**（`#3daeff`）：`--col-brand00`，较浅的品牌变体，用于强调
+- **品牌粉**（`#ea5ec1`）：`--col-brand02`，辅助品牌强调色
 
-### Blue Scale (Primary)
-- **Primary 200** (`#bfdbfe`): `--color-primary-200`, light blue backgrounds
-- **Primary Light** (`#60a5fa`): `--color-primary-light`, active states, highlights
-- **Primary 500** (`#3b82f6`): `--color-primary-500`, standard blue actions
-- **Primary 600** (`#2563eb`): `--color-primary-600`, hover states
-- **Primary 700** (`#1d4ed8`): `--color-primary-700`, pressed/active states
-- **Brand Deep** (`#17437d`): `--brand-3`, deep blue for emphasis
+### 蓝色色阶（主色）
+- **Primary 200**（`#bfdbfe`）：`--color-primary-200`，浅蓝色背景
+- **Primary Light**（`#60a5fa`）：`--color-primary-light`，激活状态，高亮
+- **Primary 500**（`#3b82f6`）：`--color-primary-500`，标准蓝色操作
+- **Primary 600**（`#2563eb`）：`--color-primary-600`，悬停状态
+- **Primary 700**（`#1d4ed8`）：`--color-primary-700`，按下/激活状态
+- **品牌深蓝**（`#17437d`）：`--brand-3`，深蓝色用于强调
 
-### Text Colors
-- **Near Black** (`#222222`): `--col-text00`, primary text
-- **Dark** (`#18181b`): Button text, headings
-- **Charcoal** (`#181e25`): Dark surface text, footer background
-- **Dark Gray** (`#45515e`): `--col-text04`, secondary text
-- **Mid Gray** (`#8e8e93`): Tertiary text, muted labels
-- **Light Gray** (`#5f5f5f`): `--brand-2`, helper text
+### 文本颜色
+- **近黑**（`#222222`）：`--col-text00`，主要文本
+- **深色**（`#18181b`）：按钮文本，标题
+- **炭黑**（`#181e25`）：深色表面文本，页脚背景
+- **深灰**（`#45515e`）：`--col-text04`，辅助文本
+- **中灰**（`#8e8e93`）：三级文本，弱化标签
+- **浅灰**（`#5f5f5f`）：`--brand-2`，辅助说明文本
 
-### Surface & Background
-- **Pure White** (`#ffffff`): `--col-bg13`, primary background
-- **Light Gray** (`#f0f0f0`): Secondary button backgrounds
-- **Glass White** (`hsla(0, 0%, 100%, 0.4)`): `--fill-bg-white`, frosted glass overlay
-- **Border Light** (`#f2f3f5`): Subtle section dividers
-- **Border Gray** (`#e5e7eb`): Component borders
+### 表面与背景
+- **纯白**（`#ffffff`）：`--col-bg13`，主要背景
+- **浅灰**（`#f0f0f0`）：辅助按钮背景
+- **透明白**（`hsla(0, 0%, 100%, 0.4)`）：`--fill-bg-white`，毛玻璃覆盖层
+- **浅色边框**（`#f2f3f5`）：微妙的区域分隔线
+- **灰色边框**（`#e5e7eb`）：组件边框
 
-### Semantic
-- **Success Background** (`#e8ffea`): `--success-bg`, positive state backgrounds
+### 语义色
+- **成功背景**（`#e8ffea`）：`--success-bg`，正面状态背景
 
-### Shadows
-- **Standard** (`rgba(0, 0, 0, 0.08) 0px 4px 6px`): Default card shadow
-- **Soft Glow** (`rgba(0, 0, 0, 0.08) 0px 0px 22.576px`): Ambient soft shadow
-- **Brand Purple** (`rgba(44, 30, 116, 0.16) 0px 0px 15px`): Brand-tinted glow
-- **Brand Purple Offset** (`rgba(44, 30, 116, 0.11) 6.5px 2px 17.5px`): Directional brand glow
-- **Card Elevation** (`rgba(36, 36, 36, 0.08) 0px 12px 16px -4px`): Lifted card shadow
+### 阴影
+- **标准**（`rgba(0, 0, 0, 0.08) 0px 4px 6px`）：默认卡片阴影
+- **柔光**（`rgba(0, 0, 0, 0.08) 0px 0px 22.576px`）：环境柔光阴影
+- **品牌紫光**（`rgba(44, 30, 116, 0.16) 0px 0px 15px`）：品牌色调光晕
+- **品牌紫偏移**（`rgba(44, 30, 116, 0.11) 6.5px 2px 17.5px`）：定向品牌光晕
+- **卡片提升**（`rgba(36, 36, 36, 0.08) 0px 12px 16px -4px`）：悬浮卡片阴影
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
-- **Primary UI**: `DM Sans`, with fallbacks: `Helvetica Neue, Helvetica, Arial`
-- **Display**: `Outfit`, with fallbacks: `Helvetica Neue, Helvetica, Arial`
-- **Mid-tier**: `Poppins`
-- **Data/Technical**: `Roboto`, with fallbacks: `Helvetica Neue, Helvetica, Arial`
+### 字体族
+- **主要 UI**：`DM Sans`，回退字体：`Helvetica Neue, Helvetica, Arial`
+- **展示**：`Outfit`，回退字体：`Helvetica Neue, Helvetica, Arial`
+- **中层**：`Poppins`
+- **数据/技术**：`Roboto`，回退字体：`Helvetica Neue, Helvetica, Arial`
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Notes |
-|------|------|------|--------|-------------|-------|
-| Display Hero | DM Sans / Outfit | 80px (5.00rem) | 500 | 1.10 (tight) | Hero headlines |
-| Section Heading | Outfit | 31px (1.94rem) | 600 | 1.50 | Feature section titles |
-| Section Heading Alt | Roboto / DM Sans | 32px (2.00rem) | 600 | 0.88 (tight) | Compact headers |
-| Card Title | Outfit | 28px (1.75rem) | 500–600 | 1.71 (relaxed) | Product card headings |
-| Sub-heading | Poppins | 24px (1.50rem) | 500 | 1.50 | Mid-tier headings |
-| Feature Label | Poppins | 18px (1.13rem) | 500 | 1.50 | Feature names |
-| Body Large | DM Sans | 20px (1.25rem) | 500 | 1.50 | Emphasized body |
-| Body | DM Sans | 16px (1.00rem) | 400–500 | 1.50 | Standard body text |
-| Body Bold | DM Sans | 16px (1.00rem) | 700 | 1.50 | Strong emphasis |
-| Nav/Link | DM Sans | 14px (0.88rem) | 400–500 | 1.50 | Navigation, links |
-| Button Small | DM Sans | 13px (0.81rem) | 600 | 1.50 | Compact buttons |
-| Caption | DM Sans / Poppins | 13px (0.81rem) | 400 | 1.70 (relaxed) | Metadata |
-| Small Label | DM Sans | 12px (0.75rem) | 500–600 | 1.25–1.50 | Tags, badges |
-| Micro | DM Sans / Outfit | 10px (0.63rem) | 400–500 | 1.50–1.80 | Tiny annotations |
+| 角色 | 字体 | 大小 | 字重 | 行高 | 备注 |
+|------|------|------|------|------|------|
+| 展示主标题 | DM Sans / Outfit | 80px（5.00rem） | 500 | 1.10（紧凑） | 主视觉标题 |
+| 区域标题 | Outfit | 31px（1.94rem） | 600 | 1.50 | 功能区域标题 |
+| 区域标题（替代） | Roboto / DM Sans | 32px（2.00rem） | 600 | 0.88（紧凑） | 紧凑型标题 |
+| 卡片标题 | Outfit | 28px（1.75rem） | 500–600 | 1.71（宽松） | 产品卡片标题 |
+| 副标题 | Poppins | 24px（1.50rem） | 500 | 1.50 | 中层标题 |
+| 功能标签 | Poppins | 18px（1.13rem） | 500 | 1.50 | 功能名称 |
+| 大号正文 | DM Sans | 20px（1.25rem） | 500 | 1.50 | 强调正文 |
+| 正文 | DM Sans | 16px（1.00rem） | 400–500 | 1.50 | 标准正文文本 |
+| 粗体正文 | DM Sans | 16px（1.00rem） | 700 | 1.50 | 强烈强调 |
+| 导航/链接 | DM Sans | 14px（0.88rem） | 400–500 | 1.50 | 导航，链接 |
+| 小按钮 | DM Sans | 13px（0.81rem） | 600 | 1.50 | 紧凑按钮 |
+| 说明文字 | DM Sans / Poppins | 13px（0.81rem） | 400 | 1.70（宽松） | 元数据 |
+| 小标签 | DM Sans | 12px（0.75rem） | 500–600 | 1.25–1.50 | 标签，徽章 |
+| 微型文字 | DM Sans / Outfit | 10px（0.63rem） | 400–500 | 1.50–1.80 | 微小注释 |
 
-### Principles
-- **Multi-font purpose**: DM Sans = UI workhorse (body, nav, buttons); Outfit = geometric display (headings, product names); Poppins = friendly mid-tier (sub-headings, features); Roboto = technical/data contexts.
-- **Universal 1.50 line-height**: The overwhelming majority of text uses 1.50 line-height, creating a consistent reading rhythm regardless of font or size. Exceptions: display (1.10 tight) and some captions (1.70 relaxed).
-- **Weight 500 as default emphasis**: Most headings use 500 (medium) rather than bold, creating a modern, approachable tone. 600 for section titles, 700 reserved for strong emphasis.
-- **Compact hierarchy**: The size scale jumps from 80px display straight to 28–32px section, then 16–20px body — a deliberate compression that keeps the visual hierarchy feeling efficient.
+### 原则
+- **多字体分工**：DM Sans = UI 主力（正文、导航、按钮）；Outfit = 几何展示（标题、产品名）；Poppins = 友好的中层（副标题、功能）；Roboto = 技术/数据场景。
+- **统一的 1.50 行高**：绝大多数文本使用 1.50 行高，无论字体或大小都保持一致的阅读节奏。例外：展示标题（1.10 紧凑）和部分说明文字（1.70 宽松）。
+- **字重 500 作为默认强调**：大多数标题使用 500（中等）而非粗体，营造现代、亲切的基调。600 用于区域标题，700 保留给强烈强调。
+- **紧凑的层级**：尺寸从 80px 展示直接跳到 28–32px 区域，再到 16–20px 正文——一种刻意的压缩，使视觉层级感觉高效。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Pill Primary Dark**
-- Background: `#181e25`
-- Text: `#ffffff`
-- Padding: 11px 20px
-- Radius: 8px
-- Use: Primary CTA ("Get Started", "Learn More")
+**深色胶囊主按钮**
+- 背景：`#181e25`
+- 文本：`#ffffff`
+- 内边距：11px 20px
+- 圆角：8px
+- 用途：主要行动号召（"开始使用"、"了解更多"）
 
-**Pill Nav**
-- Background: `rgba(0, 0, 0, 0.05)` (subtle tint)
-- Text: `#18181b`
-- Radius: 9999px (full pill)
-- Use: Navigation tabs, filter toggles
+**导航胶囊按钮**
+- 背景：`rgba(0, 0, 0, 0.05)`（微妙着色）
+- 文本：`#18181b`
+- 圆角：9999px（完整胶囊）
+- 用途：导航标签页，筛选切换
 
-**Pill White**
-- Background: `#ffffff`
-- Text: `rgba(24, 30, 37, 0.8)`
-- Radius: 9999px
-- Opacity: 0.5 (default state)
-- Use: Secondary nav, inactive tabs
+**白色胶囊按钮**
+- 背景：`#ffffff`
+- 文本：`rgba(24, 30, 37, 0.8)`
+- 圆角：9999px
+- 透明度：0.5（默认状态）
+- 用途：辅助导航，非激活标签
 
-**Secondary Light**
-- Background: `#f0f0f0`
-- Text: `#333333`
-- Padding: 11px 20px
-- Radius: 8px
-- Use: Secondary actions
+**浅色辅助按钮**
+- 背景：`#f0f0f0`
+- 文本：`#333333`
+- 内边距：11px 20px
+- 圆角：8px
+- 用途：辅助操作
 
-### Product Cards
-- Background: Vibrant gradients (pink/purple/orange/blue)
-- Radius: 20px–24px (generous rounding)
-- Shadow: `rgba(44, 30, 116, 0.16) 0px 0px 15px` (brand purple glow)
-- Content: Product name, model version, descriptive text
-- Each card has its own color palette matching the product identity
+### 产品卡片
+- 背景：鲜艳渐变（粉/紫/橙/蓝）
+- 圆角：20px–24px（大圆角）
+- 阴影：`rgba(44, 30, 116, 0.16) 0px 0px 15px`（品牌紫光晕）
+- 内容：产品名称，模型版本，描述文本
+- 每张卡片拥有与产品标识匹配的独立配色
 
-### AI Product Cards (Matrix)
-- Background: white with subtle shadow
-- Radius: 13px–16px
-- Shadow: `rgba(0, 0, 0, 0.08) 0px 4px 6px`
-- Icon/illustration centered above product name
-- Product name in DM Sans 14–16px weight 500
+### AI 产品卡片（矩阵）
+- 背景：白色，带微妙阴影
+- 圆角：13px–16px
+- 阴影：`rgba(0, 0, 0, 0.08) 0px 4px 6px`
+- 图标/插图居中于产品名称上方
+- 产品名称使用 DM Sans 14–16px 字重 500
 
-### Links
-- **Primary**: `#18181b` or `#181e25`, underline on dark text
-- **Secondary**: `#8e8e93`, muted for less emphasis
-- **On Dark**: `rgba(255, 255, 255, 0.8)` for footer and dark sections
+### 链接
+- **主链接**：`#18181b` 或 `#181e25`，深色文本带下划线
+- **辅助链接**：`#8e8e93`，弱化以减少强调
+- **深色背景上**：`rgba(255, 255, 255, 0.8)` 用于页脚和深色区域
 
-### Navigation
-- Clean horizontal nav on white background
-- MiniMax logo left-aligned (red accent in logo)
-- DM Sans 14px weight 500 for nav items
-- Pill-shaped active indicators (9999px radius)
-- "Login" text link, minimal right-side actions
-- Sticky header behavior
+### 导航
+- 白色背景上的简洁水平导航
+- MiniMax 标志左对齐（标志中有红色点缀）
+- DM Sans 14px 字重 500 用于导航项
+- 胶囊形激活指示器（9999px 圆角）
+- "登录"文本链接，右侧极简操作
+- 粘性头部行为
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 1px, 2px, 4px, 6px, 8px, 10px, 11px, 14px, 16px, 24px, 32px, 40px, 50px, 64px, 80px
+### 间距系统
+- 基础单位：8px
+- 色阶：1px, 2px, 4px, 6px, 8px, 10px, 11px, 14px, 16px, 24px, 32px, 40px, 50px, 64px, 80px
 
-### Grid & Container
-- Max content width centered on page
-- Product card grids: horizontal scroll or 3–4 column layout
-- Full-width white sections with contained content
-- Dark footer at full-width
+### 网格与容器
+- 最大内容宽度居中于页面
+- 产品卡片网格：水平滚动或 3–4 列布局
+- 全宽白色区域，内容居中
+- 深色页脚全宽
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Single column, stacked cards |
-| Tablet | 768–1024px | 2-column grids |
-| Desktop | >1024px | Full layout, horizontal card scrolls |
+### 断点
+| 名称 | 宽度 | 关键变化 |
+|------|------|----------|
+| 移动端 | <768px | 单列，卡片堆叠 |
+| 平板端 | 768–1024px | 2 列网格 |
+| 桌面端 | >1024px | 完整布局，水平卡片滚动 |
 
-### Whitespace Philosophy
-- **Gallery spacing**: Products are presented like gallery items with generous white space between cards, letting each AI model breathe as its own showcase.
-- **Section rhythm**: Large vertical gaps (64px–80px) between major sections create distinct "chapters" of content.
-- **Card breathing**: Product cards use internal padding of 16px–24px with ample whitespace around text.
+### 留白理念
+- **画廊间距**：产品如同画廊展品般展示，卡片间留有充裕的空白，让每个 AI 模型作为独立展示呼吸。
+- **区域节奏**：主要区域之间的大间距（64px–80px）形成清晰的内容"章节"。
+- **卡片呼吸空间**：产品卡片使用 16px–24px 的内边距，文本周围留有充足的空白。
 
-### Border Radius Scale
-- Minimal (4px): Small tags, micro badges
-- Standard (8px): Buttons, small cards
-- Comfortable (11px–13px): Medium cards, panels
-- Generous (16px–20px): Large product cards
-- Large (22px–24px): Hero product cards, major containers
-- Pill (30px–32px): Badge pills, rounded panels
-- Full (9999px): Buttons, nav tabs
+### 圆角色阶
+- 最小（4px）：小标签，微型徽章
+- 标准（8px）：按钮，小卡片
+- 舒适（11px–13px）：中等卡片，面板
+- 宽裕（16px–20px）：大型产品卡片
+- 大（22px–24px）：主视觉产品卡片，主要容器
+- 胶囊（30px–32px）：徽章胶囊，圆角面板
+- 完整（9999px）：按钮，导航标签
 
-## 6. Depth & Elevation
+## 6. 深度与层级
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | White background, text blocks |
-| Subtle (Level 1) | `rgba(0, 0, 0, 0.08) 0px 4px 6px` | Standard cards, containers |
-| Ambient (Level 2) | `rgba(0, 0, 0, 0.08) 0px 0px 22.576px` | Soft glow around elements |
-| Brand Glow (Level 3) | `rgba(44, 30, 116, 0.16) 0px 0px 15px` | Featured product cards |
-| Elevated (Level 4) | `rgba(36, 36, 36, 0.08) 0px 12px 16px -4px` | Lifted cards, hover states |
+| 级别 | 处理方式 | 用途 |
+|------|----------|------|
+| 平面（Level 0） | 无阴影 | 白色背景，文本块 |
+| 微妙（Level 1） | `rgba(0, 0, 0, 0.08) 0px 4px 6px` | 标准卡片，容器 |
+| 环境（Level 2） | `rgba(0, 0, 0, 0.08) 0px 0px 22.576px` | 元素周围的柔光 |
+| 品牌光晕（Level 3） | `rgba(44, 30, 116, 0.16) 0px 0px 15px` | 精选产品卡片 |
+| 悬浮（Level 4） | `rgba(36, 36, 36, 0.08) 0px 12px 16px -4px` | 悬浮卡片，悬停状态 |
 
-**Shadow Philosophy**: MiniMax uses a distinctive purple-tinted shadow (`rgba(44, 30, 116, ...)`) for featured elements, creating a subtle brand-color glow that connects the shadow system to the blue brand identity. Standard shadows use neutral black but at low opacity (0.08), keeping everything feeling light and airy. The directional shadow variant (6.5px offset) adds dimensional interest to hero product cards.
+**阴影理念**：MiniMax 对精选元素使用独特的紫色调阴影（`rgba(44, 30, 116, ...)`），创造微妙的品牌色光晕，将阴影系统与蓝色品牌标识联系起来。标准阴影使用中性黑色但低透明度（0.08），保持轻盈通透感。定向阴影变体（6.5px 偏移）为主视觉产品卡片增添了维度感。
 
-## 7. Do's and Don'ts
+## 7. 宜与忌
 
-### Do
-- Use white as the dominant background — let product cards provide the color
-- Apply pill radius (9999px) for navigation tabs and toggle buttons
-- Use generous border radius (20px–24px) for product showcase cards
-- Employ the purple-tinted shadow for featured/hero product cards
-- Keep body text at DM Sans weight 400–500 — heavier weights for buttons only
-- Use Outfit for display headings, DM Sans for everything functional
-- Maintain the universal 1.50 line-height across body text
-- Let colorful product illustrations/gradients serve as the primary visual interest
+### 宜
+- 使用白色作为主导背景——让产品卡片提供色彩
+- 导航标签页和切换按钮使用胶囊圆角（9999px）
+- 产品展示卡片使用大圆角（20px–24px）
+- 精选/主视觉产品卡片使用紫色调阴影
+- 正文保持 DM Sans 字重 400–500——更重的字重仅用于按钮
+- 展示标题使用 Outfit，所有功能性文本使用 DM Sans
+- 全部正文保持统一的 1.50 行高
+- 让色彩丰富的产品插图/渐变作为主要视觉焦点
 
-### Don't
-- Don't add colored backgrounds to main content sections — white is structural
-- Don't use sharp corners (0–4px radius) on product cards — the rounded aesthetic is core
-- Don't apply the brand pink (`#ea5ec1`) to text or buttons — it's for logo and decorative accents only
-- Don't mix more than one display font per section (Outfit OR Poppins, not both)
-- Don't use weight 700 for headings — 500–600 is the range, 700 is reserved for strong emphasis in body text
-- Don't darken shadows beyond 0.16 opacity — the light, airy feel requires restraint
-- Don't use Roboto for headings — it's the data/technical context font only
+### 忌
+- 不要给主要内容区域添加有色背景——白色是结构性的
+- 产品卡片不要使用尖角（0–4px 圆角）——圆润美学是核心
+- 不要将品牌粉（`#ea5ec1`）用于文本或按钮——仅用于标志和装饰性点缀
+- 同一区域不要混用多种展示字体（Outfit 或 Poppins，不可两者同时使用）
+- 标题不要使用字重 700——500–600 是范围，700 仅保留给正文中的强烈强调
+- 阴影透明度不要超过 0.16——轻盈通透感需要克制
+- 标题不要使用 Roboto——它仅用于数据/技术场景
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <768px | Single column, stacked product cards, hamburger nav |
-| Tablet | 768–1024px | 2-column product grids, condensed spacing |
-| Desktop | >1024px | Full horizontal card layouts, expanded spacing |
+### 断点
+| 名称 | 宽度 | 关键变化 |
+|------|------|----------|
+| 移动端 | <768px | 单列，产品卡片堆叠，汉堡导航 |
+| 平板端 | 768–1024px | 2 列产品网格，压缩间距 |
+| 桌面端 | >1024px | 完整水平卡片布局，扩展间距 |
 
-### Collapsing Strategy
-- Hero: 80px → responsive scaling to ~40px on mobile
-- Product card grid: horizontal scroll → 2-column → single column stacked
-- Navigation: horizontal → hamburger menu
-- Footer: multi-column → stacked sections
-- Spacing: 64–80px gaps → 32–40px on mobile
+### 折叠策略
+- 主标题：80px → 响应式缩放至移动端约 40px
+- 产品卡片网格：水平滚动 → 2 列 → 单列堆叠
+- 导航：水平 → 汉堡菜单
+- 页脚：多列 → 堆叠区域
+- 间距：64–80px 间距 → 移动端 32–40px
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示词指南
 
-### Quick Color Reference
-- Background: `#ffffff` (primary), `#181e25` (dark/footer)
-- Text: `#222222` (primary), `#45515e` (secondary), `#8e8e93` (muted)
-- Brand Blue: `#1456f0` (brand), `#3b82f6` (primary-500), `#2563eb` (hover)
-- Brand Pink: `#ea5ec1` (accent only)
-- Borders: `#e5e7eb`, `#f2f3f5`
+### 快速色彩参考
+- 背景：`#ffffff`（主要），`#181e25`（深色/页脚）
+- 文本：`#222222`（主要），`#45515e`（辅助），`#8e8e93`（弱化）
+- 品牌蓝：`#1456f0`（品牌），`#3b82f6`（primary-500），`#2563eb`（悬停）
+- 品牌粉：`#ea5ec1`（仅作点缀）
+- 边框：`#e5e7eb`，`#f2f3f5`
 
-### Example Component Prompts
-- "Create a hero section on white background. Headline at 80px Outfit weight 500, line-height 1.10, near-black (#222222) text. Sub-text at 16px DM Sans weight 400, line-height 1.50, #45515e. Dark CTA button (#181e25, 8px radius, 11px 20px padding, white text)."
-- "Design a product card grid: white cards with 20px border-radius, shadow rgba(44,30,116,0.16) 0px 0px 15px. Product name at 28px Outfit weight 600. Internal gradient background for the product illustration area."
-- "Build navigation bar: white background, DM Sans 14px weight 500 for links, #18181b text. Pill-shaped active tab (9999px radius, rgba(0,0,0,0.05) background). MiniMax logo left-aligned."
-- "Create an AI product matrix: 4-column grid of cards with 13px radius, subtle shadow rgba(0,0,0,0.08) 0px 4px 6px. Centered icon above product name in DM Sans 16px weight 500."
-- "Design footer on dark (#181e25) background. Product links in DM Sans 14px, rgba(255,255,255,0.8). Multi-column layout."
+### 组件提示词示例
+- "在白色背景上创建主视觉区域。标题使用 Outfit 80px 字重 500，行高 1.10，近黑色（#222222）文本。副文本使用 DM Sans 16px 字重 400，行高 1.50，#45515e。深色行动号召按钮（#181e25，8px 圆角，11px 20px 内边距，白色文本）。"
+- "设计产品卡片网格：白色卡片，20px 圆角，阴影 rgba(44,30,116,0.16) 0px 0px 15px。产品名称使用 Outfit 28px 字重 600。产品插图区域使用内部渐变背景。"
+- "构建导航栏：白色背景，链接使用 DM Sans 14px 字重 500，#18181b 文本。胶囊形激活标签（9999px 圆角，rgba(0,0,0,0.05) 背景）。MiniMax 标志左对齐。"
+- "创建 AI 产品矩阵：4 列卡片网格，13px 圆角，微妙阴影 rgba(0,0,0,0.08) 0px 4px 6px。居中图标位于产品名称上方，使用 DM Sans 16px 字重 500。"
+- "在深色（#181e25）背景上设计页脚。产品链接使用 DM Sans 14px，rgba(255,255,255,0.8)。多列布局。"
 
-### Iteration Guide
-1. Start with white — color comes from product cards and illustrations only
-2. Pill buttons (9999px) for nav/tabs, standard radius (8px) for CTA buttons
-3. Purple-tinted shadows for featured cards, neutral shadows for everything else
-4. DM Sans handles 70% of text — Outfit is display-only, Poppins is mid-tier only
-5. Keep weights moderate (500–600 for headings) — the brand tone is confident but approachable
-6. Large radius cards (20–24px) for products, smaller radius (8–13px) for UI elements
+### 迭代指南
+1. 从白色开始——色彩仅来自产品卡片和插图
+2. 导航/标签使用胶囊按钮（9999px），行动号召按钮使用标准圆角（8px）
+3. 精选卡片使用紫色调阴影，其他所有内容使用中性阴影
+4. DM Sans 处理 70% 的文本——Outfit 仅用于展示，Poppins 仅用于中层
+5. 保持字重适中（标题 500–600）——品牌基调是自信但亲切的
+6. 产品使用大圆角卡片（20–24px），UI 元素使用较小圆角（8–13px）

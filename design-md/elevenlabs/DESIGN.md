@@ -1,265 +1,265 @@
-# Design System: ElevenLabs
+# 设计系统：ElevenLabs
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-ElevenLabs' website is a study in restrained elegance — a near-white canvas (`#ffffff`, `#f5f5f5`) where typography and subtle shadows do all the heavy lifting. The design feels like a premium audio product brochure: clean, spacious, and confident enough to let the content speak (literally, given ElevenLabs makes voice AI). There's an almost Apple-like quality to the whitespace strategy, but warmer — the occasional warm stone tint (`#f5f2ef`, `#777169`) prevents the purity from feeling clinical.
+ElevenLabs 的网站是克制优雅的典范——近乎纯白的画布（`#ffffff`、`#f5f5f5`）上，排版和微妙的阴影承担了所有重任。设计感觉像一份高端音频产品手册：干净、宽敞，且足够自信地让内容自己说话（考虑到 ElevenLabs 是做语音 AI 的，这再合适不过）。留白策略有一种近乎 Apple 的品质，但更温暖——偶尔出现的暖石色调（`#f5f2ef`、`#777169`）避免了纯白带来的冰冷感。
 
-The typography system is built on a fascinating duality: Waldenburg at weight 300 (light) for display headings creates ethereal, whisper-thin titles that feel like sound waves rendered in type — delicate, precise, and surprisingly impactful at large sizes. This light-weight display approach is the design's signature — where most sites use bold headings to grab attention, ElevenLabs uses lightness to create intrigue. Inter handles all body and UI text with workmanlike reliability, using slight positive letter-spacing (0.14px–0.18px) that gives body text an airy, well-spaced quality. WaldenburgFH appears as a bold uppercase variant for specific button labels.
+排版系统建立在一种迷人的二元对立上：Waldenburg 字体在 300 字重（Light）下用于展示标题，创造出空灵的、细如耳语的标题，仿佛声波被渲染成了文字——精致、准确，在大尺寸下却有着惊人的视觉冲击力。这种 Light 字重的展示方式是设计的标志性特征——当大多数网站使用粗体标题来吸引注意力时，ElevenLabs 用轻盈感来制造吸引力。Inter 字体以可靠的实用性处理所有正文和 UI 文字，使用微正字间距（0.14px–0.18px），赋予正文一种通透的、间距舒适的阅读品质。WaldenburgFH 作为粗体大写变体，用于特定的按钮标签。
 
-What makes ElevenLabs distinctive is its multi-layered shadow system. Rather than simple box-shadows, elements use complex stacks: inset border-shadows (`rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset`), outline shadows (`rgba(0,0,0,0.06) 0px 0px 0px 1px`), and soft elevation shadows (`rgba(0,0,0,0.04) 0px 4px 4px`) — all at remarkably low opacities. The result is a design where surfaces seem to barely exist, floating just above the page with the lightest possible touch. Pill-shaped buttons (9999px) with warm-tinted backgrounds (`rgba(245,242,239,0.8)`) and warm shadows (`rgba(78,50,23,0.04)`) add a tactile, physical quality.
+让 ElevenLabs 独具特色的是其多层阴影系统。元素不使用简单的 box-shadow，而是采用复杂的叠加：内嵌边框阴影（`rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset`）、轮廓阴影（`rgba(0,0,0,0.06) 0px 0px 0px 1px`）和柔和抬升阴影（`rgba(0,0,0,0.04) 0px 4px 4px`）——所有阴影都处于极低的透明度。最终效果是，表面似乎只是勉强存在，以最轻微的触感悬浮在页面之上。药丸形按钮（9999px）搭配暖色调背景（`rgba(245,242,239,0.8)`）和暖色调阴影（`rgba(78,50,23,0.04)`），增添了一种可触摸的、有质感的效果。
 
-**Key Characteristics:**
-- Near-white canvas with warm undertones (`#f5f5f5`, `#f5f2ef`)
-- Waldenburg weight 300 (light) for display — ethereal, whisper-thin headings
-- Inter with positive letter-spacing (0.14–0.18px) for body — airy readability
-- Multi-layered shadow stacks at sub-0.1 opacity — surfaces barely exist
-- Pill buttons (9999px) with warm stone-tinted backgrounds
-- WaldenburgFH bold uppercase for specific CTA labels
-- Warm shadow tints: `rgba(78, 50, 23, 0.04)` — shadows have color, not just darkness
-- Geist Mono / ui-monospace for code snippets
+**关键特征：**
+- 近乎纯白的画布，带有暖色调底色（`#f5f5f5`、`#f5f2ef`）
+- Waldenburg 300 字重（Light）用于展示——空灵的、细如耳语的标题
+- Inter 搭配正字间距（0.14–0.18px）用于正文——通透的可读性
+- 低于 0.1 透明度的多层阴影叠加——表面若隐若现
+- 药丸形按钮（9999px），搭配暖石色调背景
+- WaldenburgFH 粗体大写用于特定的 CTA 标签
+- 暖色调阴影：`rgba(78, 50, 23, 0.04)`——阴影带有色彩，而非单纯的暗色
+- Geist Mono / ui-monospace 用于代码片段
 
-## 2. Color Palette & Roles
+## 2. 色彩系统与角色
 
-### Primary
-- **Pure White** (`#ffffff`): Primary background, card surfaces, button backgrounds
-- **Light Gray** (`#f5f5f5`): Secondary surface, subtle section differentiation
-- **Warm Stone** (`#f5f2ef`): Button background (at 80% opacity) — the warm signature
-- **Black** (`#000000`): Primary text, headings, dark buttons
+### 主色
+- **纯白**（`#ffffff`）：主背景、卡片表面、按钮背景
+- **浅灰**（`#f5f5f5`）：辅助表面，微妙的区域区分
+- **暖石色**（`#f5f2ef`）：按钮背景（80% 透明度）——温暖的标志性色彩
+- **黑色**（`#000000`）：主文字、标题、深色按钮
 
-### Neutral Scale
-- **Dark Gray** (`#4e4e4e`): Secondary text, descriptions
-- **Warm Gray** (`#777169`): Tertiary text, muted links, decorative underlines
-- **Near White** (`#f6f6f6`): Alternate light surface
+### 中性色阶
+- **深灰**（`#4e4e4e`）：次要文字、描述
+- **暖灰**（`#777169`）：辅助文字、弱化链接、装饰性下划线
+- **近白**（`#f6f6f6`）：替代浅色表面
 
-### Interactive
-- **Grid Cyan** (`#7fffff`): `--grid-column-bg`, at 25% opacity — decorative grid overlay
-- **Ring Blue** (`rgb(147 197 253 / 0.5)`): `--tw-ring-color`, focus ring
-- **Border Light** (`#e5e5e5`): Explicit borders
-- **Border Subtle** (`rgba(0, 0, 0, 0.05)`): Ultra-subtle bottom borders
+### 交互色
+- **网格青色**（`#7fffff`）：`--grid-column-bg`，25% 透明度——装饰性网格叠加
+- **环形蓝色**（`rgb(147 197 253 / 0.5)`）：`--tw-ring-color`，焦点环
+- **浅边框**（`#e5e5e5`）：显式边框
+- **微妙边框**（`rgba(0, 0, 0, 0.05)`）：极细微的底部边框
 
-### Shadows
-- **Inset Border** (`rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset`): Internal edge definition
-- **Inset Dark** (`rgba(0,0,0,0.1) 0px 0px 0px 0.5px inset`): Stronger inset variant
-- **Outline Ring** (`rgba(0,0,0,0.06) 0px 0px 0px 1px`): Shadow-as-border
-- **Soft Elevation** (`rgba(0,0,0,0.04) 0px 4px 4px`): Gentle lift
-- **Card Shadow** (`rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px`): Button/card elevation
-- **Warm Shadow** (`rgba(78,50,23,0.04) 0px 6px 16px`): Warm-tinted button shadow
-- **Edge Shadow** (`rgba(0,0,0,0.08) 0px 0px 0px 0.5px`): Subtle edge definition
-- **Inset Ring** (`rgba(0,0,0,0.1) 0px 0px 0px 1px inset`): Strong inset border
+### 阴影
+- **内嵌边框**（`rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset`）：内边缘定义
+- **深色内嵌**（`rgba(0,0,0,0.1) 0px 0px 0px 0.5px inset`）：更强的内嵌变体
+- **轮廓环**（`rgba(0,0,0,0.06) 0px 0px 0px 1px`）：阴影作为边框
+- **柔和抬升**（`rgba(0,0,0,0.04) 0px 4px 4px`）：轻微升起
+- **卡片阴影**（`rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px`）：按钮/卡片抬升
+- **暖色阴影**（`rgba(78,50,23,0.04) 0px 6px 16px`）：暖色调按钮阴影
+- **边缘阴影**（`rgba(0,0,0,0.08) 0px 0px 0px 0.5px`）：微妙的边缘定义
+- **内嵌环**（`rgba(0,0,0,0.1) 0px 0px 0px 1px inset`）：强内嵌边框
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
-- **Display**: `Waldenburg`, fallback: `Waldenburg Fallback`
-- **Display Bold**: `WaldenburgFH`, fallback: `WaldenburgFH Fallback`
-- **Body / UI**: `Inter`, fallback: `Inter Fallback`
-- **Monospace**: `Geist Mono` or `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas`
+### 字体族
+- **展示字体**：`Waldenburg`，回退字体：`Waldenburg Fallback`
+- **展示粗体**：`WaldenburgFH`，回退字体：`WaldenburgFH Fallback`
+- **正文 / UI**：`Inter`，回退字体：`Inter Fallback`
+- **等宽字体**：`Geist Mono` 或 `ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas`
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Hero | Waldenburg | 48px (3.00rem) | 300 | 1.08 (tight) | -0.96px | Whisper-thin, ethereal |
-| Section Heading | Waldenburg | 36px (2.25rem) | 300 | 1.17 (tight) | normal | Light display |
-| Card Heading | Waldenburg | 32px (2.00rem) | 300 | 1.13 (tight) | normal | Light card titles |
-| Body Large | Inter | 20px (1.25rem) | 400 | 1.35 | normal | Introductions |
-| Body | Inter | 18px (1.13rem) | 400 | 1.44–1.60 | 0.18px | Standard reading text |
-| Body Standard | Inter | 16px (1.00rem) | 400 | 1.50 | 0.16px | UI text |
-| Body Medium | Inter | 16px (1.00rem) | 500 | 1.50 | 0.16px | Emphasized body |
-| Nav / UI | Inter | 15px (0.94rem) | 500 | 1.33–1.47 | 0.15px | Navigation links |
-| Button | Inter | 15px (0.94rem) | 500 | 1.47 | normal | Button labels |
-| Button Uppercase | WaldenburgFH | 14px (0.88rem) | 700 | 1.10 (tight) | 0.7px | `text-transform: uppercase` |
-| Caption | Inter | 14px (0.88rem) | 400–500 | 1.43–1.50 | 0.14px | Metadata |
-| Small | Inter | 13px (0.81rem) | 500 | 1.38 | normal | Tags, badges |
-| Code | Geist Mono | 13px (0.81rem) | 400 | 1.85 (relaxed) | normal | Code blocks |
-| Micro | Inter | 12px (0.75rem) | 500 | 1.33 | normal | Tiny labels |
-| Tiny | Inter | 10px (0.63rem) | 400 | 1.60 (relaxed) | normal | Fine print |
+| 角色 | 字体 | 字号 | 字重 | 行高 | 字间距 | 备注 |
+|------|------|------|------|------|--------|------|
+| 展示英雄标题 | Waldenburg | 48px (3.00rem) | 300 | 1.08（紧凑） | -0.96px | 细如耳语，空灵 |
+| 区域标题 | Waldenburg | 36px (2.25rem) | 300 | 1.17（紧凑） | normal | Light 展示 |
+| 卡片标题 | Waldenburg | 32px (2.00rem) | 300 | 1.13（紧凑） | normal | Light 卡片标题 |
+| 大号正文 | Inter | 20px (1.25rem) | 400 | 1.35 | normal | 导言文字 |
+| 正文 | Inter | 18px (1.13rem) | 400 | 1.44–1.60 | 0.18px | 标准阅读文本 |
+| 标准正文 | Inter | 16px (1.00rem) | 400 | 1.50 | 0.16px | UI 文字 |
+| 中等正文 | Inter | 16px (1.00rem) | 500 | 1.50 | 0.16px | 强调正文 |
+| 导航 / UI | Inter | 15px (0.94rem) | 500 | 1.33–1.47 | 0.15px | 导航链接 |
+| 按钮 | Inter | 15px (0.94rem) | 500 | 1.47 | normal | 按钮标签 |
+| 大写按钮 | WaldenburgFH | 14px (0.88rem) | 700 | 1.10（紧凑） | 0.7px | `text-transform: uppercase` |
+| 标注 | Inter | 14px (0.88rem) | 400–500 | 1.43–1.50 | 0.14px | 元数据 |
+| 小字 | Inter | 13px (0.81rem) | 500 | 1.38 | normal | 标签、徽章 |
+| 代码 | Geist Mono | 13px (0.81rem) | 400 | 1.85（宽松） | normal | 代码块 |
+| 微型 | Inter | 12px (0.75rem) | 500 | 1.33 | normal | 极小标签 |
+| 极小 | Inter | 10px (0.63rem) | 400 | 1.60（宽松） | normal | 附注文字 |
 
-### Principles
-- **Light as the hero weight**: Waldenburg at 300 is the defining typographic choice. Where other design systems use bold for impact, ElevenLabs uses lightness — thin strokes that feel like audio waveforms, creating intrigue through restraint.
-- **Positive letter-spacing on body**: Inter uses +0.14px to +0.18px tracking across body text, creating an airy, well-spaced reading rhythm that contrasts with the tight display tracking (-0.96px).
-- **WaldenburgFH for emphasis**: A bold (700) uppercase variant of Waldenburg appears only in specific CTA button labels with 0.7px letter-spacing — the one place where the type system gets loud.
-- **Monospace as ambient**: Geist Mono at relaxed line-height (1.85) for code blocks feels unhurried and readable.
+### 原则
+- **Light 作为核心字重**：Waldenburg 300 是定义性的排版选择。当其他设计系统使用粗体来制造冲击力时，ElevenLabs 使用轻盈感——细笔画像音频波形，通过克制来创造吸引力。
+- **正文使用正字间距**：Inter 在正文文本中使用 +0.14px 到 +0.18px 的字距，创造出通透的、间距舒适的阅读节奏，与紧凑的展示字距（-0.96px）形成对比。
+- **WaldenburgFH 用于强调**：Waldenburg 的粗体（700）大写变体仅出现在特定的 CTA 按钮标签中，字间距为 0.7px——这是整个字体系统中唯一"大声说话"的地方。
+- **等宽字体作为氛围元素**：Geist Mono 在宽松行高（1.85）下用于代码块，感觉从容且易读。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary Black Pill**
-- Background: `#000000`
-- Text: `#ffffff`
-- Padding: 0px 14px
-- Radius: 9999px (full pill)
-- Use: Primary CTA
+**主黑色药丸按钮**
+- 背景：`#000000`
+- 文字：`#ffffff`
+- 内边距：0px 14px
+- 圆角：9999px（完全药丸形）
+- 用途：主要 CTA
 
-**White Pill (Shadow-bordered)**
-- Background: `#ffffff`
-- Text: `#000000`
-- Radius: 9999px
-- Shadow: `rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px`
-- Use: Secondary CTA on white
+**白色药丸按钮（阴影边框）**
+- 背景：`#ffffff`
+- 文字：`#000000`
+- 圆角：9999px
+- 阴影：`rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px`
+- 用途：白色背景上的次要 CTA
 
-**Warm Stone Pill**
-- Background: `rgba(245, 242, 239, 0.8)` (warm translucent)
-- Text: `#000000`
-- Padding: 12px 20px 12px 14px (asymmetric)
-- Radius: 30px
-- Shadow: `rgba(78, 50, 23, 0.04) 0px 6px 16px` (warm-tinted)
-- Use: Featured CTA, hero action — the signature warm button
+**暖石色药丸按钮**
+- 背景：`rgba(245, 242, 239, 0.8)`（暖半透明）
+- 文字：`#000000`
+- 内边距：12px 20px 12px 14px（不对称）
+- 圆角：30px
+- 阴影：`rgba(78, 50, 23, 0.04) 0px 6px 16px`（暖色调）
+- 用途：重点 CTA、英雄区操作按钮——标志性的暖色按钮
 
-**Uppercase Waldenburg Button**
-- Font: WaldenburgFH 14px weight 700
-- Text-transform: uppercase
-- Letter-spacing: 0.7px
-- Use: Specific bold CTA labels
+**大写 Waldenburg 按钮**
+- 字体：WaldenburgFH 14px 字重 700
+- Text-transform：uppercase
+- 字间距：0.7px
+- 用途：特定的粗体 CTA 标签
 
-### Cards & Containers
-- Background: `#ffffff`
-- Border: `1px solid #e5e5e5` or shadow-as-border
-- Radius: 16px–24px
-- Shadow: multi-layer stack (inset + outline + elevation)
-- Content: product screenshots, code examples, audio waveform previews
+### 卡片与容器
+- 背景：`#ffffff`
+- 边框：`1px solid #e5e5e5` 或阴影作为边框
+- 圆角：16px–24px
+- 阴影：多层叠加（内嵌 + 轮廓 + 抬升）
+- 内容：产品截图、代码示例、音频波形预览
 
-### Inputs & Forms
-- Textarea: padding 12px 20px, transparent text at default
-- Select: white background, standard styling
-- Radio: standard with tw-ring focus
-- Focus: `var(--tw-ring-offset-shadow)` ring system
+### 输入框与表单
+- 文本域：内边距 12px 20px，默认透明文字
+- 选择框：白色背景，标准样式
+- 单选框：标准样式，使用 tw-ring 焦点
+- 焦点：`var(--tw-ring-offset-shadow)` 环形系统
 
-### Navigation
-- Clean white sticky header
-- Inter 15px weight 500 for nav links
-- Pill CTAs right-aligned (black primary, white secondary)
-- Mobile: hamburger collapse at 1024px
+### 导航
+- 干净的白色粘性头部
+- Inter 15px 字重 500 用于导航链接
+- 药丸形 CTA 右对齐（黑色主要，白色次要）
+- 移动端：1024px 处折叠为汉堡菜单
 
-### Image Treatment
-- Product screenshots and audio waveform visualizations
-- Warm gradient backgrounds in feature sections
-- 20px–24px radius on image containers
-- Full-width sections alternating white and light gray
+### 图片处理
+- 产品截图和音频波形可视化
+- 特色区域使用暖色渐变背景
+- 图片容器圆角 20px–24px
+- 全宽区域交替使用白色和浅灰色
 
-### Distinctive Components
+### 独特组件
 
-**Audio Waveform Sections**
-- Colorful gradient backgrounds showcasing voice AI capabilities
-- Warm amber, blue, and green gradients behind product demos
-- Screenshots of the ElevenLabs product interface
+**音频波形区域**
+- 色彩丰富的渐变背景，展示语音 AI 能力
+- 暖琥珀色、蓝色和绿色渐变，用于产品演示
+- ElevenLabs 产品界面的截图
 
-**Warm Stone CTA Block**
-- `rgba(245,242,239,0.8)` background with warm shadow
-- Asymmetric padding (more right padding)
-- Creates a physical, tactile quality unique to ElevenLabs
+**暖石色 CTA 区块**
+- `rgba(245,242,239,0.8)` 背景，搭配暖色阴影
+- 不对称内边距（右侧更多）
+- 创造出 ElevenLabs 独有的、有物理质感的触觉效果
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 1px, 3px, 4px, 8px, 9px, 10px, 11px, 12px, 16px, 18px, 20px, 24px, 28px, 32px, 40px
+### 间距系统
+- 基准单位：8px
+- 刻度：1px, 3px, 4px, 8px, 9px, 10px, 11px, 12px, 16px, 18px, 20px, 24px, 28px, 32px, 40px
 
-### Grid & Container
-- Centered content with generous max-width
-- Single-column hero, expanding to feature grids
-- Full-width gradient sections for product showcases
-- White card grids on light gray backgrounds
+### 网格与容器
+- 内容居中，最大宽度充裕
+- 单栏英雄区，扩展为特色网格
+- 全宽渐变区域用于产品展示
+- 浅灰背景上的白色卡片网格
 
-### Whitespace Philosophy
-- **Apple-like generosity**: Massive vertical spacing between sections creates a premium, unhurried pace. Each section is an exhibit.
-- **Warm emptiness**: The whitespace isn't cold — the warm stone undertones and warm shadows give empty space a tactile, physical quality.
-- **Typography-led rhythm**: The light-weight Waldenburg headings create visual "whispers" that draw the eye through vast white space.
+### 留白哲学
+- **Apple 式的慷慨**：区域之间大量的垂直间距营造出高端的、从容的节奏。每个区域都是一个展品。
+- **温暖的空白**：留白并不冰冷——暖石色调底色和暖色阴影赋予空白空间一种可触摸的、有质感的效果。
+- **排版主导的节奏**：Light 字重的 Waldenburg 标题创造出视觉上的"耳语"，引导视线穿越广阔的白色空间。
 
-### Border Radius Scale
-- Minimal (2px): Small links, inline elements
-- Subtle (4px): Nav items, tab panels, tags
-- Standard (8px): Small containers
-- Comfortable (10px–12px): Medium cards, dropdowns
-- Card (16px): Standard cards, articles
-- Large (18px–20px): Featured cards, code panels
-- Section (24px): Large panels, section containers
-- Warm Button (30px): Warm stone CTA
-- Pill (9999px): Primary buttons, navigation pills
+### 圆角刻度
+- 微小（2px）：小链接、行内元素
+- 细微（4px）：导航项、标签面板、标签
+- 标准（8px）：小型容器
+- 舒适（10px–12px）：中型卡片、下拉菜单
+- 卡片（16px）：标准卡片、文章
+- 大型（18px–20px）：特色卡片、代码面板
+- 区域（24px）：大型面板、区域容器
+- 暖色按钮（30px）：暖石色 CTA
+- 药丸形（9999px）：主要按钮、导航药丸
 
-## 6. Depth & Elevation
+## 6. 层次与抬升
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Page background, text blocks |
-| Inset Edge (Level 0.5) | `rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset, #fff 0px 0px 0px 0px inset` | Internal border definition |
-| Outline Ring (Level 1) | `rgba(0,0,0,0.06) 0px 0px 0px 1px` + `rgba(0,0,0,0.04) 0px 1px 2px` + `rgba(0,0,0,0.04) 0px 2px 4px` | Shadow-as-border for cards |
-| Card (Level 2) | `rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px` | Button elevation, prominent cards |
-| Warm Lift (Level 3) | `rgba(78,50,23,0.04) 0px 6px 16px` | Featured CTAs — warm-tinted |
-| Focus (Accessibility) | `var(--tw-ring-offset-shadow)` blue ring | Keyboard focus |
+| 级别 | 处理方式 | 用途 |
+|------|----------|------|
+| 平面（级别 0） | 无阴影 | 页面背景、文本块 |
+| 内嵌边缘（级别 0.5） | `rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset, #fff 0px 0px 0px 0px inset` | 内部边框定义 |
+| 轮廓环（级别 1） | `rgba(0,0,0,0.06) 0px 0px 0px 1px` + `rgba(0,0,0,0.04) 0px 1px 2px` + `rgba(0,0,0,0.04) 0px 2px 4px` | 卡片的阴影作为边框 |
+| 卡片（级别 2） | `rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px` | 按钮抬升、醒目卡片 |
+| 暖色抬升（级别 3） | `rgba(78,50,23,0.04) 0px 6px 16px` | 重点 CTA——暖色调 |
+| 焦点（无障碍） | `var(--tw-ring-offset-shadow)` 蓝色环 | 键盘焦点 |
 
-**Shadow Philosophy**: ElevenLabs uses the most refined shadow system of any design system analyzed. Every shadow is at sub-0.1 opacity, many include both outward cast AND inward inset components, and the warm CTA shadows use an actual warm color (`rgba(78,50,23,...)`) rather than neutral black. The inset half-pixel borders (`0px 0px 0px 0.5px inset`) create edges so subtle they're felt rather than seen — surfaces define themselves through the lightest possible touch.
+**阴影哲学**：ElevenLabs 使用了所有已分析设计系统中最精细的阴影系统。每个阴影都低于 0.1 透明度，许多同时包含向外投射和向内嵌入两部分，而暖色 CTA 阴影使用了实际的暖色（`rgba(78,50,23,...)`）而非中性黑色。内嵌半像素边框（`0px 0px 0px 0.5px inset`）创造出微妙到几乎只能被感知而非被看到的边缘——表面通过最轻微的触感来定义自身。
 
-## 7. Do's and Don'ts
+## 7. 宜与忌
 
-### Do
-- Use Waldenburg weight 300 for all display headings — the lightness IS the brand
-- Apply multi-layer shadows (inset + outline + elevation) at sub-0.1 opacity
-- Use warm stone tints (`#f5f2ef`, `rgba(245,242,239,0.8)`) for featured elements
-- Apply positive letter-spacing (+0.14px to +0.18px) on Inter body text
-- Use 9999px radius for primary buttons — pill shape is standard
-- Use warm-tinted shadows (`rgba(78,50,23,0.04)`) on featured CTAs
-- Keep the page predominantly white with subtle gray section differentiation
-- Use WaldenburgFH bold uppercase ONLY for specific CTA button labels
+### 宜
+- 所有展示标题使用 Waldenburg 300 字重——轻盈感即是品牌
+- 应用低于 0.1 透明度的多层阴影（内嵌 + 轮廓 + 抬升）
+- 使用暖石色调（`#f5f2ef`、`rgba(245,242,239,0.8)`）用于重点元素
+- 在 Inter 正文中应用正字间距（+0.14px 到 +0.18px）
+- 主要按钮使用 9999px 圆角——药丸形是标准
+- 重点 CTA 使用暖色调阴影（`rgba(78,50,23,0.04)`）
+- 页面以白色为主，配合微妙的灰色区域区分
+- WaldenburgFH 粗体大写仅用于特定的 CTA 按钮标签
 
-### Don't
-- Don't use bold (700) Waldenburg for headings — weight 300 is non-negotiable
-- Don't use heavy shadows (>0.1 opacity) — the ethereal quality requires whisper-level depth
-- Don't use cool gray borders — the system is warm-tinted throughout
-- Don't skip the inset shadow component — half-pixel inset borders define edges
-- Don't apply negative letter-spacing to body text — Inter uses positive tracking
-- Don't use sharp corners (<8px) on cards — the generous radius is structural
-- Don't introduce brand colors — the palette is intentionally achromatic with warm undertones
-- Don't make buttons opaque and heavy — the warm translucent stone treatment is the signature
+### 忌
+- 不要使用粗体（700）Waldenburg 用于标题——300 字重不可协商
+- 不要使用重阴影（>0.1 透明度）——空灵品质需要耳语级别的深度
+- 不要使用冷灰色边框——整个系统都带有暖色调
+- 不要跳过内嵌阴影部分——半像素内嵌边框定义了边缘
+- 不要对正文使用负字间距——Inter 使用正字距
+- 不要在卡片上使用尖锐圆角（<8px）——大圆角是结构性的
+- 不要引入品牌色——色板刻意为无彩色配以暖色调底色
+- 不要让按钮不透明且沉重——暖半透明石色处理才是标志性手法
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <1024px | Single column, hamburger nav, stacked sections |
-| Desktop | >1024px | Full layout, horizontal nav, multi-column grids |
+### 断点
+| 名称 | 宽度 | 关键变化 |
+|------|------|----------|
+| 移动端 | <1024px | 单栏、汉堡导航、堆叠区域 |
+| 桌面端 | >1024px | 完整布局、水平导航、多栏网格 |
 
-### Touch Targets
-- Pill buttons with generous padding (12px–20px)
-- Navigation links at 15px with adequate spacing
-- Select dropdowns maintain comfortable sizing
+### 触控目标
+- 药丸按钮搭配充裕内边距（12px–20px）
+- 导航链接 15px，间距适当
+- 下拉选择框保持舒适的尺寸
 
-### Collapsing Strategy
-- Navigation: horizontal → hamburger at 1024px
-- Feature grids: multi-column → stacked
-- Hero: maintains centered layout, font scales proportionally
-- Gradient sections: full-width maintained, content stacks
-- Spacing compresses proportionally
+### 折叠策略
+- 导航：水平排列 → 1024px 处折叠为汉堡菜单
+- 特色网格：多栏 → 堆叠
+- 英雄区：保持居中布局，字体等比缩放
+- 渐变区域：保持全宽，内容堆叠
+- 间距等比压缩
 
-### Image Behavior
-- Product screenshots scale responsively
-- Gradient backgrounds simplify on mobile
-- Audio waveform previews maintain aspect ratio
-- Rounded corners maintained across breakpoints
+### 图片行为
+- 产品截图响应式缩放
+- 渐变背景在移动端简化
+- 音频波形预览保持宽高比
+- 圆角在各断点间保持一致
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示词指南
 
-### Quick Color Reference
-- Background: Pure White (`#ffffff`) or Light Gray (`#f5f5f5`)
-- Text: Black (`#000000`)
-- Secondary text: Dark Gray (`#4e4e4e`)
-- Muted text: Warm Gray (`#777169`)
-- Warm surface: Warm Stone (`rgba(245, 242, 239, 0.8)`)
-- Border: `#e5e5e5` or `rgba(0,0,0,0.05)`
+### 快速色彩参考
+- 背景：纯白（`#ffffff`）或浅灰（`#f5f5f5`）
+- 文字：黑色（`#000000`）
+- 次要文字：深灰（`#4e4e4e`）
+- 弱化文字：暖灰（`#777169`）
+- 暖色表面：暖石色（`rgba(245, 242, 239, 0.8)`）
+- 边框：`#e5e5e5` 或 `rgba(0,0,0,0.05)`
 
-### Example Component Prompts
-- "Create a hero on white background. Headline at 48px Waldenburg weight 300, line-height 1.08, letter-spacing -0.96px, black text. Subtitle at 18px Inter weight 400, line-height 1.60, letter-spacing 0.18px, #4e4e4e text. Two pill buttons: black (9999px, 0px 14px padding) and warm stone (rgba(245,242,239,0.8), 30px radius, 12px 20px padding, warm shadow rgba(78,50,23,0.04) 0px 6px 16px)."
-- "Design a card: white background, 20px radius. Shadow: rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px. Title at 32px Waldenburg weight 300, body at 16px Inter weight 400 letter-spacing 0.16px, #4e4e4e."
-- "Build a white pill button: white bg, 9999px radius. Shadow: rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px. Text at 15px Inter weight 500."
-- "Create an uppercase CTA label: 14px WaldenburgFH weight 700, text-transform uppercase, letter-spacing 0.7px."
-- "Design navigation: white sticky header. Inter 15px weight 500. Black pill CTA right-aligned. Border-bottom: rgba(0,0,0,0.05)."
+### 组件提示词示例
+- "在白色背景上创建一个英雄区。标题使用 48px Waldenburg 字重 300，行高 1.08，字间距 -0.96px，黑色文字。副标题使用 18px Inter 字重 400，行高 1.60，字间距 0.18px，#4e4e4e 文字。两个药丸按钮：黑色（9999px，内边距 0px 14px）和暖石色（rgba(245,242,239,0.8)，圆角 30px，内边距 12px 20px，暖色阴影 rgba(78,50,23,0.04) 0px 6px 16px）。"
+- "设计一张卡片：白色背景，圆角 20px。阴影：rgba(0,0,0,0.06) 0px 0px 0px 1px, rgba(0,0,0,0.04) 0px 1px 2px, rgba(0,0,0,0.04) 0px 2px 4px。标题使用 32px Waldenburg 字重 300，正文使用 16px Inter 字重 400 字间距 0.16px，#4e4e4e。"
+- "构建一个白色药丸按钮：白色背景，圆角 9999px。阴影：rgba(0,0,0,0.4) 0px 0px 1px, rgba(0,0,0,0.04) 0px 4px 4px。文字使用 15px Inter 字重 500。"
+- "创建一个大写 CTA 标签：14px WaldenburgFH 字重 700，text-transform uppercase，字间距 0.7px。"
+- "设计导航：白色粘性头部。Inter 15px 字重 500。黑色药丸 CTA 右对齐。底部边框：rgba(0,0,0,0.05)。"
 
-### Iteration Guide
-1. Start with white — the warm undertone comes from shadows and stone surfaces, not backgrounds
-2. Waldenburg 300 for headings — never bold, the lightness is the identity
-3. Multi-layer shadows: always include inset + outline + elevation at sub-0.1 opacity
-4. Positive letter-spacing on Inter body (+0.14px to +0.18px) — the airy reading quality
-5. Warm stone CTA is the signature — `rgba(245,242,239,0.8)` with `rgba(78,50,23,0.04)` shadow
-6. Pill (9999px) for buttons, generous radius (16px–24px) for cards
+### 迭代指南
+1. 从白色开始——暖色调底色来自阴影和石色表面，而非背景
+2. 标题使用 Waldenburg 300——永远不要用粗体，轻盈感即是身份
+3. 多层阴影：始终包含低于 0.1 透明度的内嵌 + 轮廓 + 抬升
+4. Inter 正文使用正字间距（+0.14px 到 +0.18px）——通透的阅读品质
+5. 暖石色 CTA 是标志——`rgba(245,242,239,0.8)` 搭配 `rgba(78,50,23,0.04)` 阴影
+6. 按钮使用药丸形（9999px），卡片使用大圆角（16px–24px）

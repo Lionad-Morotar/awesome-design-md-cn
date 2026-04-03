@@ -1,253 +1,253 @@
-# Design System: Warp
+# 设计系统：Warp
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-Warp's website feels like sitting at a campfire in a deep forest — warm, dark, and alive with quiet confidence. Unlike the cold, blue-tinted blacks favored by most developer tools, Warp wraps everything in a warm near-black that feels like charred wood or dark earth. The text isn't pure white either — it's Warm Parchment (`#faf9f6`), a barely-perceptible cream that softens every headline and makes the dark canvas feel inviting rather than austere.
+Warp 的网站给人一种坐在深邃森林中营火旁的感觉——温暖、黑暗，并带着静谧的自信而充满生机。与大多数开发者工具偏爱的冷色调蓝色黑色不同，Warp 将所有内容包裹在温暖的近黑色中，感觉像烧焦的木头或深色的土壤。文本也不是纯白色——而是温暖羊皮纸色（`#faf9f6`），一种几乎难以察觉的奶油色，柔化了每个标题，让深色画布感觉宜人而非严峻。
 
-The typography is the secret weapon: Matter, a geometric sans-serif with distinctive character, deployed at Regular weight across virtually all text. The font choice is unusual for a developer tool — Matter has a softness and humanity that signals "this terminal is for everyone, not just greybeards." Combined with tight line-heights and controlled negative letter-spacing on headlines, the effect is refined and approachable simultaneously. Nature photography is woven between terminal screenshots, creating a visual language that says: this tool brings you closer to flow, to calm productivity.
+排版是秘密武器：Matter，一种具有独特个性的几何无衬线字体，几乎所有文本都使用 Regular 字重。对于开发者工具来说，这种字体选择不同寻常——Matter 具有柔和性和人性化，传达出"这款终端适合所有人，而不仅仅是老派开发者"的信号。结合紧密的行高和标题上受控的负字间距，效果同时精致且易于亲近。自然摄影与终端截图交织在一起，创造了一种视觉语言，传达出：这款工具让你更接近心流，更接近冷静的生产力。
 
-The overall design philosophy is restraint through warmth. Minimal color (almost monochromatic warm grays), minimal ornamentation, and a focus on product showcases set against cinematic dark landscapes. It's a terminal company that markets like a lifestyle brand.
+整体设计理念是通过温暖来实现克制。极简的色彩（几乎是单色的暖灰色），极简的装饰，以及以电影般的黑暗景观为背景的产品展示。这是一家终端公司，却以生活方式品牌的姿态进行营销。
 
-**Key Characteristics:**
-- Warm dark background — not cold black, but earthy near-black with warm gray undertones
-- Warm Parchment (`#faf9f6`) text instead of pure white — subtle cream warmth
-- Matter font family (Regular weight) — geometric but approachable, not the typical developer-tool typeface
-- Nature photography interleaved with product screenshots — lifestyle meets developer tool
-- Almost monochromatic warm gray palette — no bold accent colors
-- Uppercase labels with wide letter-spacing (2.4px) for categorization — editorial signaling
-- Pill-shaped dark buttons (`#353534`, 50px radius) — restrained, muted CTAs
+**关键特征：**
+- 温暖深色背景——不是冷黑色，而是带有暖灰色调的泥土近黑色
+- 温暖羊皮纸色（`#faf9f6`）文本而非纯白色——细微的奶油温暖感
+- Matter 字体系列（Regular 字重）——几何但亲和，不是典型的开发者工具字体
+- 自然摄影与产品截图交织——生活方式与开发者工具的结合
+- 几乎单色的暖灰色调——没有大胆强调色
+- 大写字母标签配合宽松字间距（2.4px）用于分类——编辑风格信号
+- 胶囊形深色按钮（`#353534`，50px 半径）——克制、柔和的 CTA
 
-## 2. Color Palette & Roles
+## 2. 色彩调板与角色
 
-### Primary
-- **Warm Parchment** (`#faf9f6`): Primary text color — a barely-cream off-white that softens every surface
-- **Earth Gray** (`#353534`): Button backgrounds, dark interactive surfaces — warm, not cold
-- **Deep Void** (near-black, page background): The warm dark canvas derived from the body background
+### 主色
+- **温暖羊皮纸色**（`#faf9f6`）：主文本颜色——几乎呈奶油色的灰白色，柔化每个表面
+- **土灰色**（`#353534`）：按钮背景、深色交互表面——温暖，不冷
+- **深渊黑**（近黑色，页面背景）：从主体背景衍生的温暖深色画布
 
-### Secondary & Accent
-- **Stone Gray** (`#868584`): Secondary text, muted descriptions — warm mid-gray
-- **Ash Gray** (`#afaeac`): Body text, button text — the workhorse reading color
-- **Purple-Tint Gray** (`#666469`): Link text with subtle purple undertone — underlined links in content
+### 辅助色与强调色
+- **石灰色**（`#868584`）：辅助文本、柔和描述——暖中灰色
+- **灰白色**（`#afaeac`）：正文文本、按钮文本——主力阅读颜色
+- **紫调灰色**（`#666469`）：带有微妙紫色底色的链接文本——内容中带下划线的链接
 
-### Surface & Background
-- **Frosted Veil** (`rgba(255, 255, 255, 0.04)`): Ultra-subtle white overlay for surface differentiation
-- **Mist Border** (`rgba(226, 226, 226, 0.35)` / `rgba(227, 227, 227, 0.337)`): Semi-transparent borders for card containment
-- **Translucent Parchment** (`rgba(250, 249, 246, 0.9)`): Slightly transparent primary surface, allowing depth
+### 表面与背景
+- **磨砂面纱**（`rgba(255, 255, 255, 0.04)`）：超微妙的白色覆盖层用于表面区分
+- **薄雾边框**（`rgba(226, 226, 226, 0.35)` / `rgba(227, 227, 227, 0.337)`）：用于卡片容器的半透明边框
+- **半透明羊皮纸色**（`rgba(250, 249, 246, 0.9)`）：略微透明的主表面，允许深度
 
-### Neutrals & Text
-- **Warm Parchment** (`#faf9f6`): Headlines, high-emphasis text
-- **Ash Gray** (`#afaeac`): Body paragraphs, descriptions
-- **Stone Gray** (`#868584`): Secondary labels, subdued information
-- **Muted Purple** (`#666469`): Underlined links, tertiary content
-- **Dark Charcoal** (`#454545` / `#353534`): Borders, button backgrounds
+### 中性色与文本
+- **温暖羊皮纸色**（`#faf9f6`）：标题、高强调文本
+- **灰白色**（`#afaeac`）：正文段落、描述
+- **石灰色**（`#868584`）：辅助标签、低调信息
+- **柔和紫色**（`#666469`）：带下划线的链接、三级内容
+- **深木炭色**（`#454545` / `#353534`）：边框、按钮背景
 
-### Semantic & Accent
-- Warp operates as an almost monochromatic system — no bold accent colors
-- Interactive states are communicated through opacity changes and underline decorations rather than color shifts
-- Any accent color would break the warm, restrained palette
+### 语义与强调色
+- Warp 作为一个几乎单色的系统运行——没有大胆的强调色
+- 交互状态通过透明度变化和下划线装饰来传达，而非颜色变化
+- 任何强调色都会破坏温暖、克制的调色板
 
-### Gradient System
-- No explicit gradients on the marketing site
-- Depth is created through layered semi-transparent surfaces and photography rather than color gradients
+### 渐变系统
+- 营销网站上没有明确的渐变
+- 深度通过分层半透明表面和摄影来创造，而非颜色渐变
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
-- **Display & Body**: `Matter Regular` — geometric sans-serif with soft character. Fallbacks: `Matter Regular Placeholder`, system sans-serif
-- **Medium**: `Matter Medium` — weight 500 variant for emphasis. Fallbacks: `Matter Medium Placeholder`
-- **Square**: `Matter SQ Regular` — squared variant for select display contexts. Fallbacks: `Matter SQ Regular Placeholder`
-- **UI Supplement**: `Inter` — used for specific UI elements. Fallbacks: `Inter Placeholder`
-- **Monospace Display**: `Geist Mono` — for code/terminal display headings
-- **Monospace Body**: `Matter Mono Regular` — custom mono companion. Fallbacks: `Matter Mono Regular Placeholder`
+### 字体系列
+- **展示与正文**：`Matter Regular`——具有柔和个性的几何无衬线字体。回退：`Matter Regular Placeholder`、系统无衬线字体
+- **中等**：`Matter Medium`——500 字重变体用于强调。回退：`Matter Medium Placeholder`
+- **方形**：`Matter SQ Regular`——用于选定展示场景的方形变体。回退：`Matter SQ Regular Placeholder`
+- **UI 补充**：`Inter`——用于特定 UI 元素。回退：`Inter Placeholder`
+- **等宽展示**：`Geist Mono`——用于代码/终端展示标题
+- **等宽正文**：`Matter Mono Regular`——自定义等宽伴侣字体。回退：`Matter Mono Regular Placeholder`
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 字体 | 字号 | 字重 | 行高 | 字间距 | 备注 |
 |------|------|------|--------|-------------|----------------|-------|
-| Display Hero | Matter Regular | 80px | 400 | 1.00 | -2.4px | Maximum compression, hero impact |
-| Section Display | Matter Regular | 56px | 400 | 1.20 | -0.56px | Feature section headings |
-| Section Heading | Matter Regular | 48px | 400 | 1.20 | -0.48px to -0.96px | Alternate heading weight |
-| Feature Heading | Matter Regular | 40px | 400 | 1.10 | -0.4px | Feature block titles |
-| Sub-heading Large | Matter Regular | 36px | 400 | 1.15 | -0.72px | Sub-section headers |
-| Card Display | Matter SQ Regular | 42px | 400 | 1.00 | 0px | Squared variant for special display |
-| Sub-heading | Matter Regular | 32px | 400 | 1.19 | 0px | Content sub-headings |
-| Body Heading | Matter Regular | 24px | 400 | 1.20 | -0.72px to 0px | Bold content intros |
-| Card Title | Matter Medium | 22px | 500 | 1.14 | 0px | Emphasized card headers |
-| Body Large | Matter Regular | 20px | 400 | 1.40 | -0.2px | Primary body text, relaxed |
-| Body | Matter Regular | 18px | 400 | 1.30 | -0.18px | Standard body paragraphs |
-| Nav/UI | Matter Regular | 16px | 400 | 1.20 | 0px | Navigation links, UI text |
-| Button Text | Matter Medium | 16px | 500 | 1.20 | 0px | Button labels |
-| Caption | Matter Regular | 14px | 400 | 1.00 | 1.4px | Uppercase labels (transform: uppercase) |
-| Small Label | Matter Regular | 12px | 400 | 1.35 | 2.4px | Uppercase micro-labels (transform: uppercase) |
-| Micro | Matter Regular | 11px | 400 | 1.20 | 0px | Smallest text elements |
-| Code UI | Geist Mono | 16px | 400 | 1.00 | 0px | Terminal/code display |
-| Code Body | Matter Mono Regular | 16px | 400 | 1.00 | -0.2px | Code content |
-| UI Supplement | Inter | 16px | 500 | 1.00 | -0.2px | Specific UI elements |
+| 展示英雄区 | Matter Regular | 80px | 400 | 1.00 | -2.4px | 最大压缩，英雄区冲击力 |
+| 区块展示 | Matter Regular | 56px | 400 | 1.20 | -0.56px | 功能区块标题 |
+| 区块标题 | Matter Regular | 48px | 400 | 1.20 | -0.48px 至 -0.96px | 替代标题字重 |
+| 功能标题 | Matter Regular | 40px | 400 | 1.10 | -0.4px | 功能区块标题 |
+| 副标题大 | Matter Regular | 36px | 400 | 1.15 | -0.72px | 子区块标题 |
+| 卡片展示 | Matter SQ Regular | 42px | 400 | 1.00 | 0px | 特殊展示的方形变体 |
+| 副标题 | Matter Regular | 32px | 400 | 1.19 | 0px | 内容副标题 |
+| 正文标题 | Matter Regular | 24px | 400 | 1.20 | -0.72px 至 0px | 粗体内容介绍 |
+| 卡片标题 | Matter Medium | 22px | 500 | 1.14 | 0px | 强调卡片标题 |
+| 正文大 | Matter Regular | 20px | 400 | 1.40 | -0.2px | 主正文文本，宽松 |
+| 正文 | Matter Regular | 18px | 400 | 1.30 | -0.18px | 标准正文段落 |
+| 导航/UI | Matter Regular | 16px | 400 | 1.20 | 0px | 导航链接、UI 文本 |
+| 按钮文本 | Matter Medium | 16px | 500 | 1.20 | 0px | 按钮标签 |
+| 说明文字 | Matter Regular | 14px | 400 | 1.00 | 1.4px | 大写字母标签（transform: uppercase） |
+| 小标签 | Matter Regular | 12px | 400 | 1.35 | 2.4px | 大写微标签（transform: uppercase） |
+| 微型 | Matter Regular | 11px | 400 | 1.20 | 0px | 最小文本元素 |
+| 代码 UI | Geist Mono | 16px | 400 | 1.00 | 0px | 终端/代码展示 |
+| 代码正文 | Matter Mono Regular | 16px | 400 | 1.00 | -0.2px | 代码内容 |
+| UI 补充 | Inter | 16px | 500 | 1.00 | -0.2px | 特定 UI 元素 |
 
-### Principles
-- **Regular weight dominance**: Nearly all text uses weight 400 (Regular) — even headlines. Matter Medium (500) appears only for emphasis moments like card titles and buttons. This creates a remarkably even, calm typographic texture
-- **Uppercase as editorial signal**: Small labels and categories use uppercase transform with wide letter-spacing (1.4px–2.4px), creating a magazine-editorial categorization system
-- **Warm legibility**: The combination of Matter's geometric softness + warm text colors (#faf9f6) + controlled negative tracking creates text that reads as effortlessly human on dark surfaces
-- **No bold display**: Zero use of bold (700+) weight anywhere — restraint is the philosophy
+### 原则
+- **Regular 字重主导**：几乎所有文本都使用 400 字重（Regular）——即使是标题。Matter Medium（500）仅用于强调时刻，如卡片标题和按钮。这创造了异常均匀、平静的排版纹理
+- **大写作为编辑信号**：小标签和分类使用大写转换配合宽松字间距（1.4px–2.4px），创造杂志编辑风格的分类系统
+- **温暖可读性**：Matter 的几何柔和性 + 温暖文本颜色（#faf9f6）+ 受控的负字间距的组合，创造出在深色表面上毫不费力地人性化的阅读体验
+- **无粗体展示**：任何地方都未使用粗体（700+）字重——克制是核心理念
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
-- **Dark Pill**: `#353534` background, Ash Gray (`#afaeac`) text, pill shape (50px radius), `10px` padding. The primary CTA — warm, muted, understated
-- **Frosted Tag**: `rgba(255, 255, 255, 0.16)` background, black text (`rgb(0, 0, 0)`), rectangular (6px radius), `1px 6px` padding. Small inline tag-like buttons
-- **Ghost**: No visible background, text-only with underline decoration on hover
-- **Hover**: Subtle opacity or brightness shift — no dramatic color changes
+### 按钮
+- **深色胶囊**：`#353534` 背景，灰白色（`#afaeac`）文本，胶囊形状（50px 半径），`10px` 内边距。主 CTA——温暖、柔和、低调
+- **磨砂标签**：`rgba(255, 255, 255, 0.16)` 背景，黑色文本（`rgb(0, 0, 0)`），矩形（6px 半径），`1px 6px` 内边距。小型内联标签状按钮
+- **幽灵**：无可见背景，纯文本，悬停时带下划线装饰
+- **悬停**：微妙的透明度或亮度变化——无戏剧性的颜色变化
 
-### Cards & Containers
-- **Photography Cards**: Full-bleed nature imagery with overlay text, 8px–12px border-radius
-- **Terminal Screenshot Cards**: Product UI embedded in dark containers with rounded corners (8px–12px)
-- **Bordered Cards**: Semi-transparent border (`rgba(226, 226, 226, 0.35)`) for containment, 12px–14px radius
-- **Hover**: Minimal — content cards don't dramatically change on hover, maintaining the calm aesthetic
+### 卡片与容器
+- **摄影卡片**：满出血自然图像配合覆盖文本，8px–12px 圆角
+- **终端截图卡片**：产品 UI 嵌入带圆角（8px–12px）的深色容器中
+- **边框卡片**：半透明边框（`rgba(226, 226, 226, 0.35)`）用于容器，12px–14px 半径
+- **悬停**：极简——内容卡片在悬停时不会发生明显变化，保持平静美学
 
-### Inputs & Forms
-- Minimal form presence on the marketing site
-- Dark background inputs with warm gray text
-- Focus: Border brightness increase, no colored rings (consistent with the monochromatic palette)
+### 输入与表单
+- 营销网站上极简的表单存在感
+- 深色背景输入配合暖灰色文本
+- 聚焦：边框亮度增加，无彩色光环（与单色调色板一致）
 
-### Navigation
-- **Top nav**: Dark background, warm parchment brand text, Matter Regular at 16px for links
-- **Link color**: Stone Gray (`#868584`) for muted nav, Warm Parchment for active/hover
-- **CTA button**: Dark pill (#353534) at nav end — restrained, not attention-grabbing
-- **Mobile**: Collapses to simplified navigation
-- **Sticky**: Nav stays fixed on scroll
+### 导航
+- **顶部导航**：深色背景，温暖羊皮纸色品牌文本，链接使用 Matter Regular 16px
+- **链接颜色**：石灰色（`#868584`）用于柔和导航，温暖羊皮纸色用于激活/悬停
+- **CTA 按钮**：导航末端的深色胶囊（#353534）——克制，不引人注目
+- **移动端**：折叠为简化导航
+- **粘性**：导航在滚动时保持固定
 
-### Image Treatment
-- **Nature photography**: Landscapes, forests, golden-hour scenes — completely unique for a developer tool
-- **Terminal screenshots**: Product UI shown in realistic terminal window frames
-- **Mixed composition**: Nature images and terminal screenshots are interleaved, creating a lifestyle-meets-tool narrative
-- **Full-bleed**: Images often span full container width with 8px radius
-- **Video**: Video elements present with 10px border-radius
+### 图像处理
+- **自然摄影**：景观、森林、黄金时刻场景——对于开发者工具来说完全独特
+- **终端截图**：产品 UI 显示在逼真的终端窗口框架中
+- **混合构图**：自然图像和终端截图交织，创造生活方式与工具结合的叙事
+- **满出血**：图像通常跨越完整容器宽度，带 8px 半径
+- **视频**：视频元素带 10px 圆角
 
-### Testimonial Section
-- Social proof area ("Don't take our word for it") with quotes
-- Muted styling consistent with overall restraint
+### 推荐区块
+- 社交证明区域（"Don't take our word for it"）带引用
+- 柔和样式与整体克制保持一致
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- **Base unit**: 8px
-- **Scale**: 1px, 4px, 5px, 8px, 10px, 12px, 14px, 15px, 16px, 18px, 24px, 26px, 30px, 32px, 36px
-- **Section padding**: 80px–120px vertical between major sections
-- **Card padding**: 16px–32px internal spacing
-- **Component gaps**: 8px–16px between related elements
+### 间距系统
+- **基础单位**：8px
+- **尺度**：1px, 4px, 5px, 8px, 10px, 12px, 14px, 15px, 16px, 18px, 24px, 26px, 30px, 32px, 36px
+- **区块内边距**：主要区块之间垂直 80px–120px
+- **卡片内边距**：内部间距 16px–32px
+- **组件间距**：相关元素之间 8px–16px
 
-### Grid & Container
-- **Max width**: ~1500px container (breakpoint at 1500px), centered
-- **Column patterns**: Full-width hero, 2-column feature sections with photography, single-column testimonials
-- **Cinematic layout**: Wide containers that let photography breathe
+### 网格与容器
+- **最大宽度**：约 1500px 容器（断点在 1500px），居中
+- **列模式**：全宽英雄区、带摄影的 2 列功能区块、单列推荐
+- **电影般布局**：宽容器让摄影自由呼吸
 
-### Whitespace Philosophy
-- **Vast and warm**: Generous spacing between sections — the dark background creates a warm void that feels contemplative rather than empty
-- **Photography as whitespace**: Nature images serve as visual breathing room between dense product information
-- **Editorial pacing**: The layout reads like a magazine — each section is a deliberate page-turn moment
+### 留白理念
+- **广阔而温暖**：区块之间 generous 的间距——深色背景创造温暖的虚空，感觉是沉思而非空虚
+- **摄影作为留白**：自然图像作为密集产品信息之间的视觉呼吸空间
+- **编辑节奏**：布局读起来像杂志——每个区块都是刻意的翻页时刻
 
-### Border Radius Scale
-- **4px**: Small interactive elements — buttons, tags
-- **5px–6px**: Standard components — links, small containers
-- **8px**: Images, video containers, standard cards
-- **10px**: Video elements, medium containers
-- **12px**: Feature cards, large images
-- **14px**: Large containers, prominent cards
-- **40px**: Large rounded sections
-- **50px**: Pill buttons — primary CTAs
-- **200px**: Progress bars — full pill shape
+### 圆角尺度
+- **4px**：小型交互元素——按钮、标签
+- **5px–6px**：标准组件——链接、小型容器
+- **8px**：图像、视频容器、标准卡片
+- **10px**：视频元素、中等容器
+- **12px**：功能卡片、大图像
+- **14px**：大容器、突出卡片
+- **40px**：大型圆角区块
+- **50px**：胶囊按钮——主 CTA
+- **200px**：进度条——完整胶囊形状
 
-## 6. Depth & Elevation
+## 6. 深度与层次
 
-| Level | Treatment | Use |
+| 级别 | 处理 | 用途 |
 |-------|-----------|-----|
-| Level 0 (Flat) | No shadow, dark background | Page canvas, most surfaces |
-| Level 1 (Veil) | `rgba(255, 255, 255, 0.04)` overlay | Subtle surface differentiation |
-| Level 2 (Border) | `rgba(226, 226, 226, 0.35) 1px` border | Card containment, section separation |
-| Level 3 (Ambient) | `rgba(0, 0, 0, 0.2) 0px 5px 15px` (inferred from design) | Image containers, floating elements |
+| Level 0（平面） | 无阴影，深色背景 | 页面画布、大多数表面 |
+| Level 1（面纱） | `rgba(255, 255, 255, 0.04)` 覆盖层 | 微妙的表面区分 |
+| Level 2（边框） | `rgba(226, 226, 226, 0.35) 1px` 边框 | 卡片容器、区块分隔 |
+| Level 3（环境） | `rgba(0, 0, 0, 0.2) 0px 5px 15px`（从设计推断） | 图像容器、浮动元素 |
 
-### Shadow Philosophy
-Warp's elevation system is remarkably flat — almost zero shadow usage on the marketing site. Depth is communicated through:
-- **Semi-transparent borders** instead of shadows — borders at 35% opacity create a ghostly containment
-- **Photography layering** — images create natural depth without artificial shadows
-- **Surface opacity shifts** — `rgba(255, 255, 255, 0.04)` overlays create barely-perceptible layer differences
-- The effect is calm and grounded — nothing floats, everything rests
+### 阴影理念
+Warp 的层次系统异常扁平——营销网站上几乎零阴影使用。深度通过以下方式传达：
+- **半透明边框**而非阴影——35% 透明度的边框创造幽灵般的容器
+- **摄影分层**——图像创造自然深度，无需人工阴影
+- **表面透明度变化**——`rgba(255, 255, 255, 0.04)` 覆盖层创造几乎难以察觉的层次差异
+- 效果平静而稳固——没有漂浮，一切静止
 
-### Decorative Depth
-- **Photography as depth**: Nature images create atmospheric depth that shadows cannot
-- **No glass or blur effects**: The design avoids trendy glassmorphism entirely
-- **Warm ambient**: Any glow comes from the photography's natural lighting, not artificial CSS
+### 装饰深度
+- **摄影作为深度**：自然图像创造氛围深度，这是阴影无法做到的
+- **无玻璃或模糊效果**：设计完全避免流行的玻璃拟态
+- **温暖环境**：任何光晕都来自摄影的自然光照，而非人工 CSS
 
-## 7. Do's and Don'ts
+## 7. 原则与禁忌
 
-### Do
-- Use warm off-white (`#faf9f6`) for text instead of pure white — the cream undertone is essential
-- Keep buttons restrained and muted — dark fill (#353534) with muted text (#afaeac), no bright CTAs
-- Apply Matter Regular (weight 400) for nearly everything — even headlines. Reserve Medium (500) for emphasis only
-- Use uppercase labels with wide letter-spacing (1.4px–2.4px) for categorization
-- Interleave nature photography with product screenshots — this is core to the brand identity
-- Maintain the almost monochromatic warm gray palette — no bold accent colors
-- Use semi-transparent borders (`rgba(226, 226, 226, 0.35)`) for card containment instead of shadows
-- Keep negative letter-spacing on headlines (-0.4px to -2.4px) for Matter's compressed display treatment
+### 原则
+- 使用温暖灰白色（`#faf9f6`）作为文本而非纯白色——奶油底色至关重要
+- 保持按钮克制柔和——深色填充（#353534）配合柔和文本（#afaeac），无明亮 CTA
+- 几乎所有内容都使用 Matter Regular（400 字重）——即使是标题。仅将 Medium（500）保留用于强调
+- 使用大写字母标签配合宽松字间距（1.4px–2.4px）用于分类
+- 将自然摄影与产品截图交织——这是品牌身份的核心
+- 保持几乎单色的暖灰色调——无大胆强调色
+- 使用半透明边框（`rgba(226, 226, 226, 0.35)`）进行卡片容器而非阴影
+- 在标题上保持负字间距（-0.4px 至 -2.4px）用于 Matter 的压缩展示处理
 
-### Don't
-- Use pure white (#ffffff) for text — it's always warm parchment (#faf9f6)
-- Add bold accent colors (blue, red, green) — the system is deliberately monochromatic warm grays
-- Apply bold weight (700+) to any text — Warp never goes above Medium (500)
-- Use heavy drop shadows — depth comes from borders, photography, and opacity shifts
-- Create cold or blue-tinted dark backgrounds — the warmth is essential
-- Add decorative gradients or glow effects — the photography provides all visual interest
-- Use tight, compressed layouts — the editorial spacing is generous and contemplative
-- Mix in additional typefaces beyond the Matter family + Inter supplement
+### 禁忌
+- 不要使用纯白色（#ffffff）作为文本——始终是温暖羊皮纸色（#faf9f6）
+- 不要添加大胆强调色（蓝色、红色、绿色）——系统刻意是单色暖灰色
+- 不要对任何文本应用粗体字重（700+）——Warp 从不超过 Medium（500）
+- 不要使用厚重的投影——深度来自边框、摄影和透明度变化
+- 不要创造冷色或蓝色调的深色背景——温暖至关重要
+- 不要添加装饰性渐变或发光效果——摄影提供所有视觉趣味
+- 不要使用紧凑、压缩的布局——编辑间距是 generous 且沉思的
+- 不要混入 Matter 字体系列 + Inter 补充之外的其他字体
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
+### 断点
+| 名称 | 宽度 | 关键变化 |
 |------|-------|-------------|
-| Mobile | <810px | Single column, stacked sections, hero text reduces to ~48px, hamburger nav |
-| Tablet | 810px–1500px | 2-column features begin, photography scales, nav links partially visible |
-| Desktop | >1500px | Full cinematic layout, 80px hero display, side-by-side photography + text |
+| 移动端 | <810px | 单列、堆叠区块、英雄区文本降至约 48px、汉堡导航 |
+| 平板端 | 810px–1500px | 2 列功能开始、摄影缩放、导航链接部分可见 |
+| 桌面端 | >1500px | 完整电影般布局、80px 英雄区展示、摄影与文本并排 |
 
-### Touch Targets
-- Pill buttons: 50px radius with 10px padding — comfortable touch targets
-- Nav links: 16px text with surrounding padding for accessibility
-- Mobile CTAs: Full-width pills on mobile for easy thumb reach
+### 触摸目标
+- 胶囊按钮：50px 半径配合 10px 内边距——舒适的触摸目标
+- 导航链接：16px 文本配合周围内边距以确保可访问性
+- 移动端 CTA：移动端全宽胶囊便于拇指触及
 
-### Collapsing Strategy
-- **Navigation**: Full horizontal nav → simplified mobile navigation
-- **Hero text**: 80px display → 56px → 48px across breakpoints
-- **Feature sections**: Side-by-side photography + text → stacked vertically
-- **Photography**: Scales within containers, maintains cinematic aspect ratios
-- **Section spacing**: Reduces proportionally — generous desktop → compact mobile
+### 折叠策略
+- **导航**：完整水平导航 → 简化移动导航
+- **英雄区文本**：80px 展示 → 56px → 48px 跨断点
+- **功能区块**：摄影与文本并排 → 垂直堆叠
+- **摄影**：在容器内缩放，保持电影般宽高比
+- **区块间距**：成比例减少——generous 桌面端 → 紧凑移动端
 
-### Image Behavior
-- Nature photography scales responsively, maintaining wide cinematic ratios
-- Terminal screenshots maintain aspect ratios within responsive containers
-- Video elements scale with 10px radius maintained
-- No art direction changes — same compositions across breakpoints
+### 图像行为
+- 自然摄影响应式缩放，保持宽电影般比例
+- 终端截图在响应式容器内保持宽高比
+- 视频元素缩放同时保持 10px 半径
+- 无艺术指导变化——跨断点使用相同构图
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示词指南
 
-### Quick Color Reference
-- Primary Text: Warm Parchment (`#faf9f6`)
-- Secondary Text: Ash Gray (`#afaeac`)
-- Tertiary Text: Stone Gray (`#868584`)
-- Button Background: Earth Gray (`#353534`)
-- Border: Mist Border (`rgba(226, 226, 226, 0.35)`)
-- Background: Deep warm near-black (page background)
+### 快速颜色参考
+- 主文本：温暖羊皮纸色（`#faf9f6`）
+- 辅助文本：灰白色（`#afaeac`）
+- 三级文本：石灰色（`#868584`）
+- 按钮背景：土灰色（`#353534`）
+- 边框：薄雾边框（`rgba(226, 226, 226, 0.35)`）
+- 背景：深渊温暖近黑色（页面背景）
 
-### Example Component Prompts
-- "Create a hero section on warm dark background with 80px Matter Regular heading in warm parchment (#faf9f6), line-height 1.0, letter-spacing -2.4px, and a dark pill button (#353534, 50px radius, #afaeac text)"
-- "Design a feature card with semi-transparent border (rgba(226,226,226,0.35)), 12px radius, warm dark background, Matter Regular heading at 24px, and ash gray (#afaeac) body text at 18px"
-- "Build a category label using Matter Regular at 12px, uppercase transform, letter-spacing 2.4px, stone gray (#868584) color — editorial magazine style"
-- "Create a testimonial section with warm parchment quotes in Matter Regular 24px, attributed in stone gray (#868584), on dark background with minimal ornamentation"
-- "Design a navigation bar with warm dark background, Matter Regular links at 16px in stone gray (#868584), hover to warm parchment (#faf9f6), and a dark pill CTA button (#353534) at the right"
+### 示例组件提示词
+- "在温暖深色背景上创建英雄区，使用 80px Matter Regular 标题，温暖羊皮纸色（#faf9f6），行高 1.0，字间距 -2.4px，以及深色胶囊按钮（#353534，50px 半径，#afaeac 文本）"
+- "设计功能卡片，带半透明边框（rgba(226,226,226,0.35)），12px 半径，温暖深色背景，Matter Regular 标题 24px，以及灰白色（#afaeac）正文文本 18px"
+- "使用 Matter Regular 12px 创建分类标签，大写转换，字间距 2.4px，石灰色（#868584）颜色——编辑杂志风格"
+- "创建推荐区块，使用 Matter Regular 24px 的温暖羊皮纸色引用，石灰色（#868584）署名，在深色背景上极简装饰"
+- "设计导航栏，温暖深色背景，Matter Regular 链接 16px 石灰色（#868584），悬停至温暖羊皮纸色（#faf9f6），右侧深色胶囊 CTA 按钮（#353534）"
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Verify text color is warm parchment (#faf9f6) not pure white — the warmth is subtle but essential
-2. Ensure all buttons use the restrained dark palette (#353534) — no bright or colorful CTAs
-3. Check that Matter Regular (400) is the default weight — Medium (500) only for emphasis
-4. Confirm uppercase labels have wide letter-spacing (1.4px–2.4px) — tight uppercase feels wrong here
-5. The overall tone should feel warm and calm, like a well-designed magazine — not aggressive or tech-flashy
+### 迭代指南
+使用此设计系统优化现有界面时：
+1. 验证文本颜色是温暖羊皮纸色（#faf9f6）而非纯白色——温暖感微妙但至关重要
+2. 确保所有按钮使用克制的深色调色板（#353534）——无明亮或彩色 CTA
+3. 检查 Matter Regular（400）是否为默认字重——Medium（500）仅用于强调
+4. 确认大写字母标签具有宽松字间距（1.4px–2.4px）——紧凑的大写在这里感觉不对
+5. 整体基调应感觉温暖平静，像精心设计的杂志——而非激进或科技炫耀

@@ -1,281 +1,281 @@
-# Design System: OpenCode
+# 设计系统：OpenCode
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-OpenCode's website embodies a terminal-native, monospace-first aesthetic that reflects its identity as an open source AI coding agent. The entire visual system is built on a stark dark-on-light contrast using a near-black background (`#201d1d`) with warm off-white text (`#fdfcfc`). This isn't a generic dark theme -- it's a warm, slightly reddish-brown dark that feels like a sophisticated terminal emulator rather than a cold IDE. The warm undertone in both the darks and lights (notice the subtle red channel in `#201d1d` -- rgb(32, 29, 29)) creates a cohesive, lived-in quality.
+OpenCode 的网站体现了终端原生、等宽字体优先的美学风格，反映了其作为开源 AI 智能体编码工具的身份。整个视觉系统建立在鲜明的深底浅字对比之上，使用近黑色背景 (`#201d1d`) 搭配暖调灰白文本 (`#fdfcfc`)。这不是通用的深色主题——而是一种暖调、略带红棕的深色，感觉更像精致的终端模拟器，而非冰冷的 IDE。深色和浅色中的暖色基调（注意 `#201d1d` 中微妙的红色通道——rgb(32, 29, 29)）营造出一种协调的、有生活气息的质感。
 
-Berkeley Mono is the sole typeface, establishing an unapologetic monospace identity. Every element -- headings, body text, buttons, navigation -- shares this single font family, creating a unified "everything is code" philosophy. The heading at 38px bold with 1.50 line-height is generous and readable, while body text at 16px with weight 500 provides a slightly heavier-than-normal reading weight that enhances legibility on screen. The monospace grid naturally enforces alignment and rhythm across the layout.
+Berkeley Mono 是唯一的字体，确立了毫不妥协的等宽字体身份。每个元素——标题、正文、按钮、导航——都共享这单一字体家族，创造了统一的"一切皆代码"理念。38px 粗体、1.50 行高的标题宽松易读，而 16px、字重 500 的正文文本提供了略重于常规的阅读字重，增强了屏幕可读性。等宽网格自然地强化了布局的对齐和节奏。
 
-The color system is deliberately minimal. The primary palette consists of just three functional tones: the warm near-black (`#201d1d`), a medium warm gray (`#9a9898`), and a bright off-white (`#fdfcfc`). Semantic colors borrow from the Apple HIG palette -- blue accent (`#007aff`), red danger (`#ff3b30`), green success (`#30d158`), orange warning (`#ff9f0a`) -- giving the interface familiar, trustworthy signal colors without adding brand complexity. Borders use a subtle warm transparency (`rgba(15, 0, 0, 0.12)`) that ties into the warm undertone of the entire system.
+色彩系统刻意保持极简。主调色板仅由三种功能色调组成：暖近黑 (`#201d1d`)、中暖灰 (`#9a9898`) 和亮灰白 (`#fdfcfc`)。语义色借用 Apple HIG 调色板——蓝色强调色 (`#007aff`)、红色危险 (`#ff3b30`)、绿色成功 (`#30d158`)、橙色警告 (`#ff9f0a`)——赋予界面熟悉、可信赖的信号色，同时不增加品牌复杂度。边框使用微妙的暖调透明度 (`rgba(15, 0, 0, 0.12)`)，与整个系统的暖色调相呼应。
 
-**Key Characteristics:**
-- Berkeley Mono as the sole typeface -- monospace everywhere, no sans-serif or serif voices
-- Warm near-black primary (`#201d1d`) with reddish-brown undertone, not pure black
-- Off-white text (`#fdfcfc`) with warm tint, not pure white
-- Minimal 4px border radius throughout -- sharp, utilitarian corners
-- 8px base spacing system scaling up to 96px
-- Apple HIG-inspired semantic colors (blue, red, green, orange)
-- Transparent warm borders using `rgba(15, 0, 0, 0.12)`
-- Email input with generous 20px padding and 6px radius -- the most generous component radius
-- Single button variant: dark background, light text, tight vertical padding (4px 20px)
-- Underlined links as default link style, reinforcing the text-centric identity
+**关键特征：**
+- Berkeley Mono 作为唯一字体——处处等宽，无无衬线或衬线字体
+- 暖近黑主色 (`#201d1d`) 带红棕底色，非纯黑
+- 暖调灰白文本 (`#fdfcfc`)，非纯白
+- 全程极简的 4px 边框圆角——锐利、实用的边角
+- 8px 基础间距系统，向上扩展至 96px
+- Apple HIG 风格的语义色（蓝、红、绿、橙）
+- 使用 `rgba(15, 0, 0, 0.12)` 的暖调透明边框
+- 电子邮件输入框采用宽松的 20px 内边距和 6px 圆角——系统中最宽松的组件圆角
+- 单一按钮样式：深色背景、浅色文本、紧凑的垂直内边距 (4px 20px)
+- 下划线链接作为默认链接样式，强化以文本为中心的身份
 
-## 2. Color Palette & Roles
+## 2. 色彩调色板与角色
 
-### Primary
-- **OpenCode Dark** (`#201d1d`): Primary background, button fills, link text. A warm near-black with subtle reddish-brown warmth -- rgb(32, 29, 29).
-- **OpenCode Light** (`#fdfcfc`): Primary text on dark surfaces, button text. A barely-warm off-white that avoids clinical pure white.
-- **Mid Gray** (`#9a9898`): Secondary text, muted links. A neutral warm gray that bridges dark and light.
+### 主色
+- **OpenCode 深色** (`#201d1d`)：主背景、按钮填充、链接文本。带微妙红棕暖调的近黑色——rgb(32, 29, 29)。
+- **OpenCode 浅色** (`#fdfcfc`)：深色表面上的主文本、按钮文本。略带暖调的灰白，避免临床感的纯白。
+- **中灰** (`#9a9898`)：次要文本、弱化链接。连接深色与浅色的中性暖灰。
 
-### Secondary
-- **Dark Surface** (`#302c2c`): Slightly lighter than primary dark, used for elevated surfaces and subtle differentiation.
-- **Border Gray** (`#646262`): Stronger borders, outline rings on interactive elements.
-- **Light Surface** (`#f1eeee`): Light mode surface, subtle background variation.
+### 次要色
+- **深色表面** (`#302c2c`)：比主深色略浅，用于提升的表面和微妙的差异化。
+- **边框灰** (`#646262`)：更强的边框、交互元素上的轮廓环。
+- **浅色表面** (`#f1eeee`): 浅色模式表面、微妙的背景变化。
 
-### Accent
-- **Accent Blue** (`#007aff`): Primary accent, links, interactive highlights. Apple system blue.
-- **Accent Blue Hover** (`#0056b3`): Darker blue for hover states.
-- **Accent Blue Active** (`#004085`): Deepest blue for pressed/active states.
+### 强调色
+- **强调蓝** (`#007aff`)：主强调色、链接、交互高亮。Apple 系统蓝。
+- **强调蓝悬停** (`#0056b3`)：悬停状态的深蓝色。
+- **强调蓝激活** (`#004085`)：按下/激活状态的最深蓝色。
 
-### Semantic
-- **Danger Red** (`#ff3b30`): Error states, destructive actions. Apple system red.
-- **Danger Hover** (`#d70015`): Darker red for hover on danger elements.
-- **Danger Active** (`#a50011`): Deepest red for pressed danger states.
-- **Success Green** (`#30d158`): Success states, positive feedback. Apple system green.
-- **Warning Orange** (`#ff9f0a`): Warning states, caution signals. Apple system orange.
-- **Warning Hover** (`#cc7f08`): Darker orange for hover on warning elements.
-- **Warning Active** (`#995f06`): Deepest orange for pressed warning states.
+### 语义色
+- **危险红** (`#ff3b30`)：错误状态、破坏性操作。Apple 系统红。
+- **危险悬停** (`#d70015`)：危险元素悬停时的深红色。
+- **危险激活** (`#a50011`)：按下危险状态的最深红色。
+- **成功绿** (`#30d158`)：成功状态、正向反馈。Apple 系统绿。
+- **警告橙** (`#ff9f0a`)：警告状态、警示信号。Apple 系统橙。
+- **警告悬停** (`#cc7f08`)：警告元素悬停时的深橙色。
+- **警告激活** (`#995f06`)：按下警告状态的最深橙色。
 
-### Text Scale
-- **Text Muted** (`#6e6e73`): Muted labels, disabled text, placeholder content.
-- **Text Secondary** (`#424245`): Secondary text on light backgrounds, captions.
+### 文本色阶
+- **弱化文本** (`#6e6e73`)：弱化标签、禁用文本、占位符内容。
+- **次要文本** (`#424245`)：浅色背景上的次要文本、说明文字。
 
-### Border
-- **Border Warm** (`rgba(15, 0, 0, 0.12)`): Primary border color, warm transparent black with red tint.
-- **Border Tab** (`#9a9898`): Tab underline border, 2px solid bottom.
-- **Border Outline** (`#646262`): 1px solid outline border for containers.
+### 边框
+- **暖边框** (`rgba(15, 0, 0, 0.12)`)：主边框颜色，带红色调的暖调透明黑。
+- **标签边框** (`#9a9898`)：标签下划线边框，2px 实线底部。
+- **轮廓边框** (`#646262`)：容器的 1px 实线轮廓边框。
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
-- **Universal**: `Berkeley Mono`, with fallbacks: `IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace`
+### 字体家族
+- **通用**: `Berkeley Mono`，回退方案：`IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace`
 
-### Hierarchy
+### 层级
 
-| Role | Size | Weight | Line Height | Notes |
-|------|------|--------|-------------|-------|
-| Heading 1 | 38px (2.38rem) | 700 | 1.50 | Hero headlines, page titles |
-| Heading 2 | 16px (1.00rem) | 700 | 1.50 | Section titles, bold emphasis |
-| Body | 16px (1.00rem) | 400 | 1.50 | Standard body text, paragraphs |
-| Body Medium | 16px (1.00rem) | 500 | 1.50 | Links, button text, nav items |
-| Body Tight | 16px (1.00rem) | 500 | 1.00 (tight) | Compact labels, tab items |
-| Caption | 14px (0.88rem) | 400 | 2.00 (relaxed) | Footnotes, metadata, small labels |
+| 角色 | 字号 | 字重 | 行高 | 备注 |
+|------|------|------|------|------|
+| 标题 1 | 38px (2.38rem) | 700 | 1.50 | 主标题、页面标题 |
+| 标题 2 | 16px (1.00rem) | 700 | 1.50 | 章节标题、粗体强调 |
+| 正文 | 16px (1.00rem) | 400 | 1.50 | 标准正文文本、段落 |
+| 正文中等 | 16px (1.00rem) | 500 | 1.50 | 链接、按钮文本、导航项 |
+| 正文紧凑 | 16px (1.00rem) | 500 | 1.00 (紧凑) | 紧凑标签、标签项 |
+| 说明文字 | 14px (0.88rem) | 400 | 2.00 (宽松) | 脚注、元数据、小标签 |
 
-### Principles
-- **One font, one voice**: Berkeley Mono is used exclusively. There is no typographic variation between display, body, and code -- everything speaks in the same monospace register. Hierarchy is achieved through size and weight alone.
-- **Weight as hierarchy**: 700 for headings, 500 for interactive/medium emphasis, 400 for body text. Three weight levels create the entire hierarchy.
-- **Generous line-height**: 1.50 as the standard line-height gives text room to breathe within the monospace grid. The relaxed 2.00 line-height on captions creates clear visual separation.
-- **Tight for interaction**: Interactive elements (tabs, compact labels) use 1.00 line-height for dense, clickable targets.
+### 原则
+- **一种字体，一种声音**: Berkeley Mono 是唯一使用的字体。展示、正文和代码之间没有排版变化——一切都以相同的等宽风格呈现。层级仅通过字号和字重实现。
+- **字重作为层级**: 700 用于标题，500 用于交互/中等强调，400 用于正文文本。三个字重级别创建了整个层级。
+- **宽松的行高**: 1.50 作为标准行高，让文本在等宽网格中有呼吸空间。说明文字上 2.00 的宽松行高创造了清晰的视觉分隔。
+- **紧凑用于交互**: 交互元素（标签、紧凑标签）使用 1.00 行高，形成密集、可点击的目标。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary (Dark Fill)**
-- Background: `#201d1d` (OpenCode Dark)
-- Text: `#fdfcfc` (OpenCode Light)
-- Padding: 4px 20px
-- Radius: 4px
-- Font: 16px Berkeley Mono, weight 500, line-height 2.00 (relaxed)
-- Outline: `rgb(253, 252, 252) none 0px`
-- Use: Primary CTAs, main actions
+**主按钮（深色填充）**
+- 背景：`#201d1d` (OpenCode 深色)
+- 文本：`#fdfcfc` (OpenCode 浅色)
+- 内边距：4px 20px
+- 圆角：4px
+- 字体：16px Berkeley Mono，字重 500，行高 2.00（宽松）
+- 轮廓：`rgb(253, 252, 252) none 0px`
+- 用途：主行动号召、主要操作
 
-### Inputs
+### 输入框
 
-**Email Input**
-- Background: `#f8f7f7` (light neutral)
-- Text: `#201d1d`
-- Border: `1px solid rgba(15, 0, 0, 0.12)`
-- Padding: 20px
-- Radius: 6px
-- Font: Berkeley Mono, standard size
-- Use: Form fields, email capture
+**电子邮件输入框**
+- 背景：`#f8f7f7`（浅色中性色）
+- 文本：`#201d1d`
+- 边框：`1px solid rgba(15, 0, 0, 0.12)`
+- 内边距：20px
+- 圆角：6px
+- 字体：Berkeley Mono，标准字号
+- 用途：表单字段、电子邮件收集
 
-### Links
+### 链接
 
-**Default Link**
-- Color: `#201d1d`
-- Decoration: underline 1px
-- Font-weight: 500
-- Use: Primary text links in body content
+**默认链接**
+- 颜色：`#201d1d`
+- 装饰：1px 下划线
+- 字重：500
+- 用途：正文内容中的主文本链接
 
-**Light Link**
-- Color: `#fdfcfc`
-- Decoration: none
-- Use: Links on dark backgrounds, navigation
+**浅色链接**
+- 颜色：`#fdfcfc`
+- 装饰：无
+- 用途：深色背景上的链接、导航
 
-**Muted Link**
-- Color: `#9a9898`
-- Decoration: none
-- Use: Footer links, secondary navigation
+**弱化链接**
+- 颜色：`#9a9898`
+- 装饰：无
+- 用途：页脚链接、次要导航
 
-### Tabs
+### 标签
 
-**Tab Navigation**
-- Border-bottom: `2px solid #9a9898` (active tab indicator)
-- Font: 16px, weight 500, line-height 1.00
-- Use: Section switching, content filtering
+**标签导航**
+- 底部边框：`2px solid #9a9898`（活动标签指示器）
+- 字体：16px，字重 500，行高 1.00
+- 用途：章节切换、内容过滤
 
-### Navigation
-- Clean horizontal layout with Berkeley Mono throughout
-- Brand logotype left-aligned in monospace
-- Links at 16px weight 500 with underline decoration
-- Dark background matching page background
-- No backdrop blur or transparency -- solid surfaces only
+### 导航
+- 干净的横向布局，全程使用 Berkeley Mono
+- 品牌标识文字左对齐，等宽风格
+- 链接 16px 字重 500，带下划线装饰
+- 深色背景匹配页面背景
+- 无背景模糊或透明度——仅实体表面
 
-### Image Treatment
-- Terminal/code screenshots as hero imagery
-- Dark terminal aesthetic with monospace type
-- Minimal borders, content speaks for itself
+### 图像风格
+- 终端/代码截图作为主图
+- 深色终端美学搭配等宽字体
+- 极简边框，内容自我表达
 
-### Distinctive Components
+### 特色组件
 
-**Terminal Hero**
-- Full-width dark terminal window as hero element
-- ASCII art / stylized logo within terminal frame
-- Monospace command examples with syntax highlighting
-- Reinforces the CLI-first identity of the product
+**终端主图**
+- 全宽深色终端窗口作为主元素
+- 终端框内的 ASCII 艺术/风格化标识
+- 带语法高亮的等宽命令示例
+- 强化产品的 CLI 优先身份
 
-**Feature List**
-- Bulleted feature items with Berkeley Mono text
-- Weight 500 for feature names, 400 for descriptions
-- Tight vertical spacing between items
-- No cards or borders -- pure text layout
+**功能列表**
+- 带 Berkeley Mono 文本的项目符号功能项
+- 功能名称字重 500，描述字重 400
+- 项之间垂直间距紧凑
+- 无卡片或边框——纯文本布局
 
-**Email Capture**
-- Light background input (`#f8f7f7`) contrasting dark page
-- Generous 20px padding for comfortable typing
-- 6px radius -- the roundest element in the system
-- Newsletter/waitlist pattern
+**电子邮件收集**
+- 浅色背景输入框 (`#f8f7f7`) 与深色页面对比
+- 宽松的 20px 内边距提供舒适的输入体验
+- 6px 圆角——系统中最圆润的元素
+- 通讯订阅/等待名单模式
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- Base unit: 8px
-- Fine scale: 1px, 2px, 4px (sub-8px for borders and micro-adjustments)
-- Standard scale: 8px, 12px, 16px, 20px, 24px
-- Extended scale: 32px, 40px, 48px, 64px, 80px, 96px
-- The system follows a clean 4/8px grid with consistent doubling
+### 间距系统
+- 基础单位：8px
+- 精细刻度：1px, 2px, 4px（8px 以下用于边框和微调）
+- 标准刻度：8px, 12px, 16px, 20px, 24px
+- 扩展刻度：32px, 40px, 48px, 64px, 80px, 96px
+- 系统遵循干净的 4/8px 网格，一致翻倍
 
-### Grid & Container
-- Max content width: approximately 800-900px (narrow, reading-optimized)
-- Single-column layout as the primary pattern
-- Centered content with generous horizontal margins
-- Hero section: full-width dark terminal element
-- Feature sections: single-column text blocks
-- Footer: multi-column link grid
+### 网格与容器
+- 最大内容宽度：约 800-900px（窄幅、阅读优化）
+- 单列布局作为主模式
+- 居中内容配 generous 水平边距
+- 主图区域：全宽深色终端元素
+- 功能区域：单列文本块
+- 页脚：多列链接网格
 
-### Whitespace Philosophy
-- **Monospace rhythm**: The fixed-width nature of Berkeley Mono creates a natural vertical grid. Line-heights of 1.50 and 2.00 maintain consistent rhythm.
-- **Narrow and focused**: Content is constrained to a narrow column, creating generous side margins that focus attention on the text.
-- **Sections through spacing**: No decorative dividers. Sections are separated by generous vertical spacing (48-96px) rather than borders or background changes.
+### 留白理念
+- **等宽节奏**: Berkeley Mono 的固定宽度特性创造了自然的垂直网格。1.50 和 2.00 的行高保持一致的节奏。
+- **窄幅聚焦**: 内容被限制在窄列中，创造宽大的侧边距，将注意力集中在文本上。
+- **通过间距分隔区域**: 无装饰性分隔线。章节通过宽大的垂直间距 (48-96px) 分隔，而非边框或背景变化。
 
-### Border Radius Scale
-- Micro (4px): Default for all elements -- buttons, containers, badges
-- Input (6px): Form inputs get slightly more roundness
-- The entire system uses just two radius values, reinforcing the utilitarian aesthetic
+### 边框圆角刻度
+- 微型 (4px)：所有元素的默认值——按钮、容器、徽章
+- 输入框 (6px)：表单输入获得稍多的圆度
+- 整个系统仅使用两个圆角值，强化实用美学
 
-## 6. Depth & Elevation
+## 6. 深度与层级
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow, no border | Default state for most elements |
-| Border Subtle (Level 1) | `1px solid rgba(15, 0, 0, 0.12)` | Section dividers, input borders, horizontal rules |
-| Border Tab (Level 2) | `2px solid #9a9898` bottom only | Active tab indicator |
-| Border Outline (Level 3) | `1px solid #646262` | Container outlines, elevated elements |
+| 级别 | 处理方式 | 用途 |
+|------|----------|------|
+| 平面 (Level 0) | 无阴影，无边框 | 大多数元素的默认状态 |
+| 微妙边框 (Level 1) | `1px solid rgba(15, 0, 0, 0.12)` | 章节分隔线、输入边框、水平线 |
+| 标签边框 (Level 2) | `2px solid #9a9898` 仅底部 | 活动标签指示器 |
+| 轮廓边框 (Level 3) | `1px solid #646262` | 容器轮廓、提升元素 |
 
-**Shadow Philosophy**: OpenCode's depth system is intentionally flat. There are no box-shadows in the extracted tokens -- zero shadow values were detected. Depth is communicated exclusively through border treatments and background color shifts. This flatness is consistent with the terminal aesthetic: terminals don't have shadows, and neither does OpenCode. The three border levels (transparent warm, tab indicator, solid outline) create sufficient visual hierarchy without any elevation illusion.
+**阴影理念**: OpenCode 的深度系统刻意保持扁平。提取的 token 中没有 box-shadow——检测到零阴影值。深度完全通过边框处理和背景颜色变化来传达。这种扁平性与终端美学一致：终端没有阴影，OpenCode 也没有。三个边框级别（透明暖调、标签指示器、实线轮廓）在无任何 elevation 幻觉的情况下创造了足够的视觉层级。
 
-### Decorative Depth
-- Background color shifts between `#201d1d` and `#302c2c` create subtle surface differentiation
-- Transparent borders at 12% opacity provide barely-visible structure
-- The warm reddish tint in border colors (`rgba(15, 0, 0, 0.12)`) ties borders to the overall warm dark palette
-- No gradients, no blurs, no ambient effects -- pure flat terminal aesthetic
+### 装饰性深度
+- 背景颜色在 `#201d1d` 和 `#302c2c` 之间变化，创造微妙的表面差异化
+- 12% 透明度的透明边框提供几乎不可见的结构
+- 边框颜色中的暖红色调 (`rgba(15, 0, 0, 0.12)`) 将边框与整体暖深色板联系起来
+- 无渐变、无模糊、无环境效果——纯粹的平面终端美学
 
-## 7. Interaction & Motion
+## 7. 交互与动效
 
-### Hover States
-- Links: color shift from default to accent blue (`#007aff`) or underline style change
-- Buttons: subtle background lightening or border emphasis
-- Accent blue provides a three-stage hover sequence: `#007aff` → `#0056b3` → `#004085` (default → hover → active)
-- Danger red: `#ff3b30` → `#d70015` → `#a50011`
-- Warning orange: `#ff9f0a` → `#cc7f08` → `#995f06`
+### 悬停状态
+- 链接：颜色从默认变为强调蓝 (`#007aff`) 或下划线样式变化
+- 按钮：微妙的背景变亮或边框强调
+- 强调蓝提供三阶段悬停序列：`#007aff` → `#0056b3` → `#004085`（默认 → 悬停 → 激活）
+- 危险红：`#ff3b30` → `#d70015` → `#a50011`
+- 警告橙：`#ff9f0a` → `#cc7f08` → `#995f06`
 
-### Focus States
-- Border-based focus: increased border opacity or solid border color
-- No shadow-based focus rings -- consistent with the flat, no-shadow aesthetic
-- Keyboard focus likely uses outline or border color shift to accent blue
+### 聚焦状态
+- 基于边框的聚焦：增加边框不透明度或实线边框颜色
+- 无基于阴影的聚焦环——与扁平、无阴影美学一致
+- 键盘聚焦可能使用轮廓或边框颜色切换到强调蓝
 
-### Transitions
-- Minimal transitions expected -- terminal-inspired interfaces favor instant state changes
-- Color transitions: 100-150ms for subtle state feedback
-- No scale, rotate, or complex transform animations
+### 过渡
+- 极简过渡预期——终端风格界面偏好即时状态变化
+- 颜色过渡：100-150ms 用于微妙状态反馈
+- 无缩放、旋转或复杂变换动画
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile | <640px | Single column, reduced padding, heading scales down |
-| Tablet | 640-1024px | Content width expands, slight padding increase |
-| Desktop | >1024px | Full content width (~800-900px centered), maximum whitespace |
+### 断点
+| 名称 | 宽度 | 关键变化 |
+|------|------|----------|
+| 移动端 | <640px | 单列、减小内边距、标题缩放 |
+| 平板 | 640-1024px | 内容宽度扩展、内边距略增 |
+| 桌面 | >1024px | 全内容宽度（约 800-900px 居中）、最大留白 |
 
-### Touch Targets
-- Buttons with 4px 20px padding provide adequate horizontal touch area
-- Input fields with 20px padding ensure comfortable mobile typing
-- Tab items at 16px with tight line-height may need mobile adaptation
+### 触摸目标
+- 4px 20px 内边距的按钮提供足够的水平触摸区域
+- 20px 内边距的输入框确保舒适的移动输入
+- 16px 紧凑行高的标签项可能需要移动端适配
 
-### Collapsing Strategy
-- Hero heading: 38px → 28px → 24px on smaller screens
-- Navigation: horizontal links → hamburger/drawer on mobile
-- Feature lists: maintain single-column, reduce horizontal padding
-- Terminal hero: maintain full-width, reduce internal padding
-- Footer columns: multi-column → stacked single column
-- Section spacing: 96px → 64px → 48px on mobile
+### 折叠策略
+- 主标题：38px → 28px → 24px 在较小屏幕上
+- 导航：横向链接 → 移动端汉堡菜单/抽屉
+- 功能列表：保持单列、减小水平内边距
+- 终端主图：保持全宽、减小内部内边距
+- 页脚列：多列 → 堆叠单列
+- 章节间距：96px → 64px → 48px 在移动端
 
-### Image Behavior
-- Terminal screenshots maintain aspect ratio and border treatment
-- Full-width elements scale proportionally
-- Monospace type maintains readability at all sizes due to fixed-width nature
+### 图像行为
+- 终端截图保持宽高比和边框处理
+- 全宽元素按比例缩放
+- 等宽字体由于固定宽度特性在所有尺寸下保持可读性
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示词指南
 
-### Quick Color Reference
-- Page background: `#201d1d` (warm near-black)
-- Primary text: `#fdfcfc` (warm off-white)
-- Secondary text: `#9a9898` (warm gray)
-- Muted text: `#6e6e73`
-- Accent: `#007aff` (blue)
-- Danger: `#ff3b30` (red)
-- Success: `#30d158` (green)
-- Warning: `#ff9f0a` (orange)
-- Button bg: `#201d1d`, button text: `#fdfcfc`
-- Border: `rgba(15, 0, 0, 0.12)` (warm transparent)
-- Input bg: `#f8f7f7`, input border: `rgba(15, 0, 0, 0.12)`
+### 快速颜色参考
+- 页面背景：`#201d1d`（暖近黑）
+- 主文本：`#fdfcfc`（暖灰白）
+- 次要文本：`#9a9898`（暖灰）
+- 弱化文本：`#6e6e73`
+- 强调色：`#007aff`（蓝）
+- 危险色：`#ff3b30`（红）
+- 成功色：`#30d158`（绿）
+- 警告色：`#ff9f0a`（橙）
+- 按钮背景：`#201d1d`，按钮文本：`#fdfcfc`
+- 边框：`rgba(15, 0, 0, 0.12)`（暖透明）
+- 输入框背景：`#f8f7f7`，输入框边框：`rgba(15, 0, 0, 0.12)`
 
-### Example Component Prompts
-- "Create a hero section on `#201d1d` warm dark background. Headline at 38px Berkeley Mono weight 700, line-height 1.50, color `#fdfcfc`. Subtitle at 16px weight 400, color `#9a9898`. Primary CTA button (`#201d1d` bg with `1px solid #646262` border, 4px radius, 4px 20px padding, `#fdfcfc` text at weight 500)."
-- "Design a feature list: single-column on `#201d1d` background. Feature name at 16px Berkeley Mono weight 700, color `#fdfcfc`. Description at 16px weight 400, color `#9a9898`. No cards, no borders -- pure text with 16px vertical gap between items."
-- "Build an email capture form: `#f8f7f7` background input, `1px solid rgba(15, 0, 0, 0.12)` border, 6px radius, 20px padding. Adjacent dark button (`#201d1d` bg, `#fdfcfc` text, 4px radius, 4px 20px padding). Berkeley Mono throughout."
-- "Create navigation: sticky `#201d1d` background. 16px Berkeley Mono weight 500 for links, `#fdfcfc` text. Brand name left-aligned in monospace. Links with underline decoration. No blur, no transparency -- solid dark surface."
-- "Design a footer: `#201d1d` background, multi-column link grid. Links at 16px Berkeley Mono weight 400, color `#9a9898`. Section headers at weight 700. Border-top `1px solid rgba(15, 0, 0, 0.12)` separator."
+### 示例组件提示词
+- "在 `#201d1d` 暖深色背景上创建主图区域。标题 38px Berkeley Mono 字重 700，行高 1.50，颜色 `#fdfcfc`。副标题 16px 字重 400，颜色 `#9a9898`。主行动号召按钮（`#201d1d` 背景配 `1px solid #646262` 边框，4px 圆角，4px 20px 内边距，`#fdfcfc` 文本字重 500）。"
+- "设计功能列表：`#201d1d` 背景上的单列。功能名称 16px Berkeley Mono 字重 700，颜色 `#fdfcfc`。描述 16px 字重 400，颜色 `#9a9898`。无卡片、无边框——纯文本配 16px 垂直间距。"
+- "构建电子邮件收集表单：`#f8f7f7` 背景输入框，`1px solid rgba(15, 0, 0, 0.12)` 边框，6px 圆角，20px 内边距。相邻深色按钮（`#201d1d` 背景，`#fdfcfc` 文本，4px 圆角，4px 20px 内边距）。全程 Berkeley Mono。"
+- "创建导航：粘性 `#201d1d` 背景。16px Berkeley Mono 字重 500 用于链接，`#fdfcfc` 文本。品牌名称左对齐等宽风格。链接带下划线装饰。无模糊、无透明度——实体深色表面。"
+- "设计页脚：`#201d1d` 背景，多列链接网格。链接 16px Berkeley Mono 字重 400，颜色 `#9a9898`。章节标题字重 700。顶部边框 `1px solid rgba(15, 0, 0, 0.12)` 分隔线。"
 
-### Iteration Guide
-1. Berkeley Mono is the only font -- never introduce a second typeface. Size and weight create all hierarchy.
-2. Keep surfaces flat: no shadows, no gradients, no blur effects. Use borders and background shifts only.
-3. The warm undertone matters: use `#201d1d` not `#000000`, use `#fdfcfc` not `#ffffff`. The reddish warmth is subtle but essential.
-4. Border radius is 4px everywhere except inputs (6px). Never use rounded pills or large radii.
-5. Semantic colors follow Apple HIG: `#007aff` blue, `#ff3b30` red, `#30d158` green, `#ff9f0a` orange. Each has hover and active darkened variants.
-6. Three-stage interaction: default → hover (darkened) → active (deeply darkened) for all semantic colors.
-7. Borders use `rgba(15, 0, 0, 0.12)` -- a warm transparent dark, not neutral gray. This ties borders to the warm palette.
-8. Spacing follows an 8px grid: 8, 16, 24, 32, 40, 48, 64, 80, 96px. Use 4px for fine adjustments only.
+### 迭代指南
+1. Berkeley Mono 是唯一字体——切勿引入第二种字体。字号和字重创建所有层级。
+2. 保持表面扁平：无阴影、无渐变、无模糊效果。仅使用边框和背景变化。
+3. 暖色调很重要：使用 `#201d1d` 而非 `#000000`，使用 `#fdfcfc` 而非 `#ffffff`。红棕暖调微妙但至关重要。
+4. 边框圆角处处为 4px，输入框除外 (6px)。切勿使用圆角胶囊或大圆角。
+5. 语义色遵循 Apple HIG：`#007aff` 蓝、`#ff3b30` 红、`#30d158` 绿、`#ff9f0a` 橙。每个都有悬停和激活的变暗版本。
+6. 三阶段交互：默认 → 悬停（变暗）→ 激活（深度变暗）用于所有语义色。
+7. 边框使用 `rgba(15, 0, 0, 0.12)`——暖调透明深色，非中性灰。这将边框与暖调色板联系起来。
+8. 间距遵循 8px 网格：8, 16, 24, 32, 40, 48, 64, 80, 96px。仅在微调时使用 4px。

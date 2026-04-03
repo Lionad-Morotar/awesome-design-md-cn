@@ -1,185 +1,185 @@
-# Design System: Revolut
+# 设计系统：Revolut
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-Revolut's website is fintech confidence distilled into pixels — a design system that communicates "your money is in capable hands" through massive typography, generous whitespace, and a disciplined neutral palette. The visual language is built on Aeonik Pro, a geometric grotesque that creates billboard-scale headlines at 136px with weight 500 and aggressive negative tracking (-2.72px). This isn't subtle branding; it's fintech at stadium scale.
+Revolut 的网站是将金融科技的信心蒸馏为像素的设计系统——通过巨大的排版、充裕的留克和中性的调色板传达"你的资金在可靠的手中"。视觉语言基于 Aeonik Pro，一种几何无衬线字体，在 136px 时以 500 字重和激进的负字间距（-2.72px）创建广告牌规模的标题。这不是微妙的品牌设计；这是体育场规模的金融科技。
 
-The color system is built on a comprehensive `--rui-*` (Revolut UI) token architecture with semantic naming for every state: danger (`#e23b4a`), warning (`#ec7e00`), teal (`#00a87e`), blue (`#494fdf`), deep-pink (`#e61e49`), and more. But the marketing surface itself is remarkably restrained — near-black (`#191c1f`) and pure white (`#ffffff`) dominate, with the colorful semantic tokens reserved for the product interface, not the marketing page.
+色彩系统基于全面的 `--rui-*`（Revolut UI）令牌架构，为每种状态使用语义化命名：危险（`#e23b4a`）、警告（`#ec7e00`）、青色（`#00a87e`）、蓝色（`#494fdf`）、深粉（`#e61e49`）等。但营销界面本身非常克制——近黑色（`#191c1f`）和纯白（`#ffffff`）主导，彩色语义令牌保留给产品界面，而非营销页面。
 
-What distinguishes Revolut is its pill-everything button system. Every button uses 9999px radius — primary dark (`#191c1f`), secondary light (`#f4f4f4`), outlined (`transparent + 2px solid`), and ghost on dark (`rgba(244,244,244,0.1) + 2px solid`). The padding is generous (14px 32px–34px), creating large, confident touch targets. Combined with Inter for body text at various weights and positive letter-spacing (0.16px–0.24px), the result is a design that feels both premium and accessible — banking for the modern era.
+Revolut 的独特之处在于其万能胶囊按钮系统。每个按钮使用 9999px 半径——主色暗黑（`#191c1f`）、次级亮色（`#f4f4f4`）、轮廓（`transparent + 2px solid`）和暗黑背景上的幽灵（`rgba(244,244,244,0.1) + 2px solid`）。内边距充裕（14px 32px–34px），创建大而自信的触摸目标。结合 Inter 用于正文文本的各种字重和正字间距（0.16px–0.24px），结果是既高端又易用的设计——现代时代的银行业务。
 
-**Key Characteristics:**
-- Aeonik Pro display at 136px weight 500 — billboard-scale fintech headlines
-- Near-black (`#191c1f`) + white binary with comprehensive `--rui-*` semantic tokens
-- Universal pill buttons (9999px radius) with generous padding (14px 32px)
-- Inter for body text with positive letter-spacing (0.16px–0.24px)
-- Rich semantic color system: blue, teal, pink, yellow, green, brown, danger, warning
-- Zero shadows detected — depth through color contrast only
-- Tight display line-heights (1.00) with relaxed body (1.50–1.56)
+**关键特征：**
+- Aeonik Pro 展示字体 136px 字重 500——广告牌规模的金融科技标题
+- 近黑（`#191c1f`）+ 白色二元配色，辅以全面的 `--rui-*` 语义令牌
+- 万能胶囊按钮（9999px 半径），充裕内边距（14px 32px）
+- Inter 用于正文，正字间距（0.16px–0.24px）
+- 丰富的语义色彩系统：蓝、青、粉、黄、绿、棕、危险、警告
+- 零阴影——仅通过颜色对比创建深度
+- 紧凑的展示行高（1.00），宽松的正文（1.50–1.56）
 
-## 2. Color Palette & Roles
+## 2. 色彩调色板与角色
 
-### Primary
-- **Revolut Dark** (`#191c1f`): Primary dark surface, button background, near-black text
-- **Pure White** (`#ffffff`): `--rui-color-action-label`, primary light surface
-- **Light Surface** (`#f4f4f4`): Secondary button background, subtle surface
+### 主色
+- **Revolut 暗色**（`#191c1f`）：主色暗面、按钮背景、近黑色文本
+- **纯白**（`#ffffff`）：`--rui-color-action-label`，主色亮面
+- **亮面**（`#f4f4f4`）：次级按钮背景、微妙的表面
 
-### Brand / Interactive
-- **Revolut Blue** (`#494fdf`): `--rui-color-blue`, primary brand blue
-- **Action Blue** (`#4f55f1`): `--rui-color-action-photo-header-text`, header accent
-- **Blue Text** (`#376cd5`): `--website-color-blue-text`, link blue
+### 品牌/交互色
+- **Revolut 蓝**（`#494fdf`）：`--rui-color-blue`，主品牌蓝
+- **行动蓝**（`#4f55f1`）：`--rui-color-action-photo-header-text`，标题强调
+- **蓝色文本**（`#376cd5`）：`--website-color-blue-text`，链接蓝
 
-### Semantic
-- **Danger Red** (`#e23b4a`): `--rui-color-danger`, error/destructive
-- **Deep Pink** (`#e61e49`): `--rui-color-deep-pink`, critical accent
-- **Warning Orange** (`#ec7e00`): `--rui-color-warning`, warning states
-- **Yellow** (`#b09000`): `--rui-color-yellow`, attention
-- **Teal** (`#00a87e`): `--rui-color-teal`, success/positive
-- **Light Green** (`#428619`): `--rui-color-light-green`, secondary success
-- **Green Text** (`#006400`): `--website-color-green-text`, green text
-- **Light Blue** (`#007bc2`): `--rui-color-light-blue`, informational
-- **Brown** (`#936d62`): `--rui-color-brown`, warm neutral accent
-- **Red Text** (`#8b0000`): `--website-color-red-text`, dark red text
+### 语义色
+- **危险红**（`#e23b4a`）：`--rui-color-danger`，错误/破坏性操作
+- **深粉**（`#e61e49`）：`--rui-color-deep-pink`，关键强调
+- **警告橙**（`#ec7e00`）：`--rui-color-warning`，警告状态
+- **黄**（`#b09000`）：`--rui-color-yellow`，注意
+- **青**（`#00a87e`）：`--rui-color-teal`，成功/正面
+- **浅绿**（`#428619`）：`--rui-color-light-green`，次级成功
+- **绿色文本**（`#006400`）：`--website-color-green-text`，绿色文本
+- **浅蓝**（`#007bc2`）：`--rui-color-light-blue`，信息性
+- **棕**（`#936d62`）：`--rui-color-brown`，暖中性强调
+- **红色文本**（`#8b0000`）：`--website-color-red-text`，深红色文本
 
-### Neutral Scale
-- **Mid Slate** (`#505a63`): Secondary text
-- **Cool Gray** (`#8d969e`): Muted text, tertiary
-- **Gray Tone** (`#c9c9cd`): `--rui-color-grey-tone-20`, borders/dividers
+### 中性色阶
+- **中灰**（`#505a63`）：次级文本
+- **冷灰**（`#8d969e`）：弱化文本，第三级
+- **灰色调**（`#c9c9cd`）：`--rui-color-grey-tone-20`，边框/分隔线
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Families
-- **Display**: `Aeonik Pro` — geometric grotesque, no detected fallbacks
-- **Body / UI**: `Inter` — standard system sans
-- **Fallback**: `Arial` for specific button contexts
+### 字体系列
+- **展示**：`Aeonik Pro`——几何无衬线，未检测到回退
+- **正文/UI**：`Inter`——标准系统无衬线
+- **回退**：`Arial` 用于特定按钮上下文
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|------|--------|-------------|----------------|-------|
-| Display Mega | Aeonik Pro | 136px (8.50rem) | 500 | 1.00 (tight) | -2.72px | Stadium-scale hero |
-| Display Hero | Aeonik Pro | 80px (5.00rem) | 500 | 1.00 (tight) | -0.8px | Primary hero |
-| Section Heading | Aeonik Pro | 48px (3.00rem) | 500 | 1.21 (tight) | -0.48px | Feature sections |
-| Sub-heading | Aeonik Pro | 40px (2.50rem) | 500 | 1.20 (tight) | -0.4px | Sub-sections |
-| Card Title | Aeonik Pro | 32px (2.00rem) | 500 | 1.19 (tight) | -0.32px | Card headings |
-| Feature Title | Aeonik Pro | 24px (1.50rem) | 400 | 1.33 | normal | Light headings |
-| Nav / UI | Aeonik Pro | 20px (1.25rem) | 500 | 1.40 | normal | Navigation, buttons |
-| Body Large | Inter | 18px (1.13rem) | 400 | 1.56 | -0.09px | Introductions |
-| Body | Inter | 16px (1.00rem) | 400 | 1.50 | 0.24px | Standard reading |
-| Body Semibold | Inter | 16px (1.00rem) | 600 | 1.50 | 0.16px | Emphasized body |
-| Body Bold Link | Inter | 16px (1.00rem) | 700 | 1.50 | 0.24px | Bold links |
+| 角色 | 字体 | 字号 | 字重 | 行高 | 字间距 | 备注 |
+|------|------|------|------|------|--------|------|
+| 展示超大 | Aeonik Pro | 136px (8.50rem) | 500 | 1.00 (紧凑) | -2.72px | 体育场规模主视觉 |
+| 展示主视觉 | Aeonik Pro | 80px (5.00rem) | 500 | 1.00 (紧凑) | -0.8px | 主主视觉 |
+| 章节标题 | Aeonik Pro | 48px (3.00rem) | 500 | 1.21 (紧凑) | -0.48px | 功能章节 |
+| 子标题 | Aeonik Pro | 40px (2.50rem) | 500 | 1.20 (紧凑) | -0.4px | 子章节 |
+| 卡片标题 | Aeonik Pro | 32px (2.00rem) | 500 | 1.19 (紧凑) | -0.32px | 卡片标题 |
+| 功能标题 | Aeonik Pro | 24px (1.50rem) | 400 | 1.33 | 正常 | 轻量标题 |
+| 导航/UI | Aeonik Pro | 20px (1.25rem) | 500 | 1.40 | 正常 | 导航、按钮 |
+| 大正文 | Inter | 18px (1.13rem) | 400 | 1.56 | -0.09px | 介绍 |
+| 正文 | Inter | 16px (1.00rem) | 400 | 1.50 | 0.24px | 标准阅读 |
+| 正文半粗 | Inter | 16px (1.00rem) | 600 | 1.50 | 0.16px | 强调正文 |
+| 正文粗链接 | Inter | 16px (1.00rem) | 700 | 1.50 | 0.24px | 粗链接 |
 
-### Principles
-- **Weight 500 as display default**: Aeonik Pro uses medium (500) for ALL headings — no bold. This creates authority through size and tracking, not weight.
-- **Billboard tracking**: -2.72px at 136px is extremely compressed — text designed to be read at a glance, like airport signage.
-- **Positive tracking on body**: Inter uses +0.16px to +0.24px, creating airy, well-spaced reading text that contrasts with the compressed headings.
+### 原则
+- **字重 500 作为展示默认**：Aeonik Pro 对所有标题使用中档（500）——无粗体。这通过字号和字间距而非字重创建权威感。
+- **广告牌字间距**：136px 时 -2.72px 极度压缩——文本设计为一瞥即读，如机场指示牌。
+- **正文正字间距**：Inter 使用 +0.16px 至 +0.24px，创建通风、间距良好的阅读文本，与压缩的标题形成对比。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary Dark Pill**
-- Background: `#191c1f`
-- Text: `#ffffff`
-- Padding: 14px 32px
-- Radius: 9999px (full pill)
-- Hover: opacity 0.85
-- Focus: `0 0 0 0.125rem` ring
+**主色暗调胶囊**
+- 背景：`#191c1f`
+- 文本：`#ffffff`
+- 内边距：14px 32px
+- 圆角：9999px（全胶囊）
+- 悬停：透明度 0.85
+- 聚焦：`0 0 0 0.125rem` 环
 
-**Secondary Light Pill**
-- Background: `#f4f4f4`
-- Text: `#000000`
-- Padding: 14px 34px
-- Radius: 9999px
-- Hover: opacity 0.85
+**次级亮调胶囊**
+- 背景：`#f4f4f4`
+- 文本：`#000000`
+- 内边距：14px 34px
+- 圆角：9999px
+- 悬停：透明度 0.85
 
-**Outlined Pill**
-- Background: transparent
-- Text: `#191c1f`
-- Border: `2px solid #191c1f`
-- Padding: 14px 32px
-- Radius: 9999px
+**轮廓胶囊**
+- 背景：透明
+- 文本：`#191c1f`
+- 边框：`2px solid #191c1f`
+- 内边距：14px 32px
+- 圆角：9999px
 
-**Ghost on Dark**
-- Background: `rgba(244, 244, 244, 0.1)`
-- Text: `#f4f4f4`
-- Border: `2px solid #f4f4f4`
-- Padding: 14px 32px
-- Radius: 9999px
+**暗黑背景上的幽灵**
+- 背景：`rgba(244, 244, 244, 0.1)`
+- 文本：`#f4f4f4`
+- 边框：`2px solid #f4f4f4`
+- 内边距：14px 32px
+- 圆角：9999px
 
-### Cards & Containers
-- Radius: 12px (small), 20px (cards)
-- No shadows — flat surfaces with color contrast
-- Dark and light section alternation
+### 卡片与容器
+- 圆角：12px（小）、20px（卡片）
+- 无阴影——扁平表面配颜色对比
+- 暗色和亮色章节交替
 
-### Navigation
-- Aeonik Pro 20px weight 500
-- Clean header, hamburger toggle at 12px radius
-- Pill CTAs right-aligned
+### 导航
+- Aeonik Pro 20px 字重 500
+- 简洁头部，汉堡菜单切换按钮圆角 12px
+- 胶囊 CTA 右对齐
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 4px, 6px, 8px, 14px, 16px, 20px, 24px, 32px, 40px, 48px, 80px, 88px, 120px
-- Large section spacing: 80px–120px
+### 间距系统
+- 基础单位：8px
+- 缩放：4px、6px、8px、14px、16px、20px、24px、32px、40px、48px、80px、88px、120px
+- 大章节间距：80px–120px
 
-### Border Radius Scale
-- Standard (12px): Navigation, small buttons
-- Card (20px): Feature cards
-- Pill (9999px): All buttons
+### 圆角缩放
+- 标准（12px）：导航、小按钮
+- 卡片（20px）：功能卡片
+- 胶囊（9999px）：所有按钮
 
-## 6. Depth & Elevation
+## 6. 深度与层次
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow | Everything — Revolut uses zero shadows |
-| Focus | `0 0 0 0.125rem` ring | Accessibility focus |
+| 级别 | 处理 | 用途 |
+|------|------|------|
+| 扁平（级别 0） | 无阴影 | 所有元素——Revolut 使用零阴影 |
+| 聚焦 | `0 0 0 0.125rem` 环 | 无障碍聚焦 |
 
-**Shadow Philosophy**: Revolut uses ZERO shadows. Depth comes entirely from the dark/light section contrast and the generous whitespace between elements.
+**阴影理念**：Revolut 使用零阴影。深度完全来自暗/亮章节对比和元素间充裕的留白。
 
-## 7. Do's and Don'ts
+## 7. 宜与忌
 
-### Do
-- Use Aeonik Pro weight 500 for all display headings
-- Apply 9999px radius to all buttons — pill shape is universal
-- Use generous button padding (14px 32px)
-- Keep the palette to near-black + white for marketing surfaces
-- Apply positive letter-spacing on Inter body text
+### 宜
+- 对所有展示标题使用 Aeonik Pro 字重 500
+- 对所有按钮应用 9999px 圆角——胶囊形状是通用的
+- 使用充裕的按钮内边距（14px 32px）
+- 将调色板保持为近黑 + 白用于营销界面
+- 对 Inter 正文文本应用正字间距
 
-### Don't
-- Don't use shadows — Revolut is flat by design
-- Don't use bold (700) for Aeonik Pro headings — 500 is the weight
-- Don't use small buttons — the generous padding is intentional
-- Don't apply semantic colors to marketing surfaces — they're for the product
+### 忌
+- 不使用阴影——Revolut 按设计是扁平的
+- 不对 Aeonik Pro 标题使用粗体（700）——500 是标准字重
+- 不使用小按钮——充裕的内边距是有意的
+- 不对营销界面应用语义色——它们用于产品界面
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
-|------|-------|-------------|
-| Mobile Small | <400px | Compact, single column |
-| Mobile | 400–720px | Standard mobile |
-| Tablet | 720–1024px | 2-column layouts |
-| Desktop | 1024–1280px | Standard desktop |
-| Large | 1280–1920px | Full layout |
+### 断点
+| 名称 | 宽度 | 关键变化 |
+|------|------|------|
+| 小移动设备 | <400px | 紧凑，单列 |
+| 移动设备 | 400–720px | 标准移动端 |
+| 平板 | 720–1024px | 双列布局 |
+| 桌面 | 1024–1280px | 标准桌面 |
+| 大尺寸 | 1280–1920px | 全布局 |
 
-## 9. Agent Prompt Guide
+## 9. Agent 提示词指南
 
-### Quick Color Reference
-- Dark: Revolut Dark (`#191c1f`)
-- Light: White (`#ffffff`)
-- Surface: Light (`#f4f4f4`)
-- Blue: Revolut Blue (`#494fdf`)
-- Danger: Red (`#e23b4a`)
-- Success: Teal (`#00a87e`)
+### 快速颜色参考
+- 暗色：Revolut 暗色（`#191c1f`）
+- 亮色：白色（`#ffffff`）
+- 表面：亮色（`#f4f4f4`）
+- 蓝色：Revolut 蓝（`#494fdf`）
+- 危险：红色（`#e23b4a`）
+- 成功：青色（`#00a87e`）
 
-### Example Component Prompts
-- "Create a hero: white background. Headline at 136px Aeonik Pro weight 500, line-height 1.00, letter-spacing -2.72px, #191c1f text. Dark pill CTA (#191c1f, 9999px, 14px 32px). Outlined pill secondary (transparent, 2px solid #191c1f)."
-- "Build a pill button: #191c1f background, white text, 9999px radius, 14px 32px padding, 20px Aeonik Pro weight 500. Hover: opacity 0.85."
+### 示例组件提示词
+- "创建一个主视觉：白色背景。标题 136px Aeonik Pro 字重 500，行高 1.00，字间距 -2.72px，`#191c1f` 文本。暗色胶囊 CTA（`#191c1f`，9999px，14px 32px）。轮廓胶囊次级（透明，2px solid `#191c1f`）。"
+- "构建胶囊按钮：`#191c1f` 背景，白色文本，9999px 圆角，14px 32px 内边距，20px Aeonik Pro 字重 500。悬停：透明度 0.85。"
 
-### Iteration Guide
-1. Aeonik Pro 500 for headings — never bold
-2. All buttons are pills (9999px) with generous padding
-3. Zero shadows — flat is the Revolut identity
-4. Near-black + white for marketing, semantic colors for product
+### 迭代指南
+1. 标题使用 Aeonik Pro 500——永不用粗体
+2. 所有按钮都是胶囊（9999px），内边距充裕
+3. 零阴影——扁平是 Revolut 的身份
+4. 近黑 + 白用于营销，语义色用于产品

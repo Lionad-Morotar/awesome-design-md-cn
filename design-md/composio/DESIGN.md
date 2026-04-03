@@ -1,307 +1,307 @@
 # Design System: Composio
 
-## 1. Visual Theme & Atmosphere
+## 1. 视觉主题与氛围
 
-Composio's interface is a nocturnal command center — a dense, developer-focused darkness punctuated by electric cyan and deep cobalt signals. The entire experience is built on an almost-pure-black canvas (`#0f0f0f`) where content floats within barely-visible containment borders, creating the feeling of a high-tech control panel rather than a traditional marketing page. It's a site that whispers authority to developers who live in dark terminals.
+Composio 的界面是一座夜间的指挥中心——一个密集的、以开发者为中心的黑暗空间，点缀着电光青色和深钴蓝色的信号。整个体验建立在一个近乎纯黑的画布（`#0f0f0f`）之上，内容漂浮在几乎不可见的容器边框内，营造出一种高科技控制面板的感觉，而非传统的营销页面。这是一个向那些生活在黑暗终端中的开发者低语着权威的网站。
 
-The visual language leans heavily into the aesthetic of code editors and terminal windows. JetBrains Mono appears alongside the geometric precision of abcDiatype, reinforcing the message that this is a tool built *by* developers *for* developers. Decorative elements are restrained but impactful — subtle cyan-blue gradient glows emanate from cards and sections like bioluminescent organisms in deep water, while hard-offset shadows (`4px 4px`) on select elements add a raw, brutalist edge that prevents the design from feeling sterile.
+视觉语言强烈倾向于代码编辑器和终端窗口的美学风格。JetBrains Mono 与几何精度极高的 abcDiatype 并列出现，强化了这一信息：这是一个由开发者打造、为开发者服务的工具。装饰元素克制而富有冲击力——微妙的青蓝渐变光晕从卡片和区块中散发出来，如同深海中的生物发光体，而某些元素上硬朗的偏移阴影（`4px 4px`）增添了一丝原始的粗野主义边缘，防止设计显得单调乏味。
 
-What makes Composio distinctive is its tension between extreme minimalism and strategic bursts of luminous color. The site never shouts — headings use tight line-heights (0.87) that compress text into dense, authoritative blocks. Color is rationed like a rare resource: white text for primary content, semi-transparent white (`rgba(255,255,255,0.5-0.6)`) for secondary, and brand blue (`#0007cd`) or electric cyan (`#00ffff`) reserved exclusively for interactive moments and accent glows.
+Composio 的独特之处在于极端极简主义与战略性 luminous 色彩爆发之间的张力。网站从不喧哗——标题使用紧凑的行高（0.87），将文本压缩成密集而权威的区块。色彩如同稀缺资源般被配给：白色文本用于主要内容，半透明白色（`rgba(255,255,255,0.5-0.6)`）用于次要内容，而品牌蓝（`#0007cd`）或电光青（`#00ffff`）则专为交互时刻和点缀光晕保留。
 
-**Key Characteristics:**
-- Pitch-black canvas with near-invisible white-border containment (4-12% opacity)
-- Dual-font identity: geometric sans-serif (abcDiatype) for content, monospace (JetBrains Mono) for technical credibility
-- Ultra-tight heading line-heights (0.87-1.0) creating compressed, impactful text blocks
-- Bioluminescent accent strategy — cyan and blue glows that feel like they're emitting light from within
-- Hard-offset brutalist shadows (`4px 4px`) on select interactive elements
-- Monochrome hierarchy with color used only at the highest-signal moments
-- Developer-terminal aesthetic that bridges marketing and documentation
+**关键特征：**
+- 纯黑画布配以近乎隐形的白色边框容器（4-12% 不透明度）
+- 双字体身份：几何无衬线体（abcDiatype）用于内容，等宽字体（JetBrains Mono）用于技术可信度
+- 超紧凑的标题行高（0.87-1.0），形成压缩而富有冲击力的文本块
+- 生物发光点缀策略——青色和蓝色光晕仿佛从内部发出光芒
+- 硬朗偏移的粗野主义阴影（`4px 4px`）用于部分交互元素
+- 单色层次结构，色彩仅用于最高信号时刻
+- 开发者终端美学，桥接营销与文档
 
-## 2. Color Palette & Roles
+## 2. 色彩板与角色
 
-### Primary
-- **Composio Cobalt** (`#0007cd`): The core brand color — a deep, saturated blue used sparingly for high-priority interactive elements and brand moments. It anchors the identity with quiet intensity.
+### 主色
+- **Composio 钴蓝**（`#0007cd`）：核心品牌色——一种深邃、饱和的蓝色，节制地用于高优先级交互元素和品牌时刻。它以沉静的强度锚定整体视觉识别。
 
-### Secondary & Accent
-- **Electric Cyan** (`#00ffff`): The attention-grabbing accent — used at low opacity (`rgba(0,255,255,0.12)`) for glowing button backgrounds and card highlights. At full saturation, it serves as the energetic counterpoint to the dark canvas.
-- **Signal Blue** (`#0089ff` / `rgb(0,137,255)`): Used for select button borders and interactive focus states, bridging the gap between Cobalt and Cyan.
-- **Ocean Blue** (`#0096ff` / `rgb(0,150,255)`): Accent border color on CTA buttons, slightly warmer than Signal Blue.
+### 辅助色与点缀
+- **电光青**（`#00ffff`）：吸引眼球的点缀色——以低不透明度（`rgba(0,255,255,0.12)`）用于发光按钮背景和卡片高光。在完全饱和状态下，它作为深色画布的能量对立面。
+- **信号蓝**（`#0089ff` / `rgb(0,137,255)`）：用于部分按钮边框和交互焦点状态，弥合钴蓝与青色之间的间隙。
+- **海洋蓝**（`#0096ff` / `rgb(0,150,255)`）：CTA 按钮的点缀边框色，比信号蓝略暖。
 
-### Surface & Background
-- **Void Black** (`#0f0f0f`): The primary page background — not pure black, but a hair warmer, reducing eye strain on dark displays.
-- **Pure Black** (`#000000`): Used for card interiors and deep-nested containers, creating a subtle depth distinction from the page background.
-- **Charcoal** (`#2c2c2c` / `rgb(44,44,44)`): Used for secondary button borders and divider lines on dark surfaces.
+### 表面与背景
+- **虚空黑**（`#0f0f0f`）：主页面背景——并非纯黑，而是略暖一些，减少黑暗显示器上的眼睛疲劳。
+- **纯黑**（`#000000`）：用于卡片内部和深层嵌套容器，与页面背景形成微妙的深度区分。
+- **炭灰**（`#2c2c2c` / `rgb(44,44,44)`）：用于深色表面上的次要按钮边框和分隔线。
 
-### Neutrals & Text
-- **Pure White** (`#ffffff`): Primary heading and high-emphasis text color on dark surfaces.
-- **Muted Smoke** (`#444444`): De-emphasized body text, metadata, and tertiary content.
-- **Ghost White** (`rgba(255,255,255,0.6)`): Secondary body text and link labels — visible but deliberately receded.
-- **Whisper White** (`rgba(255,255,255,0.5)`): Tertiary button text and placeholder content.
-- **Phantom White** (`rgba(255,255,255,0.2)`): Subtle button backgrounds and deeply receded UI chrome.
+### 中性色与文本
+- **纯白**（`#ffffff`）：深色表面上的主标题和高强调文本颜色。
+- ** muted 烟灰**（`#444444`）：弱化的正文、元数据和次要内容。
+- **幽灵白**（`rgba(255,255,255,0.6)`）：次要正文和链接标签——可见但刻意退后。
+- **低语白**（`rgba(255,255,255,0.5)`）：三级按钮文本和占位符内容。
+- **幻影白**（`rgba(255,255,255,0.2)`）：微妙的按钮背景和深度退后的 UI 装饰。
 
-### Semantic & Accent
-- **Border Mist 12** (`rgba(255,255,255,0.12)`): Highest-opacity border treatment — used for prominent card edges and content separators.
-- **Border Mist 10** (`rgba(255,255,255,0.10)`): Standard container borders on dark surfaces.
-- **Border Mist 08** (`rgba(255,255,255,0.08)`): Subtle section dividers and secondary card edges.
-- **Border Mist 06** (`rgba(255,255,255,0.06)`): Near-invisible containment borders for background groupings.
-- **Border Mist 04** (`rgba(255,255,255,0.04)`): The faintest border — used for atmospheric separation only.
-- **Light Border** (`#e0e0e0` / `rgb(224,224,224)`): Reserved for light-surface contexts (rare on this site).
+### 语义与点缀
+- **边框雾 12**（`rgba(255,255,255,0.12)`）：最高不透明度的边框处理——用于醒目的卡片边缘和内容分隔。
+- **边框雾 10**（`rgba(255,255,255,0.10)`）：深色表面上的标准容器边框。
+- **边框雾 08**（`rgba(255,255,255,0.08)`）：微妙的区块分隔和次要卡片边缘。
+- **边框雾 06**（`rgba(255,255,255,0.06)`）：近乎不可见的容器边框，用于背景分组。
+- **边框雾 04**（`rgba(255,255,255,0.04)`）：最淡的边框——仅用于氛围分离。
+- **亮色边框**（`#e0e0e0` / `rgb(224,224,224)`）：保留用于亮色表面场景（在此网站中罕见）。
 
-### Gradient System
-- **Cyan Glow**: Radial gradients using `#00ffff` at very low opacity, creating bioluminescent halos behind cards and feature sections.
-- **Blue-to-Black Fade**: Linear gradients from Composio Cobalt (`#0007cd`) fading into Void Black (`#0f0f0f`), used in hero backgrounds and section transitions.
-- **White Fog**: Bottom-of-page gradient transitioning from dark to a diffused white/gray, creating an atmospheric "horizon line" effect near the footer.
+### 渐变系统
+- **青色光晕**：使用 `#00ffff` 以极低不透明度的径向渐变，在卡片和功能区块后方创建生物发光光晕。
+- **蓝到黑渐变**：从 Composio 钴蓝（`#0007cd`）渐变为虚空黑（`#0f0f0f`）的线性渐变，用于 hero 背景和区块过渡。
+- **白雾**：页面底部的渐变，从深色过渡到扩散的白色/灰色，在页脚附近营造氛围性的"地平线"效果。
 
-## 3. Typography Rules
+## 3. 排版规则
 
-### Font Family
-- **Primary**: `abcDiatype`, with fallbacks: `abcDiatype Fallback, ui-sans-serif, system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji`
-- **Monospace**: `JetBrains Mono`, with fallbacks: `JetBrains Mono Fallback, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New`
-- **System Monospace** (fallback): `Menlo`, `monospace` for smallest inline code
+### 字体系列
+- **主要**：`abcDiatype`，后备字体：`abcDiatype Fallback, ui-sans-serif, system-ui, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji`
+- **等宽**：`JetBrains Mono`，后备字体：`JetBrains Mono Fallback, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New`
+- **系统等宽**（后备）：`Menlo`，`monospace` 用于最小的行内代码
 
-### Hierarchy
+### 层级
 
-| Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
+| 角色 | 字体 | 字号 | 字重 | 行高 | 字母间距 | 备注 |
 |------|------|------|--------|-------------|----------------|-------|
-| Display / Hero | abcDiatype | 64px (4rem) | 400 | 0.87 (ultra-tight) | normal | Massive, compressed headings |
-| Section Heading | abcDiatype | 48px (3rem) | 400 | 1.00 (tight) | normal | Major feature section titles |
-| Sub-heading Large | abcDiatype | 40px (2.5rem) | 400 | 1.00 (tight) | normal | Secondary section markers |
-| Sub-heading | abcDiatype | 28px (1.75rem) | 400 | 1.20 (tight) | normal | Card titles, feature names |
-| Card Title | abcDiatype | 24px (1.5rem) | 500 | 1.20 (tight) | normal | Medium-emphasis card headings |
-| Feature Label | abcDiatype | 20px (1.25rem) | 500 | 1.20 (tight) | normal | Smaller card titles, labels |
-| Body Large | abcDiatype | 18px (1.125rem) | 400 | 1.20 (tight) | normal | Intro paragraphs |
-| Body / Button | abcDiatype | 16px (1rem) | 400 | 1.50 | normal | Standard body text, nav links, buttons |
-| Body Small | abcDiatype | 15px (0.94rem) | 400 | 1.63 (relaxed) | normal | Longer-form body text |
-| Caption | abcDiatype | 14px (0.875rem) | 400 | 1.63 (relaxed) | normal | Descriptions, metadata |
-| Label | abcDiatype | 13px (0.81rem) | 500 | 1.50 | normal | UI labels, badges |
-| Tag / Overline | abcDiatype | 12px (0.75rem) | 500 | 1.00 (tight) | 0.3px | Uppercase overline labels |
-| Micro | abcDiatype | 12px (0.75rem) | 400 | 1.00 (tight) | 0.3px | Smallest sans-serif text |
-| Code Body | JetBrains Mono | 16px (1rem) | 400 | 1.50 | -0.32px | Inline code, terminal output |
-| Code Small | JetBrains Mono | 14px (0.875rem) | 400 | 1.50 | -0.28px | Code snippets, technical labels |
-| Code Caption | JetBrains Mono | 12px (0.75rem) | 400 | 1.50 | -0.28px | Small code references |
-| Code Overline | JetBrains Mono | 14px (0.875rem) | 400 | 1.43 | 0.7px | Uppercase technical labels |
-| Code Micro | JetBrains Mono | 11px (0.69rem) | 400 | 1.33 | 0.55px | Tiny uppercase code tags |
-| Code Nano | JetBrains Mono | 9-10px | 400 | 1.33 | 0.45-0.5px | Smallest monospace text |
+| 展示 / Hero | abcDiatype | 64px (4rem) | 400 | 0.87（超紧凑） | normal | 巨大的压缩标题 |
+| 区块标题 | abcDiatype | 48px (3rem) | 400 | 1.00（紧凑） | normal | 主要功能区块标题 |
+| 副标题大 | abcDiatype | 40px (2.5rem) | 400 | 1.00（紧凑） | normal | 次要区块标记 |
+| 副标题 | abcDiatype | 28px (1.75rem) | 400 | 1.20（紧凑） | normal | 卡片标题、功能名称 |
+| 卡片标题 | abcDiatype | 24px (1.5rem) | 500 | 1.20（紧凑） | normal | 中等强调卡片标题 |
+| 功能标签 | abcDiatype | 20px (1.25rem) | 500 | 1.20（紧凑） | normal | 较小卡片标题、标签 |
+| 正文大 | abcDiatype | 18px (1.125rem) | 400 | 1.20（紧凑） | normal | 介绍段落 |
+| 正文 / 按钮 | abcDiatype | 16px (1rem) | 400 | 1.50 | normal | 标准正文、导航链接、按钮 |
+| 正文小 | abcDiatype | 15px (0.94rem) | 400 | 1.63（宽松） | normal | 较长篇幅的正文 |
+| 说明文字 | abcDiatype | 14px (0.875rem) | 400 | 1.63（宽松） | normal | 描述、元数据 |
+| 标签 | abcDiatype | 13px (0.81rem) | 500 | 1.50 | normal | UI 标签、徽章 |
+| 标签 / 上划线 | abcDiatype | 12px (0.75rem) | 500 | 1.00（紧凑） | 0.3px | 大写上划线标签 |
+| 微文本 | abcDiatype | 12px (0.75rem) | 400 | 1.00（紧凑） | 0.3px | 最小的无衬线文本 |
+| 代码正文 | JetBrains Mono | 16px (1rem) | 400 | 1.50 | -0.32px | 行内代码、终端输出 |
+| 代码小 | JetBrains Mono | 14px (0.875rem) | 400 | 1.50 | -0.28px | 代码片段、技术标签 |
+| 代码说明 | JetBrains Mono | 12px (0.75rem) | 400 | 1.50 | -0.28px | 小型代码引用 |
+| 代码上划线 | JetBrains Mono | 14px (0.875rem) | 400 | 1.43 | 0.7px | 大写的技术标签 |
+| 代码微文本 | JetBrains Mono | 11px (0.69rem) | 400 | 1.33 | 0.55px | 微小的大写代码标签 |
+| 代码纳米 | JetBrains Mono | 9-10px | 400 | 1.33 | 0.45-0.5px | 最小的等宽文本 |
 
-### Principles
-- **Compression creates authority**: Heading line-heights are drastically tight (0.87-1.0), making large text feel dense and commanding rather than airy and decorative.
-- **Dual personality**: abcDiatype carries the marketing voice — geometric, precise, friendly. JetBrains Mono carries the technical voice — credible, functional, familiar to developers.
-- **Weight restraint**: Almost everything is weight 400 (regular). Weight 500 (medium) is reserved for small labels, badges, and select card titles. Weight 700 (bold) appears only in microscopic system-monospace contexts.
-- **Negative letter-spacing on code**: JetBrains Mono uses negative letter-spacing (-0.28px to -0.98px) for dense, compact code blocks that feel like a real IDE.
-- **Uppercase is earned**: The `uppercase` + `letter-spacing` treatment is reserved exclusively for tiny overline labels and technical tags — never for headings.
+### 原则
+- **压缩创造权威**：标题行高极度紧凑（0.87-1.0），使大文本感觉密集而富有权威性，而非轻盈和装饰性。
+- **双重性格**：abcDiatype 承载营销声音——几何、精准、友好。JetBrains Mono 承载技术声音——可信、功能性、为开发者所熟悉。
+- **字重克制**：几乎所有内容都是字重 400（常规）。字重 500（中等）保留用于小型标签、徽章和部分卡片标题。字重 700（粗体）仅出现在微观系统等宽场景中。
+- **代码负字母间距**：JetBrains Mono 使用负字母间距（-0.28px 到 -0.98px），打造密集、紧凑的代码块，感觉像真实的 IDE。
+- **大写需慎用**：`uppercase` + `letter-spacing` 处理仅保留用于微小的上划线标签和技术标签——从不用于标题。
 
-## 4. Component Stylings
+## 4. 组件样式
 
-### Buttons
+### 按钮
 
-**Primary CTA (White Fill)**
-- Background: Pure White (`#ffffff`)
-- Text: Near Black (`oklch(0.145 0 0)`)
-- Padding: comfortable (8px 24px)
-- Border: none
-- Radius: subtly rounded (likely 4px based on token scale)
-- Hover: likely subtle opacity reduction or slight gray shift
+**主要 CTA（白色填充）**
+- 背景：纯白（`#ffffff`）
+- 文本：近黑（`oklch(0.145 0 0)`）
+- 内边距：舒适（8px 24px）
+- 边框：无
+- 圆角：微妙圆角（基于 token 比例可能为 4px）
+- 悬停：可能的微妙不透明度降低或轻微灰色偏移
 
-**Cyan Accent CTA**
-- Background: Electric Cyan at 12% opacity (`rgba(0,255,255,0.12)`)
-- Text: Near Black (`oklch(0.145 0 0)`)
-- Padding: comfortable (8px 24px)
-- Border: thin solid Ocean Blue (`1px solid rgb(0,150,255)`)
-- Radius: subtly rounded (4px)
-- Creates a "glowing from within" effect on dark backgrounds
+**青色点缀 CTA**
+- 背景：电光青 12% 不透明度（`rgba(0,255,255,0.12)`）
+- 文本：近黑（`oklch(0.145 0 0)`）
+- 内边距：舒适（8px 24px）
+- 边框：细实线海洋蓝（`1px solid rgb(0,150,255)`）
+- 圆角：微妙圆角（4px）
+- 在深色背景上营造"从内部发光"的效果
 
-**Ghost / Outline (Signal Blue)**
-- Background: transparent
-- Text: Near Black (`oklch(0.145 0 0)`)
-- Padding: balanced (10px)
-- Border: thin solid Signal Blue (`1px solid rgb(0,137,255)`)
-- Hover: likely fill or border color shift
+**幽灵 / 轮廓（信号蓝）**
+- 背景：透明
+- 文本：近黑（`oklch(0.145 0 0)`）
+- 内边距：平衡（10px）
+- 边框：细实线信号蓝（`1px solid rgb(0,137,255)`）
+- 悬停：可能的填充或边框颜色偏移
 
-**Ghost / Outline (Charcoal)**
-- Background: transparent
-- Text: Near Black (`oklch(0.145 0 0)`)
-- Padding: balanced (10px)
-- Border: thin solid Charcoal (`1px solid rgb(44,44,44)`)
-- For secondary/tertiary actions on dark surfaces
+**幽灵 / 轮廓（炭灰）**
+- 背景：透明
+- 文本：近黑（`oklch(0.145 0 0)`）
+- 内边距：平衡（10px）
+- 边框：细实线炭灰（`1px solid rgb(44,44,44)`）
+- 用于深色表面上的次要/三级操作
 
-**Phantom Button**
-- Background: Phantom White (`rgba(255,255,255,0.2)`)
-- Text: Whisper White (`rgba(255,255,255,0.5)`)
-- No visible border
-- Used for deeply de-emphasized actions
+**幻影按钮**
+- 背景：幻影白（`rgba(255,255,255,0.2)`）
+- 文本：低语白（`rgba(255,255,255,0.5)`）
+- 无明显边框
+- 用于深度弱化的操作
 
-### Cards & Containers
-- Background: Pure Black (`#000000`) or transparent
-- Border: white at very low opacity, ranging from Border Mist 04 (`rgba(255,255,255,0.04)`) to Border Mist 12 (`rgba(255,255,255,0.12)`) depending on prominence
-- Radius: barely rounded corners (2px for inline elements, 4px for content cards)
-- Shadow: select cards use the hard-offset brutalist shadow (`rgba(0,0,0,0.15) 4px 4px 0px 0px`) — a distinctive design choice that adds raw depth
-- Elevation shadow: deeper containers use soft diffuse shadow (`rgba(0,0,0,0.5) 0px 8px 32px`)
-- Hover behavior: likely subtle border opacity increase or faint glow effect
+### 卡片与容器
+- 背景：纯黑（`#000000`）或透明
+- 边框：白色以极低不透明度，范围从边框雾 04（`rgba(255,255,255,0.04)`）到边框雾 12（`rgba(255,255,255,0.12)`），取决于重要程度
+- 圆角：几乎未圆角（行内元素 2px，内容卡片 4px）
+- 阴影：部分卡片使用硬朗偏移的粗野主义阴影（`rgba(0,0,0,0.15) 4px 4px 0px 0px`）——这一独特的设计选择增添了原始深度
+-  elevation 阴影：更深层的容器使用柔和扩散阴影（`rgba(0,0,0,0.5) 0px 8px 32px`）
+- 悬停行为：可能的微妙边框不透明度增加或微弱光晕效果
 
-### Inputs & Forms
-- No explicit input token data extracted — inputs likely follow the dark-surface pattern with:
-  - Background: transparent or Pure Black
-  - Border: Border Mist 10 (`rgba(255,255,255,0.10)`)
-  - Focus: border shifts to Signal Blue (`#0089ff`) or Electric Cyan
-  - Text: Pure White with Ghost White placeholder
+### 输入与表单
+- 无明确的输入 token 数据提取——输入可能遵循深色表面模式：
+  - 背景：透明或纯黑
+  - 边框：边框雾 10（`rgba(255,255,255,0.10)`）
+  - 聚焦：边框变为信号蓝（`#0089ff`）或电光青
+  - 文本：纯白配幽灵白占位符
 
-### Navigation
-- Sticky top nav bar on dark/black background
-- Logo (white SVG): Composio wordmark on the left
-- Nav links: Pure White (`#ffffff`) at standard body size (16px, abcDiatype)
-- CTA button in the nav: White Fill Primary style
-- Mobile: collapses to hamburger menu, single-column layout
-- Subtle bottom border on nav (Border Mist 06-08)
+### 导航
+- 粘性顶部导航栏，深色/黑色背景
+- Logo（白色 SVG）：左侧为 Composio 字标
+- 导航链接：纯白（`#ffffff`）标准正文大小（16px，abcDiatype）
+- 导航中的 CTA 按钮：白色填充主要样式
+- 移动端：折叠为汉堡菜单，单列布局
+- 底部微妙边框（边框雾 06-08）
 
-### Image Treatment
-- Dark-themed product screenshots and UI mockups dominate
-- Images sit within bordered containers matching the card system
-- Blue/cyan gradient glows behind or beneath feature images
-- No visible border-radius on images beyond container rounding (4px)
-- Full-bleed within their card containers
+### 图像处理
+- 深色主题的产品截图和 UI 模型占主导
+- 图像位于与卡片系统匹配的边框容器内
+- 功能图像后方或下方有蓝色/青色渐变光晕
+- 图像上无可见的圆角半径，仅容器圆角（4px）
+- 在卡片容器内全出血布局
 
-### Distinctive Components
+### 独特组件
 
-**Stats/Metrics Display**
-- Large monospace numbers (JetBrains Mono) — "10k+" style
-- Tight layout with subtle label text beneath
+**统计数据/指标展示**
+- 大型等宽数字（JetBrains Mono）——"10k+" 风格
+- 紧凑布局，下方配有微妙的标签文本
 
-**Code Blocks / Terminal Previews**
-- Dark containers with JetBrains Mono
-- Syntax-highlighted content
-- Subtle bordered containers (Border Mist 10)
+**代码块 / 终端预览**
+- 深色容器配 JetBrains Mono
+- 语法高亮内容
+- 微妙边框容器（边框雾 10）
 
-**Integration/Partner Logos Grid**
-- Grid layout of tool logos on dark surface
-- Contained within bordered card
-- Demonstrates ecosystem breadth
+**集成/合作伙伴 Logo 网格**
+- 深色表面上的工具 Logo 网格布局
+- 包含在边框卡片内
+- 展示生态系统广度
 
-**"COMPOSIO" Brand Display**
-- Oversized brand typography — likely the largest text on the page
-- Used as a section divider/brand statement
-- Stark white on black
+**"COMPOSIO" 品牌展示**
+- 超大品牌排版——可能是页面上最大的文本
+- 用作区块分隔/品牌声明
+- 纯黑背景上的纯白
 
-## 5. Layout Principles
+## 5. 布局原则
 
-### Spacing System
-- Base unit: 8px
-- Scale: 1px, 2px, 4px, 6px, 8px, 10px, 12px, 14px, 16px, 18px, 20px, 24px, 30px, 32px, 40px
-- Component padding: typically 10px (buttons) to 24px (CTA buttons horizontal)
-- Section padding: generous vertical spacing (estimated 80-120px between major sections)
-- Card internal padding: approximately 24-32px
+### 间距系统
+- 基础单位：8px
+- 比例：1px, 2px, 4px, 6px, 8px, 10px, 12px, 14px, 16px, 18px, 20px, 24px, 30px, 32px, 40px
+- 组件内边距：通常 10px（按钮）到 24px（CTA 按钮水平）
+- 区块内边距： generous 垂直间距（估计主要区块之间为 80-120px）
+- 卡片内边距：约 24-32px
 
-### Grid & Container
-- Max container width: approximately 1200px, centered
-- Content sections use single-column or 2-3 column grids for feature cards
-- Hero: centered single-column with maximum impact
-- Feature sections: asymmetric layouts mixing text blocks with product screenshots
+### 网格与容器
+- 最大容器宽度：约 1200px，居中
+- 内容区块使用单列或 2-3 列网格用于功能卡片
+- Hero：居中的单列，最大冲击力
+- 功能区块：混合文本块和产品截图的非对称布局
 
-### Whitespace Philosophy
-- **Breathing room between sections**: Large vertical gaps create distinct "chapters" in the page scroll.
-- **Dense within components**: Cards and text blocks are internally compact (tight line-heights, minimal internal padding), creating focused information nodes.
-- **Contrast-driven separation**: Rather than relying solely on whitespace, Composio uses border opacity differences and subtle background shifts to delineate content zones.
+### 留白哲学
+- **区块间的呼吸空间**：大型垂直间隙在页面滚动中创建 distinct "章节"。
+- **组件内密集**：卡片和文本块在内部紧凑（紧凑行高、最小内边距），形成聚焦的信息节点。
+- **对比驱动的分离**：Composio 不仅依赖留白，还使用边框不透明度差异和微妙的背景偏移来划分内容区域。
 
-### Border Radius Scale
-- Nearly squared (2px): Inline code spans, small tags, pre blocks — the sharpest treatment, conveying technical precision
-- Subtly rounded (4px): Content cards, images, standard containers — the workhorse radius
-- Pill-shaped (37px): Select buttons and badges — creates a softer, more approachable feel for key CTAs
-- Full round (9999px+): Circular elements, avatar-like containers, decorative dots
+### 圆角半径比例
+- 近方形（2px）：行内代码跨度、小标签、pre 块——最锐利的处理，传达技术精度
+- 微妙圆角（4px）：内容卡片、图像、标准容器——主力圆角
+- 药丸形（37px）：部分按钮和徽章——为关键 CTA 创造更柔和、更亲和的感觉
+- 全圆（9999px+）：圆形元素、头像类容器、装饰点
 
-## 6. Depth & Elevation
+## 6. 深度与高程
 
-| Level | Treatment | Use |
-|-------|-----------|-----|
-| Flat (Level 0) | No shadow, no border | Page background, inline text |
-| Contained (Level 1) | Border Mist 04-08, no shadow | Background groupings, subtle sections |
-| Card (Level 2) | Border Mist 10-12, no shadow | Standard content cards, code blocks |
-| Brutalist (Level 3) | Hard offset shadow (`4px 4px`, 15% black) | Select interactive cards, distinctive feature highlights |
-| Floating (Level 4) | Soft diffuse shadow (`0px 8px 32px`, 50% black) | Modals, overlays, deeply elevated content |
+| 级别 | 处理 | 用途 |
+|------|-----------|-----|
+| 平面（级别 0） | 无阴影，无边框 | 页面背景、行内文本 |
+| 容器（级别 1） | 边框雾 04-08，无阴影 | 背景分组、微妙区块 |
+| 卡片（级别 2） | 边框雾 10-12，无阴影 | 标准内容卡片、代码块 |
+| 粗野主义（级别 3） | 硬朗偏移阴影（`4px 4px`，15% 黑） | 部分交互卡片、独特的功能高光 |
+| 浮动（级别 4） | 柔和扩散阴影（`0px 8px 32px`，50% 黑） | 模态框、覆盖层、深度提升的内容 |
 
-**Shadow Philosophy**: Composio uses shadows sparingly and with deliberate contrast. The hard-offset brutalist shadow is the signature — it breaks the sleek darkness with a raw, almost retro-computing feel. The soft diffuse shadow is reserved for truly floating elements. Most depth is communicated through border opacity gradations rather than shadows.
+**阴影哲学**：Composio 审慎且有选择性地使用阴影。硬朗偏移的粗野主义阴影是标志性设计——它以原始、近乎复古计算的感觉打破流畅的黑暗。柔和扩散阴影保留用于真正浮动的元素。大多数深度通过边框不透明度渐变而非阴影来传达。
 
-### Decorative Depth
-- **Cyan Glow Halos**: Radial gradient halos using Electric Cyan at low opacity behind feature cards and images. Creates a "screen glow" effect as if the UI elements are emitting light.
-- **Blue-Black Gradient Washes**: Linear gradients from Composio Cobalt to Void Black used as section backgrounds, adding subtle color temperature shifts.
-- **White Fog Horizon**: A gradient from dark to diffused white/gray at the bottom of the page, creating an atmospheric "dawn" effect before the footer.
+### 装饰深度
+- **青色光晕**：使用电光青以低不透明度的径向光晕，置于功能卡片和图像后方。营造"屏幕发光"效果，仿佛 UI 元素在发光。
+- **蓝黑渐变洗**：从 Composio 钴蓝到虚空黑的线性渐变，用作区块背景，添加微妙的色温偏移。
+- **白雾地平线**：页面底部从深色到扩散白色/灰色的渐变，在页脚前营造氛围性的"黎明"效果。
 
-## 7. Do's and Don'ts
+## 7. 宜与不宜
 
-### Do
-- Use Void Black (`#0f0f0f`) as the primary page background — never pure white for main surfaces
-- Keep heading line-heights ultra-tight (0.87-1.0) for compressed, authoritative text blocks
-- Use white-opacity borders (4-12%) for containment — they're more important than shadows here
-- Reserve Electric Cyan (`#00ffff`) for high-signal moments only — CTAs, glows, interactive accents
-- Pair abcDiatype with JetBrains Mono to reinforce the developer-tool identity
-- Use the hard-offset shadow (`4px 4px`) intentionally on select elements for brutalist personality
-- Keep button text dark (`oklch(0.145 0 0)`) even on the darkest backgrounds — buttons carry their own surface
-- Layer opacity-based borders to create subtle depth without shadows
-- Use uppercase + letter-spacing only for tiny overline labels (12px or smaller)
+### 宜
+- 使用虚空黑（`#0f0f0f`）作为主页面背景——主表面切勿使用纯白
+- 保持标题行高超紧凑（0.87-1.0），打造压缩、权威的文本块
+- 使用白色不透明度边框（4-12%）进行容器化——它们比阴影更重要
+- 仅为高信号时刻保留电光青（`#00ffff`）——CTA、光晕、交互点缀
+- 将 abcDiatype 与 JetBrains Mono 配对，强化开发者工具身份
+- 在部分元素上有意使用硬朗偏移阴影（`4px 4px`），展现粗野主义个性
+- 即使在最暗的背景上，按钮文本也保持深色（`oklch(0.145 0 0)`）——按钮承载自己的表面
+- 分层不透明度边框以创造微妙的深度，无需阴影
+- 仅为微小上划线标签（12px 或更小）使用大写 + 字母间距
 
-### Don't
-- Don't use bright backgrounds or light surfaces as primary containers
-- Don't apply heavy shadows everywhere — depth comes from border opacity, not box-shadow
-- Don't use Composio Cobalt (`#0007cd`) as a text color — it's too dark on dark and too saturated on light
-- Don't increase heading line-heights beyond 1.2 — the compressed feel is core to the identity
-- Don't use bold (700) weight for body or heading text — 400-500 is the ceiling
-- Don't mix warm colors — the palette is strictly cool (blue, cyan, white, black)
-- Don't use border-radius larger than 4px on content cards — the precision of near-square corners is intentional
-- Don't place Electric Cyan at full opacity on large surfaces — it's an accent, used at 12% max for backgrounds
-- Don't use decorative serif or handwritten fonts — the entire identity is geometric sans + monospace
-- Don't skip the monospace font for technical content — JetBrains Mono is not decorative, it's a credibility signal
+### 不宜
+- 不要使用明亮背景或浅色表面作为主容器
+- 不要到处使用厚重阴影——深度来自边框不透明度，而非 box-shadow
+- 不要将 Composio 钴蓝（`#0007cd`）用作文本颜色——在深色上太暗，在浅色上太饱和
+- 不要将标题行高增加到超过 1.2——压缩感是身份的核心
+- 不要对正文或标题文本使用粗体（700）字重——400-500 是上限
+- 不要混合暖色——调色板严格为冷色（蓝、青、白、黑）
+- 不要在内容卡片上使用大于 4px 的圆角半径——近方形角落的精度是有意的
+- 不要在大表面上以全不透明度使用电光青——它是点缀，背景使用最多 12%
+- 不要使用装饰性衬线或手写字体——整个身份是几何无衬线 + 等宽
+- 不要跳过技术内容的等宽字体——JetBrains Mono 不是装饰，它是可信度信号
 
-## 8. Responsive Behavior
+## 8. 响应式行为
 
-### Breakpoints
-| Name | Width | Key Changes |
+### 断点
+| 名称 | 宽度 | 关键变化 |
 |------|-------|-------------|
-| Mobile | <768px | Single column, hamburger nav, full-width cards, reduced section padding, hero text scales down to ~28-40px |
-| Tablet | 768-1024px | 2-column grid for cards, condensed nav, slightly reduced hero text |
-| Desktop | 1024-1440px | Full multi-column layout, expanded nav with all links visible, large hero typography (64px) |
-| Large Desktop | >1440px | Max-width container centered, generous horizontal margins |
+| 移动端 | <768px | 单列、汉堡导航、全宽卡片、减少的区块内边距、hero 文本缩小至约 28-40px |
+| 平板 | 768-1024px | 卡片 2 列网格、紧凑导航、略小的 hero 文本 |
+| 桌面 | 1024-1440px | 完整多列布局、展开的导航显示所有链接、大 hero 排版（64px） |
+| 大桌面 | >1440px | 最大宽度容器居中、 generous 水平外边距 |
 
-### Touch Targets
-- Minimum touch target: 44x44px for all interactive elements
-- Buttons use comfortable padding (8px 24px minimum) ensuring adequate touch area
-- Nav links spaced with sufficient gap for thumb navigation
+### 触控目标
+- 最小触控目标：所有交互元素为 44x44px
+- 按钮使用舒适的内边距（最小 8px 24px），确保足够的触控区域
+- 导航链接之间有足够的间隙，便于拇指导航
 
-### Collapsing Strategy
-- **Navigation**: Full horizontal nav on desktop collapses to hamburger on mobile
-- **Feature grids**: 3-column → 2-column → single-column stacking
-- **Hero text**: 64px → 40px → 28px progressive scaling
-- **Section padding**: Reduces proportionally but maintains generous vertical rhythm
-- **Cards**: Stack vertically on mobile with full-width treatment
-- **Code blocks**: Horizontal scroll on smaller viewports rather than wrapping
+### 折叠策略
+- **导航**：桌面端完整水平导航在移动端折叠为汉堡菜单
+- **功能网格**：3 列 → 2 列 → 单列堆叠
+- **Hero 文本**：64px → 40px → 28px 渐进缩放
+- **区块内边距**：成比例减少但保持 generous 垂直节奏
+- **卡片**：移动端垂直堆叠，全宽处理
+- **代码块**：在较小视口上水平滚动而非换行
 
-### Image Behavior
-- Product screenshots scale proportionally within their containers
-- Dark-themed images maintain contrast on the dark background at all sizes
-- Gradient glow effects scale with container size
-- No visible art direction changes between breakpoints — same crops, proportional scaling
+### 图像行为
+- 产品截图在容器内成比例缩放
+- 深色主题图像在所有尺寸下在深色背景上保持对比度
+- 渐变光晕效果随容器大小缩放
+- 断点之间无可见的艺术指导变化——相同裁剪，成比例缩放
 
-## 9. Agent Prompt Guide
+## 9. 智能体提示词指南
 
-### Quick Color Reference
-- Primary CTA: "Pure White (#ffffff)"
-- Page Background: "Void Black (#0f0f0f)"
-- Brand Accent: "Composio Cobalt (#0007cd)"
-- Glow Accent: "Electric Cyan (#00ffff)"
-- Heading Text: "Pure White (#ffffff)"
-- Body Text: "Ghost White (rgba(255,255,255,0.6))"
-- Card Border: "Border Mist 10 (rgba(255,255,255,0.10))"
-- Button Border: "Signal Blue (#0089ff)"
+### 快速颜色参考
+- 主要 CTA："纯白（`#ffffff`）"
+- 页面背景："虚空黑（`#0f0f0f`）"
+- 品牌点缀："Composio 钴蓝（`#0007cd`）"
+- 光晕点缀："电光青（`#00ffff`）"
+- 标题文本："纯白（`#ffffff`）"
+- 正文文本："幽灵白（`rgba(255,255,255,0.6)`）"
+- 卡片边框："边框雾 10（`rgba(255,255,255,0.10)`）"
+- 按钮边框："信号蓝（`#0089ff`）"
 
-### Example Component Prompts
-- "Create a feature card with a near-black background (#000000), barely visible white border at 10% opacity, subtly rounded corners (4px), and a hard-offset shadow (4px right, 4px down, 15% black). Use Pure White for the title in abcDiatype at 24px weight 500, and Ghost White (60% opacity) for the description at 16px."
-- "Design a primary CTA button with a solid white background, near-black text, comfortable padding (8px vertical, 24px horizontal), and subtly rounded corners. Place it next to a secondary button with transparent background, Signal Blue border, and matching padding."
-- "Build a hero section on Void Black (#0f0f0f) with a massive heading at 64px, line-height 0.87, in abcDiatype. Center the text. Add a subtle blue-to-black gradient glow behind the content. Include a white CTA button and a cyan-accented secondary button below."
-- "Create a code snippet display using JetBrains Mono at 14px with -0.28px letter-spacing on a black background. Add a Border Mist 10 border (rgba(255,255,255,0.10)) and 4px radius. Show syntax-highlighted content with white and cyan text."
-- "Design a navigation bar on Void Black with the Composio wordmark in white on the left, 4-5 nav links in white abcDiatype at 16px, and a white-fill CTA button on the right. Add a Border Mist 06 bottom border."
+### 示例组件提示词
+- "创建一个功能卡片，背景为近黑色（`#000000`），几乎不可见的白色边框 10% 不透明度，微妙圆角（4px），以及硬朗偏移阴影（向右 4px、向下 4px、15% 黑色）。标题使用纯白 abcDiatype 24px 字重 500，描述使用幽灵白（60% 不透明度）16px。"
+- "设计一个主要 CTA 按钮，实心白色背景、近黑文本、舒适内边距（垂直 8px、水平 24px）、微妙圆角。在其旁边放置一个次要按钮，透明背景、信号蓝边框、匹配的内边距。"
+- "在虚空黑（`#0f0f0f`）上构建一个 hero 区块，使用 abcDiatype 创建一个巨大标题 64px，行高 0.87。居中文本。在内容后方添加微妙的蓝到黑渐变光晕。在下方包含一个白色 CTA 按钮和一个青色点缀的次要按钮。"
+- "使用 JetBrains Mono 14px、字母间距 -0.28px 在黑色背景上创建代码片段显示。添加边框雾 10 边框（`rgba(255,255,255,0.10)`）和 4px 圆角。显示带有白色和青色文本的语法高亮内容。"
+- "设计一个导航栏，虚空黑背景，左侧为白色 Composio 字标，4-5 个导航链接使用白色 abcDiatype 16px，右侧为白色填充 CTA 按钮。添加边框雾 06 底部边框。"
 
-### Iteration Guide
-When refining existing screens generated with this design system:
-1. Focus on ONE component at a time
-2. Reference specific color names and hex codes from this document — "use Ghost White (rgba(255,255,255,0.6))" not "make it lighter"
-3. Use natural language descriptions — "make the border barely visible" = Border Mist 04-06
-4. Describe the desired "feel" alongside specific measurements — "compressed and authoritative heading at 48px with line-height 1.0"
-5. For glow effects, specify "Electric Cyan at 12% opacity as a radial gradient behind the element"
-6. Always specify which font — abcDiatype for marketing, JetBrains Mono for technical/code content
+### 迭代指南
+优化使用此设计系统生成的现有屏幕时：
+1. 一次聚焦一个组件
+2. 引用本文档中的具体颜色名称和十六进制代码——使用"幽灵白（`rgba(255,255,255,0.6)`）"而非"让它更浅"
+3. 使用自然语言描述——"让边框几乎不可见" = 边框雾 04-06
+4. 在描述具体测量值时描述期望的"感觉"——"48px 压缩且权威的标题，行高 1.0"
+5. 对于光晕效果，指定"电光青 12% 不透明度作为元素后方的径向渐变"
+6. 始终指定使用哪个字体——abcDiatype 用于营销，JetBrains Mono 用于技术/代码内容
